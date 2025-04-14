@@ -240,4 +240,119 @@ entry 0x40080640
 [0;32mI (158314) User: sent successfully num: 30[0m
 [0;32mI (158314) User: sent successfully num: 30[0m
 [0;32mI (158314) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 30[0m
-[0;32mI (158424) LCD: receive successfully, ID: 
+[0;32mI (158424) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 30[0m
+[0;32mI (158524) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 30[0m
+[0;32mI (163414) User: sent successfully num: 31[0m
+[0;32mI (163414) User: sent successfully num: 31[0m
+[0;32mI (163414) User: sent successfully num: 31[0m
+[0;32mI (163414) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 31[0m
+[0;32mI (163524) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 31[0m
+[0;32mI (163624) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 31[0m
+[0;32mI (168514) User: sent successfully num: 32[0m
+[0;32mI (168514) User: sent successfully num: 32[0m
+[0;32mI (168514) User: sent successfully num: 32[0m
+[0;32mI (168514) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 32[0m
+[0;32mI (168624) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 32[0m
+[0;32mI (168724) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 32[0m
+[0;32mI (173614) User: sent successfully num: 33[0m
+[0;32mI (173614) User: sent successfully num: 33[0m
+[0;32mI (173614) User: sent successfully num: 33[0m
+[0;32mI (173614) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 33[0m
+[0;32mI (173724) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 33[0m
+[0;32mI (173824) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 33[0m
+[0;32mI (178714) User: sent successfully num: 34[0m
+[0;32mI (178714) User: sent successfully num: 34[0m
+[0;32mI (178714) User: sent successfully num: 34[0m
+[0;32mI (178714) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 34[0m
+[0;32mI (178824) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 34[0m
+[0;32mI (178924) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 34[0m
+[0;32mI (183814) User: sent successfully num: 35[0m
+[0;32mI (183814) User: sent successfully num: 35[0m
+[0;32mI (183814) User: sent successfully num: 35[0m
+[0;32mI (183814) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 35[0m
+[0;32mI (183924) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 35[0m
+[0;32mI (184024) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 35[0m
+[0;32mI (188914) User: sent successfully num: 36[0m
+[0;32mI (188914) User: sent successfully num: 36[0m
+[0;32mI (188914) User: sent successfully num: 36[0m
+[0;32mI (188914) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 36[0m
+[0;32mI (189024) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 36[0m
+[0;32mI (189124) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 36[0m
+[0;32mI (194014) User: sent successfully num: 37[0m
+[0;32mI (194014) User: sent successfully num: 37[0m
+[0;32mI (194014) User: sent successfully num: 37[0m
+[0;32mI (194014) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 37[0m
+[0;32mI (194124) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 37[0m
+[0;32mI (194224) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 37[0m
+[0;32mI (199114) User: sent successfully num: 38[0m
+[0;32mI (199114) User: sent successfully num: 38[0m
+[0;32mI (199114) User: sent successfully num: 38[0m
+[0;32mI (199114) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 38[0m
+[0;32mI (199224) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 38[0m
+[0;32mI (199324) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 38[0m
+[0;32mI (204214) User: sent successfully num: 39[0m
+[0;32mI (204214) User: sent successfully num: 39[0m
+[0;32mI (204214) User: sent successfully num: 39[0m
+[0;32mI (204214) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 39[0m
+[0;32mI (204324) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 39[0m
+[0;32mI (204424) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 39[0m
+[0;32mI (209314) User: sent successfully num: 40[0m
+[0;32mI (209314) User: sent successfully num: 40[0m
+[0;32mI (209314) User: sent successfully num: 40[0m
+[0;32mI (209314) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 40[0m
+[0;32mI (209424) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 40[0m
+[0;32mI (209524) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 40[0m
+[0;32mI (214414) User: sent successfully num: 41[0m
+[0;32mI (214414) User: sent successfully num: 41[0m
+[0;32mI (214414) User: sent successfully num: 41[0m
+[0;32mI (214414) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 41[0m
+[0;32mI (214524) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 41[0m
+[0;32mI (214624) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 41[0m
+[0;32mI (219514) User: sent successfully num: 42[0m
+[0;32mI (219514) User: sent successfully num: 42[0m
+[0;32mI (219514) User: sent successfully num: 42[0m
+[0;32mI (219514) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 42[0m
+[0;32mI (219624) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 42[0m
+[0;32mI (219724) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 42[0m
+[0;32mI (224614) User: sent successfully num: 43[0m
+[0;32mI (224614) User: sent successfully num: 43[0m
+[0;32mI (224614) User: sent successfully num: 43[0m
+[0;32mI (224614) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 43[0m
+[0;32mI (224724) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 43[0m
+[0;32mI (224824) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 43[0m
+[0;32mI (229714) User: sent successfully num: 44[0m
+[0;32mI (229714) User: sent successfully num: 44[0m
+[0;32mI (229714) User: sent successfully num: 44[0m
+[0;32mI (229714) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 44[0m
+[0;32mI (229824) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 44[0m
+[0;32mI (229924) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 44[0m
+[0;32mI (234814) User: sent successfully num: 45[0m
+[0;32mI (234814) User: sent successfully num: 45[0m
+[0;32mI (234814) User: sent successfully num: 45[0m
+[0;32mI (234814) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 45[0m
+[0;32mI (234924) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 45[0m
+[0;32mI (235024) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 45[0m
+[0;32mI (239914) User: sent successfully num: 46[0m
+[0;32mI (239914) User: sent successfully num: 46[0m
+[0;32mI (239914) User: sent successfully num: 46[0m
+[0;32mI (239914) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 46[0m
+[0;32mI (240024) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 46[0m
+[0;32mI (240124) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 46[0m
+[0;32mI (245014) User: sent successfully num: 47[0m
+[0;32mI (245014) User: sent successfully num: 47[0m
+[0;32mI (245014) User: sent successfully num: 47[0m
+[0;32mI (245014) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 47[0m
+[0;32mI (245124) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 47[0m
+[0;32mI (245224) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 47[0m
+[0;32mI (250114) User: sent successfully num: 48[0m
+[0;32mI (250114) User: sent successfully num: 48[0m
+[0;32mI (250114) User: sent successfully num: 48[0m
+[0;32mI (250114) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 48[0m
+[0;32mI (250224) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 48[0m
+[0;32mI (250324) LCD: receive successfully, ID: 3 , msg: Hello I'm Task3, num: 48[0m
+[0;32mI (255214) User: sent successfully num: 49[0m
+[0;32mI (255214) User: sent successfully num: 49[0m
+[0;32mI (255214) User: sent successfully num: 49[0m
+[0;32mI (255214) LCD: receive successfully, ID: 1 , msg: Hello I'm Task1, num: 49[0m
+[0;32mI (255324) LCD: receive successfully, ID: 2 , msg: Hello I'm Task2, num: 49[0m
+[
