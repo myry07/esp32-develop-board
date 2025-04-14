@@ -1,0 +1,168 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 13 2025 22:29:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095c4h ( 38340) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=000195ec vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b820 vaddr=40080000 size=047f8h ( 18424) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=137ach ( 79788) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000337d4 vaddr=400847f8 size=07fa0h ( 32672) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     001_Queue[0m
+[0;32mI (207) cpu_start: App version:      59143b5-dirty[0m
+[0;32mI (213) cpu_start: Compile time:     Apr 13 2025 22:28:58[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  ec180c920...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB2B10 len 0002D4F0 (181 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008C798 len 00013868 (78 KiB): IRAM[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) TAG: begin[0m
+[0;32mI (314) main_task: Returned from app_main()[0m
+[0;32mI (314) TAG: sent successfully[0m
+[0;32mI (314) TAG: took successfully[0m
+[0;32mI (414) TAG: sent successfully[0m
+[0;32mI (424) TAG: took successfully[0m
+[0;32mI (514) TAG: sent successfully[0m
+[0;32mI (524) TAG: took successfully[0m
+[0;32mI (614) TAG: sent successfully[0m
+[0;32mI (624) TAG: took successfully[0m
+[0;32mI (714) TAG: sent successfully[0m
+[0;32mI (724) TAG: took successfully[0m
+[0;32mI (814) TAG: sent successfully[0m
+[0;32mI (824) TAG: took successfully[0m
+[0;32mI (914) TAG: sent successfully[0m
+[0;32mI (924) TAG: took successfully[0m
+[0;32mI (1014) TAG: sent successfully[0m
+[0;32mI (1024) TAG: took successfully[0m
+[0;32mI (1114) TAG: sent successfully[0m
+[0;32mI (1124) TAG: took successfully[0m
+[0;32mI (1214) TAG: sent successfully[0m
+[0;32mI (1224) TAG: took successfully[0m
+[0;32mI (1314) TAG: sent successfully[0m
+[0;32mI (1324) TAG: took successfully[0m
+[0;32mI (1414) TAG: sent successfully[0m
+[0;32mI (1424) TAG: took successfully[0m
+[0;32mI (1514) TAG: sent successfully[0m
+[0;32mI (1524) TAG: took successfully[0m
+[0;32mI (1614) TAG: sent successfully[0m
+[0;32mI (1624) TAG: took successfully[0m
+[0;32mI (1714) TAG: sent successfully[0m
+[0;32mI (1724) TAG: took successfully[0m
+[0;32mI (1814) TAG: sent successfully[0m
+[0;32mI (1824) TAG: took successfully[0m
+[0;32mI (1914) TAG: sent successfully[0m
+[0;32mI (1924) TAG: took successfully[0m
+[0;32mI (2014) TAG: sent successfully[0m
+[0;32mI (2024) TAG: took successfully[0m
+[0;32mI (2114) TAG: sent successfully[0m
+[0;32mI (2124) TAG: took successfully[0m
+[0;32mI (2214) TAG: sent successfully[0m
+[0;32mI (2224) TAG: took successfully[0m
+[0;32mI (2314) TAG: sent successfully[0m
+[0;32mI (2324) TAG: took successfully[0m
+[0;32mI (2414) TAG: sent successfully[0m
+[0;32mI (2424) TAG: took successfully[0m
+[0;32mI (2514) TAG: sent successfully[0m
+[0;32mI (2524) TAG: took successfully[0m
+[0;32mI (2614) TAG: sent successfully[0m
+[0;32mI (2624) TAG: took successfully[0m
+[0;32mI (2714) TAG: sent successfully[0m
+[0;32mI (2724) TAG: took successfully[0m
+[0;32mI (2814) TAG: sent successfully[0m
+[0;32mI (2824) TAG: took successfully[0m
+[0;32mI (2914) TAG: sent successfully[0m
+[0;32mI (2924) TAG: took successfully[0m
+[0;32mI (3014) TAG: sent successfully[0m
+[0;32mI (3024) TAG: took successfully[0m
+[0;32mI (3114) TAG: sent successfully[0m
+[0;32mI (3124) TAG: took successfully[0m
+[0;32mI (3214) TAG: sent successfully[0m
+[0;32mI (3224) TAG: took successfully[0m
+[0;32mI (3314) TAG: sent successfully[0m
+[0;32mI (3324) TAG: took successfully[0m
+[0;32mI (3414) TAG: sent successfully[0m
+[0;32mI (3424) TAG: took successfully[0m
+[0;32mI (3514) TAG: sent successfully[0m
+[0;32mI (3524) TAG: took successfully[0m
+[0;32mI (3614) TAG: sent successfully[0m
+[0;32mI (3624) TAG: took successfully[0m
+[0;32mI (3714) TAG: sent successfully[0m
+[0;32mI (3724) TAG: took successfully[0m
+[0;32mI (3814) TAG: sent successfully[0m
+[0;32mI (3824) TAG: took successfully[0m
+[0;32mI (3914) TAG: sent successfully[0m
+[0;32mI (3924) TAG: took successfully[0m
+[0;32mI (4014) TAG: sent successfully[0m
+[0;32mI (4024) TAG: took successfully[0m
+[0;32mI (4114) TAG: sent successfully[0m
+[0;32mI (4124) TAG: took successfully[0m
+[0;32mI (4214) TAG: sent successfully[0m
+[0;32mI (4224) TAG: took successfully[0m
+[0;32mI (4314) TAG: sent successfully[0m
+[0;32mI (4324) TAG: took successfully[0m
+[0;32mI (4414) TAG: sent successfully[0m
+[0;32mI (4424) TAG: took successfully[0m
+[0;32mI (4514) TAG: sent successfully[0m
+[0;32mI (4524) TAG: took successfully[0m
+[0;32mI (4614) TAG: sent successfully[0m
+[0;32mI (4624) TAG: took successfully[0m
+[0;32mI (4714) TAG: sent successfully[0m
+[0;32mI (4724) TAG: took successfully[0m
+[0;32mI (4814) TAG: sent successfully[0m
+[0;32mI (4824) TAG: took successfully[0m
+[0;32mI (4914) TAG: sent successfully[0m
+[0;32mI (4924) TAG: took successfully[0m
+[0;32mI (5014) TAG: sent successfully[0m
+[0;32mI (5024) TAG: took successfully[0m
+[0;32mI (5114) TAG: sent successfully[0m
+[0;32mI (5124) TAG: took successfully[0m
+[0;32mI (5214) TAG: sent successfully[0m
+[0;32mI (5224) TAG: took successfully[0m
+[0;32mI (5314) TAG: sent successfully[0m
+[0;32mI (5324) TAG: took successfully[0m
+[0;32mI (5414) TAG: sent successfully[0m
+[0;32mI (5424) TAG: took successfully[0m
+[0;32mI (5514) TAG: sent successfully[0m
+[0;32mI (5524) TAG: took successfully[0m
+[0;32mI (5614) TAG: sent successfully[0m
+[0;32mI (5624) TAG: took successfully[0m
+[0;32mI (5714) TAG: sent successfully[0m
+[0;32mI (5724) TA

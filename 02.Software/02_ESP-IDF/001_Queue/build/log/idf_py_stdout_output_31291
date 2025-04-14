@@ -1,0 +1,552 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 13 2025 22:29:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095f4h ( 38388) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001961c vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b850 vaddr=40080000 size=047c8h ( 18376) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=137b8h ( 79800) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000337e0 vaddr=400847c8 size=07fd0h ( 32720) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     001_Queue[0m
+[0;32mI (207) cpu_start: App version:      59143b5-dirty[0m
+[0;32mI (213) cpu_start: Compile time:     Apr 13 2025 22:28:58[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  e515855be...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB2B10 len 0002D4F0 (181 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008C798 len 00013868 (78 KiB): IRAM[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) TAG: begin[0m
+[0;32mI (314) main_task: Returned from app_main()[0m
+[0;32mI (314) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (314) User: sent successfully[0m
+[0;32mI (424) User: sent successfully[0m
+[0;32mI (424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (524) User: sent successfully[0m
+[0;32mI (524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (624) User: sent successfully[0m
+[0;32mI (624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (724) User: sent successfully[0m
+[0;32mI (724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (824) User: sent successfully[0m
+[0;32mI (824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (924) User: sent successfully[0m
+[0;32mI (924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1024) User: sent successfully[0m
+[0;32mI (1024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1124) User: sent successfully[0m
+[0;32mI (1124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1224) User: sent successfully[0m
+[0;32mI (1224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1324) User: sent successfully[0m
+[0;32mI (1324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1424) User: sent successfully[0m
+[0;32mI (1424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1524) User: sent successfully[0m
+[0;32mI (1524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1624) User: sent successfully[0m
+[0;32mI (1624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1724) User: sent successfully[0m
+[0;32mI (1724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1824) User: sent successfully[0m
+[0;32mI (1824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (1924) User: sent successfully[0m
+[0;32mI (1924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2024) User: sent successfully[0m
+[0;32mI (2024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2124) User: sent successfully[0m
+[0;32mI (2124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2224) User: sent successfully[0m
+[0;32mI (2224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2324) User: sent successfully[0m
+[0;32mI (2324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2424) User: sent successfully[0m
+[0;32mI (2424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2524) User: sent successfully[0m
+[0;32mI (2524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2624) User: sent successfully[0m
+[0;32mI (2624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2724) User: sent successfully[0m
+[0;32mI (2724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2824) User: sent successfully[0m
+[0;32mI (2824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (2924) User: sent successfully[0m
+[0;32mI (2924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3024) User: sent successfully[0m
+[0;32mI (3024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3124) User: sent successfully[0m
+[0;32mI (3124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3224) User: sent successfully[0m
+[0;32mI (3224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3324) User: sent successfully[0m
+[0;32mI (3324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3424) User: sent successfully[0m
+[0;32mI (3424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3524) User: sent successfully[0m
+[0;32mI (3524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3624) User: sent successfully[0m
+[0;32mI (3624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3724) User: sent successfully[0m
+[0;32mI (3724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3824) User: sent successfully[0m
+[0;32mI (3824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (3924) User: sent successfully[0m
+[0;32mI (3924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4024) User: sent successfully[0m
+[0;32mI (4024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4124) User: sent successfully[0m
+[0;32mI (4124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4224) User: sent successfully[0m
+[0;32mI (4224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4324) User: sent successfully[0m
+[0;32mI (4324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4424) User: sent successfully[0m
+[0;32mI (4424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4524) User: sent successfully[0m
+[0;32mI (4524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4624) User: sent successfully[0m
+[0;32mI (4624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4724) User: sent successfully[0m
+[0;32mI (4724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4824) User: sent successfully[0m
+[0;32mI (4824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (4924) User: sent successfully[0m
+[0;32mI (4924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5024) User: sent successfully[0m
+[0;32mI (5024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5124) User: sent successfully[0m
+[0;32mI (5124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5224) User: sent successfully[0m
+[0;32mI (5224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5324) User: sent successfully[0m
+[0;32mI (5324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5424) User: sent successfully[0m
+[0;32mI (5424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5524) User: sent successfully[0m
+[0;32mI (5524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5624) User: sent successfully[0m
+[0;32mI (5624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5724) User: sent successfully[0m
+[0;32mI (5724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5824) User: sent successfully[0m
+[0;32mI (5824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (5924) User: sent successfully[0m
+[0;32mI (5924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6024) User: sent successfully[0m
+[0;32mI (6024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6124) User: sent successfully[0m
+[0;32mI (6124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6224) User: sent successfully[0m
+[0;32mI (6224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6324) User: sent successfully[0m
+[0;32mI (6324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6424) User: sent successfully[0m
+[0;32mI (6424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6524) User: sent successfully[0m
+[0;32mI (6524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6624) User: sent successfully[0m
+[0;32mI (6624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6724) User: sent successfully[0m
+[0;32mI (6724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6824) User: sent successfully[0m
+[0;32mI (6824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (6924) User: sent successfully[0m
+[0;32mI (6924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7024) User: sent successfully[0m
+[0;32mI (7024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7124) User: sent successfully[0m
+[0;32mI (7124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7224) User: sent successfully[0m
+[0;32mI (7224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7324) User: sent successfully[0m
+[0;32mI (7324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7424) User: sent successfully[0m
+[0;32mI (7424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7524) User: sent successfully[0m
+[0;32mI (7524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7624) User: sent successfully[0m
+[0;32mI (7624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7724) User: sent successfully[0m
+[0;32mI (7724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7824) User: sent successfully[0m
+[0;32mI (7824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (7924) User: sent successfully[0m
+[0;32mI (7924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8024) User: sent successfully[0m
+[0;32mI (8024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8124) User: sent successfully[0m
+[0;32mI (8124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8224) User: sent successfully[0m
+[0;32mI (8224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8324) User: sent successfully[0m
+[0;32mI (8324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8424) User: sent successfully[0m
+[0;32mI (8424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8524) User: sent successfully[0m
+[0;32mI (8524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8624) User: sent successfully[0m
+[0;32mI (8624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8724) User: sent successfully[0m
+[0;32mI (8724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8824) User: sent successfully[0m
+[0;32mI (8824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (8924) User: sent successfully[0m
+[0;32mI (8924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9024) User: sent successfully[0m
+[0;32mI (9024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9124) User: sent successfully[0m
+[0;32mI (9124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9224) User: sent successfully[0m
+[0;32mI (9224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9324) User: sent successfully[0m
+[0;32mI (9324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9424) User: sent successfully[0m
+[0;32mI (9424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9524) User: sent successfully[0m
+[0;32mI (9524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9624) User: sent successfully[0m
+[0;32mI (9624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9724) User: sent successfully[0m
+[0;32mI (9724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9824) User: sent successfully[0m
+[0;32mI (9824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (9924) User: sent successfully[0m
+[0;32mI (9924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10024) User: sent successfully[0m
+[0;32mI (10024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10124) User: sent successfully[0m
+[0;32mI (10124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10224) User: sent successfully[0m
+[0;32mI (10224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10324) User: sent successfully[0m
+[0;32mI (10324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10424) User: sent successfully[0m
+[0;32mI (10424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10524) User: sent successfully[0m
+[0;32mI (10524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10624) User: sent successfully[0m
+[0;32mI (10624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10724) User: sent successfully[0m
+[0;32mI (10724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10824) User: sent successfully[0m
+[0;32mI (10824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (10924) User: sent successfully[0m
+[0;32mI (10924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11024) User: sent successfully[0m
+[0;32mI (11024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11124) User: sent successfully[0m
+[0;32mI (11124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11224) User: sent successfully[0m
+[0;32mI (11224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11324) User: sent successfully[0m
+[0;32mI (11324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11424) User: sent successfully[0m
+[0;32mI (11424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11524) User: sent successfully[0m
+[0;32mI (11524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11624) User: sent successfully[0m
+[0;32mI (11624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11724) User: sent successfully[0m
+[0;32mI (11724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11824) User: sent successfully[0m
+[0;32mI (11824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (11924) User: sent successfully[0m
+[0;32mI (11924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12024) User: sent successfully[0m
+[0;32mI (12024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12124) User: sent successfully[0m
+[0;32mI (12124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12224) User: sent successfully[0m
+[0;32mI (12224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12324) User: sent successfully[0m
+[0;32mI (12324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12424) User: sent successfully[0m
+[0;32mI (12424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12524) User: sent successfully[0m
+[0;32mI (12524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12624) User: sent successfully[0m
+[0;32mI (12624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12724) User: sent successfully[0m
+[0;32mI (12724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12824) User: sent successfully[0m
+[0;32mI (12824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (12924) User: sent successfully[0m
+[0;32mI (12924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13024) User: sent successfully[0m
+[0;32mI (13024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13124) User: sent successfully[0m
+[0;32mI (13124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13224) User: sent successfully[0m
+[0;32mI (13224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13324) User: sent successfully[0m
+[0;32mI (13324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13424) User: sent successfully[0m
+[0;32mI (13424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13524) User: sent successfully[0m
+[0;32mI (13524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13624) User: sent successfully[0m
+[0;32mI (13624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13724) User: sent successfully[0m
+[0;32mI (13724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13824) User: sent successfully[0m
+[0;32mI (13824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (13924) User: sent successfully[0m
+[0;32mI (13924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14024) User: sent successfully[0m
+[0;32mI (14024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14124) User: sent successfully[0m
+[0;32mI (14124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14224) User: sent successfully[0m
+[0;32mI (14224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14324) User: sent successfully[0m
+[0;32mI (14324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14424) User: sent successfully[0m
+[0;32mI (14424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14524) User: sent successfully[0m
+[0;32mI (14524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14624) User: sent successfully[0m
+[0;32mI (14624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14724) User: sent successfully[0m
+[0;32mI (14724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14824) User: sent successfully[0m
+[0;32mI (14824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (14924) User: sent successfully[0m
+[0;32mI (14924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15024) User: sent successfully[0m
+[0;32mI (15024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15124) User: sent successfully[0m
+[0;32mI (15124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15224) User: sent successfully[0m
+[0;32mI (15224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15324) User: sent successfully[0m
+[0;32mI (15324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15424) User: sent successfully[0m
+[0;32mI (15424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15524) User: sent successfully[0m
+[0;32mI (15524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15624) User: sent successfully[0m
+[0;32mI (15624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15724) User: sent successfully[0m
+[0;32mI (15724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15824) User: sent successfully[0m
+[0;32mI (15824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (15924) User: sent successfully[0m
+[0;32mI (15924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16024) User: sent successfully[0m
+[0;32mI (16024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16124) User: sent successfully[0m
+[0;32mI (16124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16224) User: sent successfully[0m
+[0;32mI (16224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16324) User: sent successfully[0m
+[0;32mI (16324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16424) User: sent successfully[0m
+[0;32mI (16424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16524) User: sent successfully[0m
+[0;32mI (16524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16624) User: sent successfully[0m
+[0;32mI (16624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16724) User: sent successfully[0m
+[0;32mI (16724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16824) User: sent successfully[0m
+[0;32mI (16824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (16924) User: sent successfully[0m
+[0;32mI (16924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17024) User: sent successfully[0m
+[0;32mI (17024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17124) User: sent successfully[0m
+[0;32mI (17124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17224) User: sent successfully[0m
+[0;32mI (17224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17324) User: sent successfully[0m
+[0;32mI (17324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17424) User: sent successfully[0m
+[0;32mI (17424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17524) User: sent successfully[0m
+[0;32mI (17524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17624) User: sent successfully[0m
+[0;32mI (17624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17724) User: sent successfully[0m
+[0;32mI (17724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17824) User: sent successfully[0m
+[0;32mI (17824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (17924) User: sent successfully[0m
+[0;32mI (17924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18024) User: sent successfully[0m
+[0;32mI (18024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18124) User: sent successfully[0m
+[0;32mI (18124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18224) User: sent successfully[0m
+[0;32mI (18224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18324) User: sent successfully[0m
+[0;32mI (18324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18424) User: sent successfully[0m
+[0;32mI (18424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18524) User: sent successfully[0m
+[0;32mI (18524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18624) User: sent successfully[0m
+[0;32mI (18624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18724) User: sent successfully[0m
+[0;32mI (18724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18824) User: sent successfully[0m
+[0;32mI (18824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (18924) User: sent successfully[0m
+[0;32mI (18924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19024) User: sent successfully[0m
+[0;32mI (19024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19124) User: sent successfully[0m
+[0;32mI (19124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19224) User: sent successfully[0m
+[0;32mI (19224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19324) User: sent successfully[0m
+[0;32mI (19324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19424) User: sent successfully[0m
+[0;32mI (19424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19524) User: sent successfully[0m
+[0;32mI (19524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19624) User: sent successfully[0m
+[0;32mI (19624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19724) User: sent successfully[0m
+[0;32mI (19724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19824) User: sent successfully[0m
+[0;32mI (19824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (19924) User: sent successfully[0m
+[0;32mI (19924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20024) User: sent successfully[0m
+[0;32mI (20024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20124) User: sent successfully[0m
+[0;32mI (20124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20224) User: sent successfully[0m
+[0;32mI (20224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20324) User: sent successfully[0m
+[0;32mI (20324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20424) User: sent successfully[0m
+[0;32mI (20424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20524) User: sent successfully[0m
+[0;32mI (20524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20624) User: sent successfully[0m
+[0;32mI (20624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20724) User: sent successfully[0m
+[0;32mI (20724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20824) User: sent successfully[0m
+[0;32mI (20824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (20924) User: sent successfully[0m
+[0;32mI (20924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21024) User: sent successfully[0m
+[0;32mI (21024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21124) User: sent successfully[0m
+[0;32mI (21124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21224) User: sent successfully[0m
+[0;32mI (21224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21324) User: sent successfully[0m
+[0;32mI (21324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21424) User: sent successfully[0m
+[0;32mI (21424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21524) User: sent successfully[0m
+[0;32mI (21524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21624) User: sent successfully[0m
+[0;32mI (21624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21724) User: sent successfully[0m
+[0;32mI (21724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21824) User: sent successfully[0m
+[0;32mI (21824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (21924) User: sent successfully[0m
+[0;32mI (21924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22024) User: sent successfully[0m
+[0;32mI (22024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22124) User: sent successfully[0m
+[0;32mI (22124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22224) User: sent successfully[0m
+[0;32mI (22224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22324) User: sent successfully[0m
+[0;32mI (22324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22424) User: sent successfully[0m
+[0;32mI (22424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22524) User: sent successfully[0m
+[0;32mI (22524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22624) User: sent successfully[0m
+[0;32mI (22624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22724) User: sent successfully[0m
+[0;32mI (22724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22824) User: sent successfully[0m
+[0;32mI (22824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (22924) User: sent successfully[0m
+[0;32mI (22924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23024) User: sent successfully[0m
+[0;32mI (23024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23124) User: sent successfully[0m
+[0;32mI (23124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23224) User: sent successfully[0m
+[0;32mI (23224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23324) User: sent successfully[0m
+[0;32mI (23324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23424) User: sent successfully[0m
+[0;32mI (23424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23524) User: sent successfully[0m
+[0;32mI (23524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23624) User: sent successfully[0m
+[0;32mI (23624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23724) User: sent successfully[0m
+[0;32mI (23724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23824) User: sent successfully[0m
+[0;32mI (23824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (23924) User: sent successfully[0m
+[0;32mI (23924) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24024) User: sent successfully[0m
+[0;32mI (24024) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24124) User: sent successfully[0m
+[0;32mI (24124) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24224) User: sent successfully[0m
+[0;32mI (24224) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24324) User: sent successfully[0m
+[0;32mI (24324) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24424) User: sent successfully[0m
+[0;32mI (24424) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24524) User: sent successfully[0m
+[0;32mI (24524) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24624) User: sent successfully[0m
+[0;32mI (24624) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24724) User: sent successfully[0m
+[0;32mI (24724) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24824) User: sent successfully[0m
+[0;32mI (24824) LCD: receive successfully, ID: 1 , msg: Hello I'm A[0m
+[0;32mI (24924) User: sent successfully[0m
+[0;32mI (24924) L
