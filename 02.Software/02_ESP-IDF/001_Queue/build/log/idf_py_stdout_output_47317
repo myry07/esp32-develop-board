@@ -1,0 +1,128 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 13 2025 22:29:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095f4h ( 38388) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001961c vaddr=3ffb0000 size=0222ch (  8748) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b850 vaddr=40080000 size=047c8h ( 18376) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13690h ( 79504) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000336b8 vaddr=400847c8 size=07fa8h ( 32680) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     001_Queue[0m
+[0;32mI (207) cpu_start: App version:      54a1121-dirty[0m
+[0;32mI (213) cpu_start: Compile time:     Apr 14 2025 17:18:56[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  49133b2e2...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB2B10 len 0002D4F0 (181 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008C770 len 00013890 (78 KiB): IRAM[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (286) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) TAG: begin[0m
+[0;32mI (314) main_task: Returned from app_main()[0m
+[0;32mI (5314) User: sent successfully num: 0[0m
+[0;32mI (5314) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 0[0m
+[0;32mI (10414) User: sent successfully num: 1[0m
+[0;32mI (10414) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 1[0m
+[0;32mI (15514) User: sent successfully num: 2[0m
+[0;32mI (15514) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 2[0m
+[0;32mI (20614) User: sent successfully num: 3[0m
+[0;32mI (20614) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 3[0m
+[0;32mI (25714) User: sent successfully num: 4[0m
+[0;32mI (25714) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 4[0m
+[0;32mI (30814) User: sent successfully num: 5[0m
+[0;32mI (30814) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 5[0m
+[0;32mI (35914) User: sent successfully num: 6[0m
+[0;32mI (35914) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 6[0m
+[0;32mI (41014) User: sent successfully num: 7[0m
+[0;32mI (41014) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 7[0m
+[0;32mI (46114) User: sent successfully num: 8[0m
+[0;32mI (46114) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 8[0m
+[0;32mI (51214) User: sent successfully num: 9[0m
+[0;32mI (51214) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 9[0m
+[0;32mI (56314) User: sent successfully num: 10[0m
+[0;32mI (56314) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 10[0m
+[0;32mI (61414) User: sent successfully num: 11[0m
+[0;32mI (61414) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 11[0m
+[0;32mI (66514) User: sent successfully num: 12[0m
+[0;32mI (66514) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 12[0m
+[0;32mI (71614) User: sent successfully num: 13[0m
+[0;32mI (71614) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 13[0m
+[0;32mI (76714) User: sent successfully num: 14[0m
+[0;32mI (76714) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 14[0m
+[0;32mI (81814) User: sent successfully num: 15[0m
+[0;32mI (81814) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 15[0m
+[0;32mI (86914) User: sent successfully num: 16[0m
+[0;32mI (86914) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 16[0m
+[0;32mI (92014) User: sent successfully num: 17[0m
+[0;32mI (92014) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 17[0m
+[0;32mI (97114) User: sent successfully num: 18[0m
+[0;32mI (97114) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 18[0m
+[0;32mI (102214) User: sent successfully num: 19[0m
+[0;32mI (102214) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 19[0m
+[0;32mI (107314) User: sent successfully num: 20[0m
+[0;32mI (107314) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 20[0m
+[0;32mI (112414) User: sent successfully num: 21[0m
+[0;32mI (112414) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 21[0m
+[0;32mI (117514) User: sent successfully num: 22[0m
+[0;32mI (117514) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 22[0m
+[0;32mI (122614) User: sent successfully num: 23[0m
+[0;32mI (122614) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 23[0m
+[0;32mI (127714) User: sent successfully num: 24[0m
+[0;32mI (127714) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 24[0m
+[0;32mI (132814) User: sent successfully num: 25[0m
+[0;32mI (132814) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 25[0m
+[0;32mI (137914) User: sent successfully num: 26[0m
+[0;32mI (137914) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 26[0m
+[0;32mI (143014) User: sent successfully num: 27[0m
+[0;32mI (143014) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 27[0m
+[0;32mI (148114) User: sent successfully num: 28[0m
+[0;32mI (148114) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 28[0m
+[0;32mI (153214) User: sent successfully num: 29[0m
+[0;32mI (153214) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 29[0m
+[0;32mI (158314) User: sent successfully num: 30[0m
+[0;32mI (158314) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 30[0m
+[0;32mI (163414) User: sent successfully num: 31[0m
+[0;32mI (163414) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 31[0m
+[0;32mI (168514) User: sent successfully num: 32[0m
+[0;32mI (168514) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 32[0m
+[0;32mI (173614) User: sent successfully num: 33[0m
+[0;32mI (173614) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 33[0m
+[0;32mI (178714) User: sent successfully num: 34[0m
+[0;32mI (178714) LCD: receive successfully, ID: 1 , msg: Hello I'm A, num: 34

@@ -126,7 +126,6 @@ void setup()
   Serial.begin(115200);
 
   xEventPurchase = xEventGroupCreate();
-
   xTaskCreate(addTask, "add", 1024 * 3, NULL, 3, NULL);
 }
 
