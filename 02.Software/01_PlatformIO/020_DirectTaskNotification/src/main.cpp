@@ -15,16 +15,17 @@ void takeTask(void *param)
   {
     xResult = xTaskNotifyWait(0x00, 0x00, &notiValue, portMAX_DELAY); // wait for notification
 
-    if( xResult == pdPASS)
+    if (xResult == pdPASS)
     {
+      Serial.printf("Task notified, notiValue: %d \r\n", notiValue);
       Serial.print("Task notified, notiValue: ");
-      Serial.println(notiValue);
+      Serial.println(notiValue, BIN); // Binary
     }
     else
     {
-      Serial.println("Task not notified");
+      Serial.println("Task not notified \r\n");
     }
-    vTaskDelay(10 / portTICK_PERIOD_MS);
+    vTaskDelay(10);
   }
 }
 
@@ -32,18 +33,30 @@ void giveTask(void *param)
 {
   GPIOInit_Input(BUTTON_PIN);
   BaseType_t xResult;
-  uint32_t val = *(volatile unsigned int *)GPIO_IN_REG;
-
   while (1)
   {
-    vTaskDelay(200 / portTICK_PERIOD_MS);
+    uint32_t val = *(volatile unsigned int *)GPIO_IN_REG;
+    vTaskDelay(200);
     if (!(val & (1 << BUTTON_PIN)))
     {
-      xResult = xTaskNotify(&takeHandle, 0, eIncrement); // noti value +1
+      // xResult = xTaskNotify(takeHandle, 0, eIncrement); // noti value +1
+      // xResult = xTaskNotify(takeHandle, 0, eNoAction); // noti value no change
+      // xResult = xTaskNotify(takeHandle, (1UL << 4UL), eSetBits);
 
-      Serial.println(xResult == pdPASS ? "Task notified" : "Task not notified");
+      /* not overwrite */
+      // xResult = xTaskNotify(takeHandle, (1UL << 4UL), eSetBits);
+      // xResult = xTaskNotify(takeHandle, 0b111, eSetBits);
+
+      /* overwrite */
+      // xResult = xTaskNotify(takeHandle, (1UL << 4UL), eSetBits);
+      // xResult = xTaskNotify(takeHandle, 0b111, eSetValueWithOverwrite);
+
+      xResult = xTaskNotify(takeHandle, (1UL << 4UL), eSetBits);
+      xResult = xTaskNotify(takeHandle, 0b111, eSetValueWithoutOverwrite);
+
+      Serial.println(xResult == pdPASS ? "Task notified \r\n" : "Task not notified \r\n");
     }
-    vTaskDelay(10 / portTICK_PERIOD_MS);
+    vTaskDelay(10);
   }
 }
 
@@ -53,7 +66,6 @@ void setup()
 
   xTaskCreate(takeTask, "Take Task", 1024 * 4, NULL, 3, &takeHandle);
   xTaskCreate(giveTask, "Give Task", 1024 * 4, NULL, 3, &giveHandle);
-
 }
 
 void loop()
