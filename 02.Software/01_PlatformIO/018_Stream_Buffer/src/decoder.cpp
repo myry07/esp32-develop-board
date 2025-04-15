@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "string.h"
+#include "decoder.h"
 
 #define BUZZER_PIN 32
 #define BUZZER_CHANNEL 0
