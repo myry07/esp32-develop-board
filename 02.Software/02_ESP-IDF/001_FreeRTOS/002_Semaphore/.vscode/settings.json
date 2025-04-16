@@ -1,0 +1,7 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "files.associations": {
+    "task.h": "c",
+    "esp_log.h": "c"
+  }
+}
