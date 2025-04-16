@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "002_Intr_Btn",
-    "project_version":    "a97cd08-dirty",
+    "project_version":    "853c800-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build",

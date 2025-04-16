@@ -1,0 +1,71 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/bootloader/bootloader.bin
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/002_Intr_Btn.c.obj
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/main/002_Intr_Btn.c: In function 'app_main':
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/main/002_Intr_Btn.c:103:81: warning: passing argument 5 of 'xTimerCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  103 |     debounce = xTimerCreate("debounce", pdMS_TO_TICKS(100), pdFALSE, (void *)0, timerCallBack);
+      |                                                                                 ^~~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 void (*)(void *)
+In file included from /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:41,
+                 from /Users/wangjiaqi/esp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:25,
+                 from /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/main/002_Intr_Btn.c:2:
+/Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:238:57: note: expected 'TimerCallbackFunction_t' {aka 'void (*)(struct tmrTimerControl *)'} but argument is of type 'void (*)(void *)'
+  238 |                                 TimerCallbackFunction_t pxCallbackFunction ) PRIVILEGED_FUNCTION;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable 002_Intr_Btn.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/002_Intr_Btn.bin
+[9/10] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build/002_Intr_Btn.bin
+002_Intr_Btn.bin binary size 0x2e190 bytes. Smallest app partition is 0x100000 bytes. 0xd1e70 bytes (82%) free.
+[9/10] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/004_Button/002_Intr_Btn/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 002_Intr_Btn.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbserial-10
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a8:42:e3:ae:d2:30
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26800 bytes to 16417...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007898... (100 %)
+Wrote 26800 bytes (16417 compressed) at 0x00001000 in 0.8 seconds (effective 273.4 kbit/s)...
+Hash of data verified.
+Compressed 188816 bytes to 100862...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001ca20... (28 %)
+Writing at 0x0002242c... (42 %)
+Writing at 0x0002813a... (57 %)
+Writing at 0x0002f9ac... (71 %)
+Writing at 0x00036c31... (85 %)
+Writing at 0x0003d049... (100 %)
+Wrote 188816 bytes (100862 compressed) at 0x00010000 in 3.1 seconds (effective 489.3 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 384.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
