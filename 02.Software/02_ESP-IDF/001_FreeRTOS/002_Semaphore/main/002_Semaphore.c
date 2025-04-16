@@ -2,38 +2,41 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/semphr.h"
 #include "freertos/task.h"
-#include "driver/gpio.h"
 #include "esp_log.h"
 
-#define LED_NUM 2
+#define TAG "SEMA"
 
-SemaphoreHandle_t semaLED = NULL;
+SemaphoreHandle_t sema = NULL;
 
-void gpio_simple_init()
+void sendTask(void *param)
 {
-    gpio_config_t led_config = {
-        .pin_bit_mask = (1 << LED_NUM),
-        .pull_up_en = GPIO_PULLUP_DISABLE,
-        .pull_down_en = GPIO_PULLDOWN_DISABLE,
-        .mode = GPIO_MODE_OUTPUT,
-        .intr_type = GPIO_INTR_DISABLE};
-
-    if (gpio_config(&led_config) == ESP_OK)
+    while (1)
     {
-        ESP_LOGI("GPIO", "Init");
-    }
-    else
-    {
-        ESP_LOGI("GPIO", "Error");
+        if (xSemaphoreGive(sema) == pdTRUE)
+        {
+            ESP_LOGI(TAG, "sent");
+            vTaskDelay(pdMS_TO_TICKS(500));
+        }
+        vTaskDelay(pdMS_TO_TICKS(10));
     }
 }
 
-void buttonTask(void *param)
+void receiveTask(void *param)
 {
-
+    while (1)
+    {
+        if (xSemaphoreTake(sema, pdMS_TO_TICKS(1000)) == pdTRUE)
+        {
+            ESP_LOGI(TAG, "received");
+            vTaskDelay(pdMS_TO_TICKS(500));
+        }
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
 }
 
 void app_main(void)
 {
-    semaLED = xSemaphoreCreateBinary();
+    sema = xSemaphoreCreateBinary();
+    xTaskCreatePinnedToCore(sendTask, "send", 1024 * 3, NULL, 3, NULL, 1);
+    xTaskCreatePinnedToCore(receiveTask, "receive", 1024 * 3, NULL, 3, NULL, 1);
 }

@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader/bootloader.elf
+    add-symbol-file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/002_Semaphore.elf
+file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/002_Semaphore.elf

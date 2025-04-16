@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader/bootloader.elf
+file /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader/bootloader.elf

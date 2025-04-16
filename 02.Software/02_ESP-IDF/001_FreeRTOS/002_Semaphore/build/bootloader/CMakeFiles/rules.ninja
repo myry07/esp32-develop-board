@@ -318,7 +318,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjiaqi/esp/esp-idf/components/bootloader/subproject -B/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader
+  command = /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/wangjiaqi/esp/esp-idf/components/bootloader/subproject -B/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader
   description = Re-running CMake...
   generator = 1
 

@@ -1,0 +1,197 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 16 2025 20:08:09[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09564h ( 38244) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001958c vaddr=3ffb0000 size=0221ch (  8732) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b7b0 vaddr=40080000 size=04868h ( 18536) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13640h ( 79424) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=00033668 vaddr=40084868 size=07e00h ( 32256) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     002_Semaphore[0m
+[0;32mI (207) cpu_start: App version:      c8f930e-dirty[0m
+[0;32mI (213) cpu_start: Compile time:     Apr 16 2025 20:08:01[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  58ad29c3f...[0m
+[0;32mI (224) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (229) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (234) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (239) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB2B00 len 0002D500 (181 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (269) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008C668 len 00013998 (78 KiB): IRAM[0m
+[0;32mI (283) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (290) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (314) main_task: Returned from app_main()[0m
+[0;32mI (314) SEMA: sent[0m
+[0;32mI (314) SEMA: received[0m
+[0;32mI (824) SEMA: sent[0m
+[0;32mI (824) SEMA: received[0m
+[0;32mI (1334) SEMA: sent[0m
+[0;32mI (1334) SEMA: received[0m
+[0;32mI (1844) SEMA: sent[0m
+[0;32mI (1844) SEMA: received[0m
+[0;32mI (2354) SEMA: sent[0m
+[0;32mI (2354) SEMA: received[0m
+[0;32mI (2864) SEMA: sent[0m
+[0;32mI (2864) SEMA: received[0m
+[0;32mI (3374) SEMA: sent[0m
+[0;32mI (3374) SEMA: received[0m
+[0;32mI (3884) SEMA: sent[0m
+[0;32mI (3884) SEMA: received[0m
+[0;32mI (4394) SEMA: sent[0m
+[0;32mI (4394) SEMA: received[0m
+[0;32mI (4904) SEMA: sent[0m
+[0;32mI (4904) SEMA: received[0m
+[0;32mI (5414) SEMA: sent[0m
+[0;32mI (5414) SEMA: received[0m
+[0;32mI (5924) SEMA: sent[0m
+[0;32mI (5924) SEMA: received[0m
+[0;32mI (6434) SEMA: sent[0m
+[0;32mI (6434) SEMA: received[0m
+[0;32mI (6944) SEMA: sent[0m
+[0;32mI (6944) SEMA: received[0m
+[0;32mI (7454) SEMA: sent[0m
+[0;32mI (7454) SEMA: received[0m
+[0;32mI (7964) SEMA: sent[0m
+[0;32mI (7964) SEMA: received[0m
+[0;32mI (8474) SEMA: sent[0m
+[0;32mI (8474) SEMA: received[0m
+[0;32mI (8984) SEMA: sent[0m
+[0;32mI (8984) SEMA: received[0m
+[0;32mI (9494) SEMA: sent[0m
+[0;32mI (9494) SEMA: received[0m
+[0;32mI (10004) SEMA: sent[0m
+[0;32mI (10004) SEMA: received[0m
+[0;32mI (10514) SEMA: sent[0m
+[0;32mI (10514) SEMA: received[0m
+[0;32mI (11024) SEMA: sent[0m
+[0;32mI (11024) SEMA: received[0m
+[0;32mI (11534) SEMA: sent[0m
+[0;32mI (11534) SEMA: received[0m
+[0;32mI (12044) SEMA: sent[0m
+[0;32mI (12044) SEMA: received[0m
+[0;32mI (12554) SEMA: sent[0m
+[0;32mI (12554) SEMA: received[0m
+[0;32mI (13064) SEMA: sent[0m
+[0;32mI (13064) SEMA: received[0m
+[0;32mI (13574) SEMA: sent[0m
+[0;32mI (13574) SEMA: received[0m
+[0;32mI (14084) SEMA: sent[0m
+[0;32mI (14084) SEMA: received[0m
+[0;32mI (14594) SEMA: sent[0m
+[0;32mI (14594) SEMA: received[0m
+[0;32mI (15104) SEMA: sent[0m
+[0;32mI (15104) SEMA: received[0m
+[0;32mI (15614) SEMA: sent[0m
+[0;32mI (15614) SEMA: received[0m
+[0;32mI (16124) SEMA: sent[0m
+[0;32mI (16124) SEMA: received[0m
+[0;32mI (16634) SEMA: sent[0m
+[0;32mI (16634) SEMA: received[0m
+[0;32mI (17144) SEMA: sent[0m
+[0;32mI (17144) SEMA: received[0m
+[0;32mI (17654) SEMA: sent[0m
+[0;32mI (17654) SEMA: received[0m
+[0;32mI (18164) SEMA: sent[0m
+[0;32mI (18164) SEMA: received[0m
+[0;32mI (18674) SEMA: sent[0m
+[0;32mI (18674) SEMA: received[0m
+[0;32mI (19184) SEMA: sent[0m
+[0;32mI (19184) SEMA: received[0m
+[0;32mI (19694) SEMA: sent[0m
+[0;32mI (19694) SEMA: received[0m
+[0;32mI (20204) SEMA: sent[0m
+[0;32mI (20204) SEMA: received[0m
+[0;32mI (20714) SEMA: sent[0m
+[0;32mI (20714) SEMA: received[0m
+[0;32mI (21224) SEMA: sent[0m
+[0;32mI (21224) SEMA: received[0m
+[0;32mI (21734) SEMA: sent[0m
+[0;32mI (21734) SEMA: received[0m
+[0;32mI (22244) SEMA: sent[0m
+[0;32mI (22244) SEMA: received[0m
+[0;32mI (22754) SEMA: sent[0m
+[0;32mI (22754) SEMA: received[0m
+[0;32mI (23264) SEMA: sent[0m
+[0;32mI (23264) SEMA: received[0m
+[0;32mI (23774) SEMA: sent[0m
+[0;32mI (23774) SEMA: received[0m
+[0;32mI (24284) SEMA: sent[0m
+[0;32mI (24284) SEMA: received[0m
+[0;32mI (24794) SEMA: sent[0m
+[0;32mI (24794) SEMA: received[0m
+[0;32mI (25304) SEMA: sent[0m
+[0;32mI (25304) SEMA: received[0m
+[0;32mI (25814) SEMA: sent[0m
+[0;32mI (25814) SEMA: received[0m
+[0;32mI (26324) SEMA: sent[0m
+[0;32mI (26324) SEMA: received[0m
+[0;32mI (26834) SEMA: sent[0m
+[0;32mI (26834) SEMA: received[0m
+[0;32mI (27344) SEMA: sent[0m
+[0;32mI (27344) SEMA: received[0m
+[0;32mI (27854) SEMA: sent[0m
+[0;32mI (27854) SEMA: received[0m
+[0;32mI (28364) SEMA: sent[0m
+[0;32mI (28364) SEMA: received[0m
+[0;32mI (28874) SEMA: sent[0m
+[0;32mI (28874) SEMA: received[0m
+[0;32mI (29384) SEMA: sent[0m
+[0;32mI (29384) SEMA: received[0m
+[0;32mI (29894) SEMA: sent[0m
+[0;32mI (29894) SEMA: received[0m
+[0;32mI (30404) SEMA: sent[0m
+[0;32mI (30404) SEMA: received[0m
+[0;32mI (30914) SEMA: sent[0m
+[0;32mI (30914) SEMA: received[0m
+[0;32mI (31424) SEMA: sent[0m
+[0;32mI (31424) SEMA: received[0m
+[0;32mI (31934) SEMA: sent[0m
+[0;32mI (31934) SEMA: received[0m
+[0;32mI (32444) SEMA: sent[0m
+[0;32mI (32444) SEMA: received[0m
+[0;32mI (32954) SEMA: sent[0m
+[0;32mI (32954) SEMA: received[0m
+[0;32mI (33464) SEMA: sent[0m
+[0;32mI (33464) SEMA: received[0m
+[0;32mI (33974) SEMA: sent[0m
+[0;32mI (33974) SEMA: received[0m
+[0;32mI (34484) SEMA: sent[0m
+[0;32mI (34484) SEMA: received[0m
+[0;32mI (34994) SEMA: sent[0m
+[0;32mI (34994) SEMA: received[0m
+[0;32mI (35504) SEMA: sent[0m
+[0;32

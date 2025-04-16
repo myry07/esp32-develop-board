@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/01_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/001_FreeRTOS/002_Semaphore/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
