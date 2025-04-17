@@ -1,0 +1,214 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 17 2025 21:05:55[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a77ch ( 42876) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a7a4 vaddr=3ffb0000 size=022dch (  8924) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001ca88 vaddr=40080000 size=03590h ( 13712) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15da8h ( 89512) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035dd0 vaddr=40083590 size=094d4h ( 38100) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     003_Notification[0m
+[0;32mI (215) cpu_start: App version:      8607b8f-dirty[0m
+[0;32mI (220) cpu_start: Compile time:     Apr 17 2025 21:05:47[0m
+[0;32mI (227) cpu_start: ELF file SHA256:  41ebfd005...[0m
+[0;32mI (232) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (237) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2C28 len 0002D3D8 (180 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CA64 len 0001359C (77 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (322) GPIO: Init[0m
+[0;32mI (332) Timer: Init[0m
+[0;32mI (332) Channel: Init[0m
+[0;32mI (332) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (342) button: first btn add[0m
+[0;32mI (342) button: run button timer[0m
+[0;32mI (352) main_task: Returned from app_main()[0m
+[0;32mI (1422) button: short press detect[0m
+[0;32mI (1422) LED: Short press[0m
+[0;32mI (2282) button: short press detect[0m
+[0;32mI (2282) LED: Short press[0m
+[0;32mI (3762) button: long press detect[0m
+[0;32mI (3762) LED: Long press[0m
+[0;32mI (3782) Duty: +[0m
+[0;32mI (3802) Duty: +[0m
+[0;32mI (3822) Duty: +[0m
+[0;32mI (3842) Duty: +[0m
+[0;32mI (3862) Duty: +[0m
+[0;32mI (3882) Duty: +[0m
+[0;32mI (3902) Duty: +[0m
+[0;32mI (3922) Duty: +[0m
+[0;32mI (3942) Duty: +[0m
+[0;32mI (3962) Duty: +[0m
+[0;32mI (3982) Duty: +[0m
+[0;32mI (4002) Duty: +[0m
+[0;32mI (4022) Duty: +[0m
+[0;32mI (4042) Duty: +[0m
+[0;32mI (4062) Duty: +[0m
+[0;32mI (4082) Duty: +[0m
+[0;32mI (4102) Duty: +[0m
+[0;32mI (4122) Duty: +[0m
+[0;32mI (4142) Duty: +[0m
+[0;32mI (4162) Duty: +[0m
+[0;32mI (4182) Duty: +[0m
+[0;32mI (4202) Duty: +[0m
+[0;32mI (4222) Duty: +[0m
+[0;32mI (4242) Duty: +[0m
+[0;32mI (4262) Duty: +[0m
+[0;32mI (4282) Duty: +[0m
+[0;32mI (4302) Duty: +[0m
+[0;32mI (4322) Duty: +[0m
+[0;32mI (4342) Duty: +[0m
+[0;32mI (4362) Duty: +[0m
+[0;32mI (4382) Duty: +[0m
+[0;32mI (4402) Duty: +[0m
+[0;32mI (4422) Duty: +[0m
+[0;32mI (4442) Duty: +[0m
+[0;32mI (4462) Duty: +[0m
+[0;32mI (4482) Duty: +[0m
+[0;32mI (4502) Duty: +[0m
+[0;32mI (4522) Duty: +[0m
+[0;32mI (4542) Duty: +[0m
+[0;32mI (4562) Duty: +[0m
+[0;32mI (4582) Duty: +[0m
+[0;32mI (4602) Duty: +[0m
+[0;32mI (4622) Duty: +[0m
+[0;32mI (4642) Duty: +[0m
+[0;32mI (4662) Duty: +[0m
+[0;32mI (4682) Duty: +[0m
+[0;32mI (4702) Duty: +[0m
+[0;32mI (4722) Duty: +[0m
+[0;32mI (4742) Duty: +[0m
+[0;32mI (4762) Duty: +[0m
+[0;32mI (4782) Duty: +[0m
+[0;32mI (4802) Duty: +[0m
+[0;32mI (4822) Duty: +[0m
+[0;32mI (4842) Duty: +[0m
+[0;32mI (4862) Duty: +[0m
+[0;32mI (4882) Duty: +[0m
+[0;32mI (4902) Duty: +[0m
+[0;32mI (4922) Duty: +[0m
+[0;32mI (4942) Duty: +[0m
+[0;32mI (4962) Duty: +[0m
+[0;32mI (4982) Duty: +[0m
+[0;32mI (5002) Duty: +[0m
+[0;32mI (5022) Duty: +[0m
+[0;32mI (5042) Duty: +[0m
+[0;32mI (5062) Duty: +[0m
+[0;32mI (5082) Duty: +[0m
+[0;32mI (5102) Duty: +[0m
+[0;32mI (5122) Duty: +[0m
+[0;32mI (5142) Duty: +[0m
+[0;32mI (5162) Duty: +[0m
+[0;32mI (5182) Duty: +[0m
+[0;32mI (5202) Duty: +[0m
+[0;32mI (5222) Duty: +[0m
+[0;32mI (5242) Duty: +[0m
+[0;32mI (5262) Duty: +[0m
+[0;32mI (5282) Duty: +[0m
+[0;32mI (5302) Duty: +[0m
+[0;32mI (5322) Duty: +[0m
+[0;32mI (5342) Duty: +[0m
+[0;32mI (5362) Duty: +[0m
+[0;32mI (5382) Duty: +[0m
+[0;32mI (5402) Duty: +[0m
+[0;32mI (5422) Duty: -[0m
+[0;32mI (5442) Duty: -[0m
+[0;32mI (5462) Duty: -[0m
+[0;32mI (5482) Duty: -[0m
+[0;32mI (5502) Duty: -[0m
+[0;32mI (5522) Duty: -[0m
+[0;32mI (5542) Duty: -[0m
+[0;32mI (5562) Duty: -[0m
+[0;32mI (5582) Duty: -[0m
+[0;32mI (5602) Duty: -[0m
+[0;32mI (5622) Duty: -[0m
+[0;32mI (5642) Duty: -[0m
+[0;32mI (5662) Duty: -[0m
+[0;32mI (5682) Duty: -[0m
+[0;32mI (5702) Duty: -[0m
+[0;32mI (5722) Duty: -[0m
+[0;32mI (5742) Duty: -[0m
+[0;32mI (5762) Duty: -[0m
+[0;32mI (5782) Duty: -[0m
+[0;32mI (5802) Duty: -[0m
+[0;32mI (5822) Duty: -[0m
+[0;32mI (5842) Duty: -[0m
+[0;32mI (5862) Duty: -[0m
+[0;32mI (5882) Duty: -[0m
+[0;32mI (5902) Duty: -[0m
+[0;32mI (5922) Duty: -[0m
+[0;32mI (5942) Duty: -[0m
+[0;32mI (5962) Duty: -[0m
+[0;32mI (5982) Duty: -[0m
+[0;32mI (6002) Duty: -[0m
+[0;32mI (6022) Duty: -[0m
+[0;32mI (6042) Duty: -[0m
+[0;32mI (6062) Duty: -[0m
+[0;32mI (6082) Duty: -[0m
+[0;32mI (6102) Duty: -[0m
+[0;32mI (6122) Duty: -[0m
+[0;32mI (6142) Duty: -[0m
+[0;32mI (6162) Duty: -[0m
+[0;32mI (6182) Duty: -[0m
+[0;32mI (6202) Duty: -[0m
+[0;32mI (6222) Duty: -[0m
+[0;32mI (6242) Duty: -[0m
+[0;32mI (6262) Duty: -[0m
+[0;32mI (6282) Duty: -[0m
+[0;32mI (6302) Duty: -[0m
+[0;32mI (6322) Duty: -[0m
+[0;32mI (6342) Duty: -[0m
+[0;32mI (6362) Duty: -[0m
+[0;32mI (6382) Duty: -[0m
+[0;32mI (6402) Duty: -[0m
+[0;32mI (6422) Duty: -[0m
+[0;32mI (6442) Duty: -[0m
+[0;32mI (6462) Duty: -[0m
+[0;32mI (6482) Duty: -[0m
+[0;32mI (6502) Duty: -[0m
+[0;32mI (6522) Duty: -[0m
+[0;32mI (6542) Duty: -[0m
+[0;32mI (6562) Duty: -[0m
+[0;32mI (6582) Duty: -[0m
+[0;32mI (6602) Duty: -[0m
+[0;32mI (6622) Duty: -[0m
+[0;32mI (6642) Duty: -[
