@@ -1,0 +1,656 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x3b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1870
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcec
+load:0x403cc700,len:0x2ec4
+entry 0x403c9918
+[0;32mI (27) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 18 2025 18:35:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bd80h ( 48512) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=0001bda8 vaddr=3fc93500 size=02950h ( 10576) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=0001e700 vaddr=40374000 size=01918h (  6424) load[0m
+[0;32mI (122) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1bbdch (113628) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=0003bc04 vaddr=40375918 size=0db24h ( 56100) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (168) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) cpu_start: Application information:[0m
+[0;32mI (192) cpu_start: Project name:     002_WS_Control[0m
+[0;32mI (198) cpu_start: App version:      f4b0ec6-dirty[0m
+[0;32mI (203) cpu_start: Compile time:     Apr 18 2025 18:34:43[0m
+[0;32mI (209) cpu_start: ELF file SHA256:  23cf4264e...[0m
+[0;32mI (215) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (219) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (224) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (229) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FC96738 len 00052FD8 (331 KiB): RAM[0m
+[0;32mI (247) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (294) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (321) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (331) button: first btn add[0m
+[0;32mI (331) button: run button timer[0m
+[0;32mI (331) WS&BUTTON: button init[0m
+[0;32mI (341) main_task: Returned from app_main()[0m
+[0;32mI (351) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (461) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (571) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (681) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (791) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (901) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1011) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1121) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1231) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1341) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1451) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1561) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1671) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1781) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1891) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2001) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2111) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2221) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2331) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2441) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2551) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2661) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2771) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2881) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2991) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3101) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3211) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3321) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3431) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3541) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3651) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3761) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3871) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3981) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4091) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4201) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4311) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4421) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4531) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4641) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4721) button: short press detect[0m
+[0;32mI (4721) WS&BUTTON: short press
+[0m
+[0;32mI (4741) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (4851) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (4961) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5071) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5181) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5291) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5401) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5511) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5621) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5731) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5841) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (5951) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6061) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6171) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6281) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6391) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6501) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6611) WS&BUTTON: R: 35, G: 0, B: 30[0m
+[0;32mI (6651) button: short press detect[0m
+[0;32mI (6651) WS&BUTTON: short press
+[0m
+[0;32mI (6711) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (6821) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (6931) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (7041) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (7151) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (7261) WS&BUTTON: R: 40, G: 0, B: 30[0m
+[0;32mI (7271) button: short press detect[0m
+[0;32mI (7271) WS&BUTTON: short press
+[0m
+[0;32mI (7361) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (7471) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (7581) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (7691) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (7801) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (7911) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (8021) WS&BUTTON: R: 45, G: 0, B: 30[0m
+[0;32mI (8051) button: short press detect[0m
+[0;32mI (8051) WS&BUTTON: short press
+[0m
+[0;32mI (8121) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8231) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8341) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8451) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8561) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8671) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8781) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (8891) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9001) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9111) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9221) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9331) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9441) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9531) button: long press detect[0m
+[0;32mI (9531) WS&BUTTON: long press
+[0m
+[0;32mI (9541) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9651) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9761) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9871) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (9981) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10091) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10201) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10311) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10421) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10531) WS&BUTTON: R: 50, G: 0, B: 30[0m
+[0;32mI (10561) button: short press detect[0m
+[0;32mI (10561) WS&BUTTON: short press
+[0m
+[0;32mI (10631) WS&BUTTON: R: 50, G: 5, B: 30[0m
+[0;32mI (10741) WS&BUTTON: R: 50, G: 5, B: 30[0m
+[0;32mI (10851) WS&BUTTON: R: 50, G: 5, B: 30[0m
+[0;32mI (10961) WS&BUTTON: R: 50, G: 5, B: 30[0m
+[0;32mI (11071) WS&BUTTON: R: 50, G: 5, B: 30[0m
+[0;32mI (11081) button: short press detect[0m
+[0;32mI (11081) WS&BUTTON: short press
+[0m
+[0;32mI (11171) WS&BUTTON: R: 50, G: 10, B: 30[0m
+[0;32mI (11281) WS&BUTTON: R: 50, G: 10, B: 30[0m
+[0;32mI (11391) WS&BUTTON: R: 50, G: 10, B: 30[0m
+[0;32mI (11421) button: short press detect[0m
+[0;32mI (11421) WS&BUTTON: short press
+[0m
+[0;32mI (11491) WS&BUTTON: R: 50, G: 15, B: 30[0m
+[0;32mI (11601) WS&BUTTON: R: 50, G: 15, B: 30[0m
+[0;32mI (11711) WS&BUTTON: R: 50, G: 15, B: 30[0m
+[0;32mI (11711) button: short press detect[0m
+[0;32mI (11711) WS&BUTTON: short press
+[0m
+[0;32mI (11811) WS&BUTTON: R: 50, G: 20, B: 30[0m
+[0;32mI (11921) WS&BUTTON: R: 50, G: 20, B: 30[0m
+[0;32mI (11951) button: short press detect[0m
+[0;32mI (11951) WS&BUTTON: short press
+[0m
+[0;32mI (12021) WS&BUTTON: R: 50, G: 25, B: 30[0m
+[0;32mI (12131) WS&BUTTON: R: 50, G: 25, B: 30[0m
+[0;32mI (12231) button: short press detect[0m
+[0;32mI (12231) WS&BUTTON: short press
+[0m
+[0;32mI (12231) WS&BUTTON: R: 50, G: 30, B: 30[0m
+[0;32mI (12341) WS&BUTTON: R: 50, G: 30, B: 30[0m
+[0;32mI (12451) WS&BUTTON: R: 50, G: 30, B: 30[0m
+[0;32mI (12491) button: short press detect[0m
+[0;32mI (12491) WS&BUTTON: short press
+[0m
+[0;32mI (12551) WS&BUTTON: R: 50, G: 35, B: 30[0m
+[0;32mI (12661) WS&BUTTON: R: 50, G: 35, B: 30[0m
+[0;32mI (12761) button: short press detect[0m
+[0;32mI (12761) WS&BUTTON: short press
+[0m
+[0;32mI (12761) WS&BUTTON: R: 50, G: 40, B: 30[0m
+[0;32mI (12881) WS&BUTTON: R: 50, G: 40, B: 30[0m
+[0;32mI (12991) WS&BUTTON: R: 50, G: 40, B: 30[0m
+[0;32mI (13021) button: short press detect[0m
+[0;32mI (13021) WS&BUTTON: short press
+[0m
+[0;32mI (13091) WS&BUTTON: R: 50, G: 45, B: 30[0m
+[0;32mI (13201) WS&BUTTON: R: 50, G: 45, B: 30[0m
+[0;32mI (13311) WS&BUTTON: R: 50, G: 45, B: 30[0m
+[0;32mI (13321) button: short press detect[0m
+[0;32mI (13321) WS&BUTTON: short press
+[0m
+[0;32mI (13411) WS&BUTTON: R: 50, G: 50, B: 30[0m
+[0;32mI (13521) WS&BUTTON: R: 50, G: 50, B: 30[0m
+[0;32mI (13571) button: short press detect[0m
+[0;32mI (13571) WS&BUTTON: short press
+[0m
+[0;32mI (13621) WS&BUTTON: R: 50, G: 55, B: 30[0m
+[0;32mI (13731) WS&BUTTON: R: 50, G: 55, B: 30[0m
+[0;32mI (13841) WS&BUTTON: R: 50, G: 55, B: 30[0m
+[0;32mI (13891) button: short press detect[0m
+[0;32mI (13891) WS&BUTTON: short press
+[0m
+[0;32mI (13941) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14051) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14161) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14271) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14381) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14491) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14601) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14711) WS&BUTTON: R: 50, G: 60, B: 30[0m
+[0;32mI (14781) button: short press detect[0m
+[0;32mI (14781) WS&BUTTON: short press
+[0m
+[0;32mI (14811) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (14921) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15031) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15141) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15251) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15361) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15471) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15581) WS&BUTTON: R: 50, G: 65, B: 30[0m
+[0;32mI (15611) button: short press detect[0m
+[0;32mI (15611) WS&BUTTON: short press
+[0m
+[0;32mI (15681) WS&BUTTON: R: 50, G: 70, B: 30[0m
+[0;32mI (15791) WS&BUTTON: R: 50, G: 70, B: 30[0m
+[0;32mI (15901) WS&BUTTON: R: 50, G: 70, B: 30[0m
+[0;32mI (15961) button: short press detect[0m
+[0;32mI (15961) WS&BUTTON: short press
+[0m
+[0;32mI (16001) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16111) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16221) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16331) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16441) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16551) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16661) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16771) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16881) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (16991) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17101) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17211) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17321) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17431) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17541) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17651) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17761) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17871) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (17981) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18091) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18201) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18311) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18421) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18531) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18641) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18751) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18861) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (18971) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19081) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19191) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19301) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19411) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19521) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19631) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19741) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19851) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (19961) WS&BUTTON: R: 50, G: 75, B: 30[0m
+[0;32mI (20001) button: short press detect[0m
+[0;32mI (20001) WS&BUTTON: short press
+[0m
+[0;32mI (20061) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20171) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20281) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20391) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20501) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20611) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20721) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20831) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (20941) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21051) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21161) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21271) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21381) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21481) button: long press detect[0m
+[0;32mI (21481) WS&BUTTON: long press
+[0m
+[0;32mI (21481) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21591) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21701) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21811) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (21921) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (22031) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (22141) WS&BUTTON: R: 50, G: 80, B: 30[0m
+[0;32mI (22201) button: short press detect[0m
+[0;32mI (22201) WS&BUTTON: short press
+[0m
+[0;32mI (22241) WS&BUTTON: R: 50, G: 80, B: 35[0m
+[0;32mI (22351) WS&BUTTON: R: 50, G: 80, B: 35[0m
+[0;32mI (22461) WS&BUTTON: R: 50, G: 80, B: 35[0m
+[0;32mI (22551) button: short press detect[0m
+[0;32mI (22551) WS&BUTTON: short press
+[0m
+[0;32mI (22561) WS&BUTTON: R: 50, G: 80, B: 40[0m
+[0;32mI (22671) WS&BUTTON: R: 50, G: 80, B: 40[0m
+[0;32mI (22781) WS&BUTTON: R: 50, G: 80, B: 40[0m
+[0;32mI (22801) button: short press detect[0m
+[0;32mI (22801) WS&BUTTON: short press
+[0m
+[0;32mI (22881) WS&BUTTON: R: 50, G: 80, B: 45[0m
+[0;32mI (22991) WS&BUTTON: R: 50, G: 80, B: 45[0m
+[0;32mI (23081) button: short press detect[0m
+[0;32mI (23081) WS&BUTTON: short press
+[0m
+[0;32mI (23091) WS&BUTTON: R: 50, G: 80, B: 50[0m
+[0;32mI (23201) WS&BUTTON: R: 50, G: 80, B: 50[0m
+[0;32mI (23311) WS&BUTTON: R: 50, G: 80, B: 50[0m
+[0;32mI (23351) button: short press detect[0m
+[0;32mI (23351) WS&BUTTON: short press
+[0m
+[0;32mI (23411) WS&BUTTON: R: 50, G: 80, B: 55[0m
+[0;32mI (23521) WS&BUTTON: R: 50, G: 80, B: 55[0m
+[0;32mI (23591) button: short press detect[0m
+[0;32mI (23591) WS&BUTTON: short press
+[0m
+[0;32mI (23621) WS&BUTTON: R: 50, G: 80, B: 60[0m
+[0;32mI (23731) WS&BUTTON: R: 50, G: 80, B: 60[0m
+[0;32mI (23841) WS&BUTTON: R: 50, G: 80, B: 60[0m
+[0;32mI (23861) button: short press detect[0m
+[0;32mI (23861) WS&BUTTON: short press
+[0m
+[0;32mI (23941) WS&BUTTON: R: 50, G: 80, B: 65[0m
+[0;32mI (24051) WS&BUTTON: R: 50, G: 80, B: 65[0m
+[0;32mI (24081) button: short press detect[0m
+[0;32mI (24081) WS&BUTTON: short press
+[0m
+[0;32mI (24151) WS&BUTTON: R: 50, G: 80, B: 70[0m
+[0;32mI (24261) WS&BUTTON: R: 50, G: 80, B: 70[0m
+[0;32mI (24351) button: short press detect[0m
+[0;32mI (24351) WS&BUTTON: short press
+[0m
+[0;32mI (24361) WS&BUTTON: R: 50, G: 80, B: 75[0m
+[0;32mI (24471) WS&BUTTON: R: 50, G: 80, B: 75[0m
+[0;32mI (24581) WS&BUTTON: R: 50, G: 80, B: 75[0m
+[0;32mI (24631) button: short press detect[0m
+[0;32mI (24631) WS&BUTTON: short press
+[0m
+[0;32mI (24681) WS&BUTTON: R: 50, G: 80, B: 80[0m
+[0;32mI (24791) WS&BUTTON: R: 50, G: 80, B: 80[0m
+[0;32mI (24901) WS&BUTTON: R: 50, G: 80, B: 80[0m
+[0;32mI (24911) button: short press detect[0m
+[0;32mI (24911) WS&BUTTON: short press
+[0m
+[0;32mI (25001) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25111) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25221) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25331) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25441) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25551) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25661) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25771) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25881) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (25991) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (26101) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (26211) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (26321) WS&BUTTON: R: 50, G: 80, B: 85[0m
+[0;32mI (26331) button: short press detect[0m
+[0;32mI (26331) WS&BUTTON: short press
+[0m
+[0;32mI (26421) WS&BUTTON: R: 50, G: 80, B: 90[0m
+[0;32mI (26531) WS&BUTTON: R: 50, G: 80, B: 90[0m
+[0;32mI (26611) button: short press detect[0m
+[0;32mI (26611) WS&BUTTON: short press
+[0m
+[0;32mI (26631) WS&BUTTON: R: 50, G: 80, B: 95[0m
+[0;32mI (26741) WS&BUTTON: R: 50, G: 80, B: 95[0m
+[0;32mI (26851) WS&BUTTON: R: 50, G: 80, B: 95[0m
+[0;32mI (26941) button: short press detect[0m
+[0;32mI (26941) WS&BUTTON: short press
+[0m
+[0;32mI (26951) WS&BUTTON: R: 50, G: 80, B: 100[0m
+[0;32mI (27061) WS&BUTTON: R: 50, G: 80, B: 100[0m
+[0;32mI (27171) WS&BUTTON: R: 50, G: 80, B: 100[0m
+[0;32mI (27211) button: short press detect[0m
+[0;32mI (27211) WS&BUTTON: short press
+[0m
+[0;32mI (27271) WS&BUTTON: R: 50, G: 80, B: 105[0m
+[0;32mI (27381) WS&BUTTON: R: 50, G: 80, B: 105[0m
+[0;32mI (27481) button: short press detect[0m
+[0;32mI (27481) WS&BUTTON: short press
+[0m
+[0;32mI (27481) WS&BUTTON: R: 50, G: 80, B: 110[0m
+[0;32mI (27591) WS&BUTTON: R: 50, G: 80, B: 110[0m
+[0;32mI (27701) WS&BUTTON: R: 50, G: 80, B: 110[0m
+[0;32mI (27711) button: short press detect[0m
+[0;32mI (27711) WS&BUTTON: short press
+[0m
+[0;32mI (27801) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (27911) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28021) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28131) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28241) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28351) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28461) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28571) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28681) WS&BUTTON: R: 50, G: 80, B: 115[0m
+[0;32mI (28791) WS&BUTTON: R: 50, G: 80, B: 115[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x39 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1870
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcec
+load:0x403cc700,len:0x2ec4
+entry 0x403c9918
+[0;32mI (27) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 18 2025 18:35:47[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bd80h ( 48512) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=0001bda8 vaddr=3fc93500 size=02950h ( 10576) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=0001e700 vaddr=40374000 size=01918h (  6424) load[0m
+[0;32mI (122) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1bbdch (113628) map[0m
+[0;32mI (149) esp_image: segment 4: paddr=0003bc04 vaddr=40375918 size=0db24h ( 56100) load[0m
+[0;32mI (168) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (168) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) cpu_start: Application information:[0m
+[0;32mI (192) cpu_start: Project name:     002_WS_Control[0m
+[0;32mI (198) cpu_start: App version:      f4b0ec6-dirty[0m
+[0;32mI (203) cpu_start: Compile time:     Apr 18 2025 18:34:43[0m
+[0;32mI (209) cpu_start: ELF file SHA256:  23cf4264e...[0m
+[0;32mI (215) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (219) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (224) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (229) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FC96738 len 00052FD8 (331 KiB): RAM[0m
+[0;32mI (247) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (294) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (321) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (331) button: first btn add[0m
+[0;32mI (331) button: run button timer[0m
+[0;32mI (331) WS&BUTTON: button init[0m
+[0;32mI (341) main_task: Returned from app_main()[0m
+[0;32mI (351) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (461) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (571) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (681) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (791) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (901) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1011) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1121) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1231) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1341) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1451) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1561) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1671) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1781) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (1891) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2001) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2111) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2221) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2331) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2441) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2551) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2661) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2771) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2881) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (2991) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3101) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3211) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3321) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3431) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3541) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3651) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3761) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3871) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (3981) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4091) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4201) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4311) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4421) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4531) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4641) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4751) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4861) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (4971) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5081) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5191) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5301) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5411) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5521) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5631) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5741) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5851) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (5961) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6071) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6181) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6291) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6401) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6511) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6621) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6731) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6841) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (6951) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7061) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7171) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7281) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7391) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7501) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7611) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7721) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7831) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (7941) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8051) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8161) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8271) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8381) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8491) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8601) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8711) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8821) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (8931) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9041) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9151) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9261) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9371) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9481) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9591) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9701) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9811) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (9921) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10031) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10141) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10251) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10361) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10471) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10581) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10691) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10801) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (10911) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11021) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11131) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11241) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11351) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11461) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11571) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11681) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11791) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (11901) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12011) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12121) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12231) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12341) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12451) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12561) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12671) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12781) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (12891) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13001) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13111) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13221) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13331) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13441) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13551) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13661) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13771) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13881) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (13991) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14101) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14211) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14321) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14431) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14541) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14651) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14761) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14871) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (14981) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15091) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15201) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15311) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15421) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15531) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15641) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15751) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15861) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (15971) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16081) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16191) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16301) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16411) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16521) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16631) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16741) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;32mI (16851) WS&BUTTON: R: 30, G: 0, B: 30[0m
+[0;3
