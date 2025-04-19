@@ -19,7 +19,7 @@ static const char *TAG = "SD";
 static sdmmc_card_t *sd_card = NULL;
 static sdmmc_host_t host = SDSPI_HOST_DEFAULT();
 
-esp_err_t create_dir_if_not_exist(const char *path)
+esp_err_t create_dir(const char *path)
 {
     struct stat st;
 
@@ -52,7 +52,16 @@ esp_err_t create_dir_if_not_exist(const char *path)
     }
 }
 
-esp_err_t s_example_write_file(const char *path, char *data)
+/*
+    w  如果文件不存在 会创建 如果存在 会清空再写入
+    a  如果文件不存在 会创建 如果存在 会追加写入
+    r  只读 必须存在
+    w+ 读写 存在则清空
+    a+ 读写 从末尾写入 不存在会创建
+    r+ 读写 覆盖
+     */
+
+esp_err_t write_file(const char *path, const char *data)
 {
     ESP_LOGI(TAG, "Opening file %s", path);
     FILE *f = fopen(path, "w");
@@ -68,7 +77,7 @@ esp_err_t s_example_write_file(const char *path, char *data)
     return ESP_OK;
 }
 
-esp_err_t s_example_read_file(const char *path)
+esp_err_t read_file(const char *path)
 {
     ESP_LOGI(TAG, "Reading file %s", path);
     FILE *f = fopen(path, "r");
@@ -152,35 +161,46 @@ esp_err_t sd_spi_deinit(void)
     return ESP_OK;
 }
 
-esp_err_t create_file(const char *file, const char *data)
-{
-    esp_err_t ret = s_example_read_file(file);
-    if (ret == ESP_OK)
-    {
-        ESP_LOGI("FILE", "File already exists: %s", file);
-        return ESP_OK;
-    }
-
-    ESP_LOGW("FILE", "File not found, creating: %s", file);
-    ret = s_example_write_file(file, (char *)data);
-    if (ret != ESP_OK)
-    {
-        ESP_LOGE("FILE", "Failed to create file: %s", file);
-    }
-
-    return ret;
-}
-
 esp_err_t create_file_and_folder(const char *file, const char *data, const char *folder)
 {
     char path[128];
-    snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, folder);
+    if (snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, folder) >= sizeof(path))
+    {
+        ESP_LOGE(TAG, "Folder path too long");
+        return ESP_FAIL;
+    }
 
-    esp_err_t ret = create_dir_if_not_exist(path);
-    if (ret != ESP_OK)
+    if (create_dir(path) != ESP_OK)
         return ESP_FAIL;
 
     char full_path[128];
-    snprintf(full_path, sizeof(full_path), "%s%s", path, file);
-    return create_file(full_path, data);
+    if (snprintf(full_path, sizeof(full_path), "%s/%s", path, file) >= sizeof(full_path))
+    {
+        ESP_LOGE(TAG, "File path too long");
+        return ESP_FAIL;
+    }
+    ESP_LOGI(TAG, "Full file path: %s", full_path);
+    return write_file(full_path, data);
+}
+
+esp_err_t read_file_and_folder(const char *file, const char *data, const char *folder)
+{
+    char path[128];
+    if (snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, folder) >= sizeof(path))
+    {
+        ESP_LOGE(TAG, "Folder path too long");
+        return ESP_FAIL;
+    }
+
+    if (create_dir(path) != ESP_OK)
+        return ESP_FAIL;
+
+    char full_path[128];
+    if (snprintf(full_path, sizeof(full_path), "%s/%s", path, file) >= sizeof(full_path))
+    {
+        ESP_LOGE(TAG, "File path too long");
+        return ESP_FAIL;
+    }
+
+    return read_file(full_path);
 }

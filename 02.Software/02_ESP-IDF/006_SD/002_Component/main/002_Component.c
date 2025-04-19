@@ -6,10 +6,11 @@
 
 void app_main(void)
 {
-    const char *file = "/goodbye.txt";
+    const char *file = "hello.txt";
     const char *folder = "IDF_SPI";
-    const char *data = "Good Bye hapless!";
+    const char *data = "Hello World!\n";
     sd_spi_init();
-    create_file_and_folder(file, data, folder);
+    // create_file_and_folder(file, data, folder);
+    read_file_and_folder(file, data, folder);
     sd_spi_deinit();
 }
