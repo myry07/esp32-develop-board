@@ -64,7 +64,7 @@ esp_err_t create_dir(const char *path)
 esp_err_t write_file(const char *path, const char *data)
 {
     ESP_LOGI(TAG, "Opening file %s", path);
-    FILE *f = fopen(path, "w");
+    FILE *f = fopen(path, "a");
     if (f == NULL)
     {
         ESP_LOGE(TAG, "Failed to open file for writing");
@@ -87,17 +87,20 @@ esp_err_t read_file(const char *path)
         return ESP_FAIL;
     }
     char line[EXAMPLE_MAX_CHAR_SIZE];
-    fgets(line, sizeof(line), f);
-    fclose(f);
 
-    // strip newline
-    char *pos = strchr(line, '\n');
-    if (pos)
+    while (fgets(line, sizeof(line), f))
     {
-        *pos = '\0';
-    }
-    ESP_LOGI(TAG, "Read from file: '%s'", line);
+        // 去除换行符
+        char *pos = strchr(line, '\n');
+        if (pos)
+        {
+            *pos = '\0';
+        }
 
+        ESP_LOGI(TAG, "Line: %s", line);
+    }
+
+    fclose(f);
     return ESP_OK;
 }
 

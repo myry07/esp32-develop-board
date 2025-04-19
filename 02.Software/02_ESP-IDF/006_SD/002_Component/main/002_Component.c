@@ -8,9 +8,9 @@ void app_main(void)
 {
     const char *file = "hello.txt";
     const char *folder = "IDF_SPI";
-    const char *data = "Hello World!\n";
+    const char *data = "Hello World 2!\n";
     sd_spi_init();
-    // create_file_and_folder(file, data, folder);
+    create_file_and_folder(file, data, folder);
     read_file_and_folder(file, data, folder);
     sd_spi_deinit();
 }
