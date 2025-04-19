@@ -61,4 +61,5 @@
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/perfmon/libperfmon.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/spiffs/libspiffs.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/libsd_spi.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/main/libmain.a

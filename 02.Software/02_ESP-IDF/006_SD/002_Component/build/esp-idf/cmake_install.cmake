@@ -414,6 +414,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/main/cmake_install.cmake")
 endif()
 

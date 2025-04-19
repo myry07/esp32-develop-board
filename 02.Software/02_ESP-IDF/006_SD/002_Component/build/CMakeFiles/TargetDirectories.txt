@@ -635,6 +635,13 @@
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/__idf_sd_spi.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/edit_cache.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/rebuild_cache.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/list_install_components.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/install.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/install/local.dir
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/sd_spi/CMakeFiles/install/strip.dir
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/006_SD/002_Component/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
