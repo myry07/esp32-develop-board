@@ -47,7 +47,7 @@ void i2s_write_task(void *param)
             sleep_led();
             if (pwmHandle == NULL)
             {
-                xTaskCreate(pwm_breath_task, "pwmblink", 2048, NULL, 1, &pwmHandle);
+                xTaskCreatePinnedToCore(pwm_breath_task, "pwmblink", 2048, NULL, 1, &pwmHandle, 1);
             }
 
             ESP_LOGI("I2S", "Paused");
@@ -98,5 +98,5 @@ void i2s_init(void)
     i2s_driver_install(I2S_NUM_0, &i2s_config, 0, NULL);
     i2s_set_pin(I2S_NUM_0, &pin_config);
 
-    xTaskCreate(i2s_write_task, "i2s_example_write_task", 4096 * 3, (void *)"test.pcm", 5, &i2sHandle);
+    xTaskCreatePinnedToCore(i2s_write_task, "i2s_example_write_task", 4096 * 3, (void *)"test.pcm", 5, &i2sHandle, 1);
 }
