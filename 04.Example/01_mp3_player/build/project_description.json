@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "002_PCM_Control",
-    "project_version":    "ff517a2b-dirty",
+    "project_version":    "967a9b11-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build",
