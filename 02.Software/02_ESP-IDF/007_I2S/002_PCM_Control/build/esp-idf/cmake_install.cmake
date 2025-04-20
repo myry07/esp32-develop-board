@@ -427,6 +427,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/esp-idf/button/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
