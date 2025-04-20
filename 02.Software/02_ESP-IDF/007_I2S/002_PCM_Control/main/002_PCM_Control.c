@@ -8,8 +8,6 @@
 #include "esp_log.h"
 
 TaskHandle_t i2sHandle = NULL;
-volatile bool is_paused = false;
-
 
 void app_main(void)
 {

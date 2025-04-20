@@ -8,7 +8,7 @@
 #include <string.h>
 static const char* TAG = "button";
 
-extern volatile bool is_paused;
+volatile bool is_paused;
 extern TaskHandle_t i2sHandle;
 
 typedef enum

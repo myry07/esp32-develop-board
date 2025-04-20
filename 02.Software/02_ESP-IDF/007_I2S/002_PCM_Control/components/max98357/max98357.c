@@ -19,6 +19,9 @@
 #define SAMPLE_RATE (44100)
 #define BUFF_SIZE 1024
 
+extern volatile bool is_paused;
+extern TaskHandle_t i2sHandle;
+
 void i2s_write_task(void *param)
 {
 
