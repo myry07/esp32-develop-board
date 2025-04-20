@@ -1,5 +1,4 @@
 #include "button.h"
-
 #include "esp_log.h"
 #include "driver/gpio.h"
 #include "esp_timer.h"
@@ -83,7 +82,6 @@ esp_err_t button_event_set(button_config_t *cfg)
         esp_timer_start_periodic(g_button_timer_handle,  5000);
         g_is_timer_running = true;
     }
-
 
     return ESP_OK;
 }

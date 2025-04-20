@@ -5,11 +5,11 @@
 #include "driver/i2s.h"
 #include "driver/gpio.h"
 #include "esp_check.h"
-#include "sdkconfig.h"
 #include "sd_spi.h"
 #include "esp_log.h"
 #include <string.h>
 #include "max98357.h"
+#include "button.h"
 
 #define I2S_BLCK GPIO_NUM_12      // I2S bit clock io number
 #define I2S_WS GPIO_NUM_13        // I2S word select io number
@@ -21,7 +21,9 @@
 
 void i2s_write_task(void *param)
 {
+
     char *f = (char *)param;
+
     FILE *my_file = sd_i2s_open_file(f);
     if (!my_file)
     {
@@ -35,12 +37,16 @@ void i2s_write_task(void *param)
 
     while (!feof(my_file))
     {
-        memset(line, 0, sizeof line);
-        size_t len = fread(line, sizeof(char), sizeof(line), my_file);
+        if (is_paused)
+        {
+            ESP_LOGI("I2S", "Paused");
+            ulTaskNotifyTake(pdTRUE, portMAX_DELAY); // 阻塞等待恢复
+        }
 
+        // ESP_LOGI("I2S", "Playing");
+        size_t len = fread(line, sizeof(char), sizeof(line), my_file);
         size_t bytes_written;
         i2s_write(I2S_NUM_0, line, len, &bytes_written, portMAX_DELAY);
-        ESP_LOGI("I2S", "Playing");
     }
 
     fclose(my_file);

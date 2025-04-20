@@ -1,0 +1,18 @@
+[1/10] Linking C static library esp-idf/max98357/libmax98357.a
+[2/10] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/bootloader/bootloader.bin
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[3/10] No install step for 'bootloader'
+[4/10] Completed 'bootloader'
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/002_PCM_Control.c.obj
+[6/10] Linking C static library esp-idf/main/libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable 002_PCM_Control.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/002_PCM_Control.bin
+[10/10] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/002_PCM_Control.bin
+002_PCM_Control.bin binary size 0x4aff0 bytes. Smallest app partition is 0x100000 bytes. 0xb5010 bytes (71%) free.

@@ -1,0 +1,475 @@
+[1/115] Linking C static library esp-idf/esp_mm/libesp_mm.a
+[2/115] Linking C static library esp-idf/efuse/libefuse.a
+[3/115] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/constants.pb-c.c.obj
+[4/115] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj
+FAILED: esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj 
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.2.5\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/build/config -I/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/include -I/Users/wangjiaqi/esp/esp-idf/components/newlib/platform_include -I/Users/wangjiaqi/esp/esp-idf/components/freertos/config/include -I/Users/wangjiaqi/esp/esp-idf/components/freertos/config/include/freertos -I/Users/wangjiaqi/esp/esp-idf/components/freertos/config/xtensa/include -I/Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/Users/wangjiaqi/esp/esp-idf/components/freertos/esp_additions/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/soc/esp32 -I/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/port/esp32/. -I/Users/wangjiaqi/esp/esp-idf/components/heap/include -I/Users/wangjiaqi/esp/esp-idf/components/log/include -I/Users/wangjiaqi/esp/esp-idf/components/soc/include -I/Users/wangjiaqi/esp/esp-idf/components/soc/esp32 -I/Users/wangjiaqi/esp/esp-idf/components/soc/esp32/include -I/Users/wangjiaqi/esp/esp-idf/components/hal/platform_port/include -I/Users/wangjiaqi/esp/esp-idf/components/hal/esp32/include -I/Users/wangjiaqi/esp/esp-idf/components/hal/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_rom/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_rom/include/esp32 -I/Users/wangjiaqi/esp/esp-idf/components/esp_rom/esp32 -I/Users/wangjiaqi/esp/esp-idf/components/esp_common/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_system/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_system/port/soc -I/Users/wangjiaqi/esp/esp-idf/components/esp_system/port/include/private -I/Users/wangjiaqi/esp/esp-idf/components/xtensa/esp32/include -I/Users/wangjiaqi/esp/esp-idf/components/xtensa/include -I/Users/wangjiaqi/esp/esp-idf/components/xtensa/deprecated_include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/include/apps -I/Users/wangjiaqi/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/wangjiaqi/esp/esp-idf/components/lwip/lwip/src/include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/port/include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/port/freertos/include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/port/esp32xx/include -I/Users/wangjiaqi/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/Users/wangjiaqi/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/Users/wangjiaqi/esp/esp-idf/components/driver/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/deprecated -I/Users/wangjiaqi/esp/esp-idf/components/driver/analog_comparator/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/dac/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/gptimer/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/i2c/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/i2s/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/ledc/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/mcpwm/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/parlio/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/pcnt/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/rmt/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/sdio_slave/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/sdmmc/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/sigma_delta/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/spi/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/temperature_sensor/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/touch_sensor/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/twai/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/uart/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/usb_serial_jtag/include -I/Users/wangjiaqi/esp/esp-idf/components/driver/touch_sensor/esp32/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_pm/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_ringbuf/include -I/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include -mlongcalls -Wno-frame-address  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control=. -fmacro-prefix-map=/Users/wangjiaqi/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj -MF esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj.d -o esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj -c /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c
+In file included from /Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:12,
+                 from /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:2:
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h: In function 'button_event_set':
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:315:3: error: storage class specified for parameter 'imaxdiv_t'
+  315 | } imaxdiv_t;
+      |   ^~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:323:18: error: storage class specified for parameter 'imaxabs'
+  323 | extern intmax_t  imaxabs(intmax_t);
+      |                  ^~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:324:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'imaxdiv'
+  324 | extern imaxdiv_t imaxdiv(intmax_t __numer, intmax_t __denomer);
+      |                  ^~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:325:18: error: storage class specified for parameter 'strtoimax'
+  325 | extern intmax_t  strtoimax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:326:18: error: storage class specified for parameter '_strtoimax_r'
+  326 | extern intmax_t  _strtoimax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:327:18: error: storage class specified for parameter 'strtoumax'
+  327 | extern uintmax_t strtoumax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:328:18: error: storage class specified for parameter '_strtoumax_r'
+  328 | extern uintmax_t _strtoumax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:329:18: error: storage class specified for parameter 'wcstoimax'
+  329 | extern intmax_t  wcstoimax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:330:18: error: storage class specified for parameter '_wcstoimax_r'
+  330 | extern intmax_t  _wcstoimax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:331:18: error: storage class specified for parameter 'wcstoumax'
+  331 | extern uintmax_t wcstoumax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:332:18: error: storage class specified for parameter '_wcstoumax_r'
+  332 | extern uintmax_t _wcstoumax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:335:18: error: storage class specified for parameter 'strtoimax_l'
+  335 | extern intmax_t  strtoimax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:336:18: error: storage class specified for parameter 'strtoumax_l'
+  336 | extern uintmax_t strtoumax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:337:18: error: storage class specified for parameter 'wcstoimax_l'
+  337 | extern intmax_t  wcstoimax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+/Users/wangjiaqi/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:338:18: error: storage class specified for parameter 'wcstoumax_l'
+  338 | extern uintmax_t wcstoumax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+In file included from /Users/wangjiaqi/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:10,
+                 from /Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:14:
+/Users/wangjiaqi/esp/esp-idf/components/soc/esp32/include/soc/reset_reasons.h:54:3: error: storage class specified for parameter 'soc_reset_reason_t'
+   54 | } soc_reset_reason_t;
+      |   ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h:71:1: error: expected declaration specifiers before 'soc_reset_reason_t'
+   71 | soc_reset_reason_t esp_rom_get_reset_reason(int cpu_no);
+      | ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:31:3: error: storage class specified for parameter 'esp_log_level_t'
+   31 | } esp_log_level_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:33:15: error: storage class specified for parameter 'vprintf_like_t'
+   33 | typedef int (*vprintf_like_t)(const char *, va_list);
+      |               ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:42:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'esp_log_default_level'
+   42 | extern esp_log_level_t esp_log_default_level;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:87:41: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   87 | void esp_log_level_set(const char* tag, esp_log_level_t level);
+      |                                         ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:97:1: error: expected declaration specifiers before 'esp_log_level_t'
+   97 | esp_log_level_t esp_log_level_get(const char* tag);
+      | ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:113:1: error: expected declaration specifiers before 'vprintf_like_t'
+  113 | vprintf_like_t esp_log_set_vprintf(vprintf_like_t func);
+      | ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:162:20: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  162 | void esp_log_write(esp_log_level_t level, const char* tag, const char* format, ...) __attribute__ ((format (printf, 3, 4)));
+      |                    ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:171:21: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  171 | void esp_log_writev(esp_log_level_t level, const char* tag, const char* format, va_list args);
+      |                     ^~~~~~~~~~~~~~~
+In file included from /Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log.h:175:
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log_internal.h:11:90: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   11 | void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                          ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log_internal.h:12:91: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   12 | void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                           ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/log/include/esp_log_internal.h:13:95: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   13 | void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
+      |                                                                                               ^~~~~~~~~~~~~~~
+In file included from /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:13,
+                 from /Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:13,
+                 from /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:3:
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_types.h:13:16: error: storage class specified for parameter 'intr_handler_t'
+   13 | typedef void (*intr_handler_t)(void *arg);
+      |                ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_types.h:16:36: error: storage class specified for parameter 'intr_handle_t'
+   16 | typedef struct intr_handle_data_t *intr_handle_t;
+      |                                    ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_types.h:27:3: error: storage class specified for parameter 'esp_intr_cpu_affinity_t'
+   27 | } esp_intr_cpu_affinity_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:148:49: error: expected declaration specifiers or '...' before 'intr_handler_t'
+  148 | esp_err_t esp_intr_alloc(int source, int flags, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                 ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:148:84: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  148 | esp_err_t esp_intr_alloc(int source, int flags, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                                                    ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:186:109: error: expected declaration specifiers or '...' before 'intr_handler_t'
+  186 | esp_err_t esp_intr_alloc_intrstatus(int source, int flags, uint32_t intrstatusreg, uint32_t intrstatusmask, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                                                                             ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:186:144: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  186 | esp_err_t esp_intr_alloc_intrstatus(int source, int flags, uint32_t intrstatusreg, uint32_t intrstatusmask, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:207:25: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  207 | esp_err_t esp_intr_free(intr_handle_t handle);
+      |                         ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:217:22: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  217 | int esp_intr_get_cpu(intr_handle_t handle);
+      |                      ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:226:24: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  226 | int esp_intr_get_intno(intr_handle_t handle);
+      |                        ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:244:28: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  244 | esp_err_t esp_intr_disable(intr_handle_t handle);
+      |                            ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:257:27: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  257 | esp_err_t esp_intr_enable(intr_handle_t handle);
+      |                           ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:271:32: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  271 | esp_err_t esp_intr_set_in_iram(intr_handle_t handle, bool is_in_iram);
+      |                                ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:300:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  300 | {
+      | ^
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:309:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  309 | {
+      | ^
+In file included from /Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:10,
+                 from /Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:15:
+/Users/wangjiaqi/esp/esp-idf/components/soc/esp32/include/soc/gpio_num.h:58:3: error: storage class specified for parameter 'gpio_num_t'
+   58 | } gpio_num_t;
+      |   ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:88:3: error: storage class specified for parameter 'gpio_int_type_t'
+   88 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:104:3: error: storage class specified for parameter 'gpio_mode_t'
+  104 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:109:3: error: storage class specified for parameter 'gpio_pullup_t'
+  109 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:114:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  114 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:121:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  121 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/hal/include/hal/gpio_types.h:130:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  130 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from /Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:10,
+                 from /Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:17:
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:19:35: error: storage class specified for parameter 'esp_etm_channel_handle_t'
+   19 | typedef struct esp_etm_channel_t *esp_etm_channel_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:24:33: error: storage class specified for parameter 'esp_etm_event_handle_t'
+   24 | typedef struct esp_etm_event_t *esp_etm_event_handle_t;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:29:32: error: storage class specified for parameter 'esp_etm_task_handle_t'
+   29 | typedef struct esp_etm_task_t *esp_etm_task_handle_t;
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:36:3: error: storage class specified for parameter 'esp_etm_channel_config_t'
+   36 | } esp_etm_channel_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:52:37: error: type defaults to 'int' in declaration of 'esp_etm_channel_config_t' [-Werror=implicit-int]
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      |                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:52:62: error: expected ';', ',' or ')' before '*' token
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      |                                                              ^
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:63:31: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   63 | esp_err_t esp_etm_del_channel(esp_etm_channel_handle_t chan);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:77:34: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   77 | esp_err_t esp_etm_channel_enable(esp_etm_channel_handle_t chan);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:91:35: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+   91 | esp_err_t esp_etm_channel_disable(esp_etm_channel_handle_t chan);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:106:35: error: expected declaration specifiers or '...' before 'esp_etm_channel_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:106:66: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:106:96: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      |                                                                                                ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:119:29: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+  119 | esp_err_t esp_etm_del_event(esp_etm_event_handle_t event);
+      |                             ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/esp_etm.h:132:28: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  132 | esp_err_t esp_etm_del_task(esp_etm_task_handle_t task);
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:26:3: error: storage class specified for parameter 'gpio_etm_event_edge_t'
+   26 | } gpio_etm_event_edge_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:36:9: error: expected specifier-qualifier-list before 'gpio_etm_event_edge_t'
+   36 |         gpio_etm_event_edge_t edge;                                 /*!< Which kind of edge can trigger the ETM event module */
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:39:3: error: storage class specified for parameter 'gpio_etm_event_config_t'
+   39 | } gpio_etm_event_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:58:36: error: type defaults to 'int' in declaration of 'gpio_etm_event_config_t' [-Werror=implicit-int]
+   58 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event, ...);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:58:60: error: expected ';', ',' or ')' before '*' token
+   58 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event, ...);
+      |                                                            ^
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:73:36: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+   73 | esp_err_t gpio_etm_event_bind_gpio(esp_etm_event_handle_t event, int gpio_num);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:82:3: error: storage class specified for parameter 'gpio_etm_task_action_t'
+   82 | } gpio_etm_task_action_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:91:9: error: expected specifier-qualifier-list before 'gpio_etm_task_action_t'
+   91 |         gpio_etm_task_action_t action;                                  /*!< Action to take by the ETM task module */
+      |         ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:94:3: error: storage class specified for parameter 'gpio_etm_task_config_t'
+   94 | } gpio_etm_task_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:114:35: error: type defaults to 'int' in declaration of 'gpio_etm_task_config_t' [-Werror=implicit-int]
+  114 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task, ...);
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:114:58: error: expected ';', ',' or ')' before '*' token
+  114 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task, ...);
+      |                                                          ^
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:130:34: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  130 | esp_err_t gpio_etm_task_add_gpio(esp_etm_task_handle_t task, int gpio_num);
+      |                                  ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio_etm.h:146:33: error: expected declaration specifiers or '...' before 'esp_etm_task_handle_t'
+  146 | esp_err_t gpio_etm_task_rm_gpio(esp_etm_task_handle_t task, int gpio_num);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:34:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gpio_isr_handle_t'
+   34 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:41:16: error: storage class specified for parameter 'gpio_isr_t'
+   41 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:48:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   48 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:55:3: error: storage class specified for parameter 'gpio_config_t'
+   55 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:69:29: error: type defaults to 'int' in declaration of 'gpio_config_t' [-Werror=implicit-int]
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                             ^~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:69:43: error: expected ';', ',' or ')' before '*' token
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      |                                           ^
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:82:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   82 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:95:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:95:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:112:28: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  112 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:126:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  126 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:141:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      |                          ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:155:20: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  155 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:170:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                              ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:170:51: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                   ^~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:185:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                              ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:185:51: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                   ^~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:198:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                              ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:198:51: error: expected declaration specifiers or '...' before 'gpio_int_type_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      |                                                   ^~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:209:31: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  209 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      |                               ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:235:82: error: unknown type name 'gpio_isr_handle_t'
+  235 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      |                                                                                  ^~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:246:26: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  246 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      |                          ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:257:27: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  257 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      |                           ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:268:28: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  268 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      |                            ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:279:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  279 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:327:32: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:327:53: error: expected declaration specifiers or '...' before 'gpio_isr_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      |                                                     ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:339:35: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  339 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      |                                   ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:351:37: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                     ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:351:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:363:37: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                     ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:363:58: error: expected declaration specifiers or '...' before 'gpio_drive_cap_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      |                                                          ^~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:391:24: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  391 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      |                        ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:410:25: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  410 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      |                         ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:484:29: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  484 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      |                             ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:493:30: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  493 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      |                              ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:507:36: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  507 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                    ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:507:57: error: expected declaration specifiers or '...' before 'gpio_mode_t'
+  507 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      |                                                         ^~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:521:36: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  521 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                    ^~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/driver/gpio/include/driver/gpio.h:521:57: error: expected declaration specifiers or '...' before 'gpio_pull_mode_t'
+  521 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      |                                                         ^~~~~~~~~~~~~~~~
+In file included from /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:4:
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:47:27: error: storage class specified for parameter 'esp_timer_handle_t'
+   47 | typedef struct esp_timer* esp_timer_handle_t;
+      |                           ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:53:16: error: storage class specified for parameter 'esp_timer_cb_t'
+   53 | typedef void (*esp_timer_cb_t)(void* arg);
+      |                ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:65:3: error: storage class specified for parameter 'esp_timer_dispatch_t'
+   65 | } esp_timer_dispatch_t;
+      |   ^~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:71:5: error: expected specifier-qualifier-list before 'esp_timer_cb_t'
+   71 |     esp_timer_cb_t callback;        //!< Function to call when timer expires
+      |     ^~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:76:3: error: storage class specified for parameter 'esp_timer_create_args_t'
+   76 | } esp_timer_create_args_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:141:34: error: type defaults to 'int' in declaration of 'esp_timer_create_args_t' [-Werror=implicit-int]
+  141 | esp_err_t esp_timer_create(const esp_timer_create_args_t* create_args,
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:141:57: error: expected ';', ',' or ')' before '*' token
+  141 | esp_err_t esp_timer_create(const esp_timer_create_args_t* create_args,
+      |                                                         ^
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:156:32: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  156 | esp_err_t esp_timer_start_once(esp_timer_handle_t timer, uint64_t timeout_us);
+      |                                ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:171:36: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  171 | esp_err_t esp_timer_start_periodic(esp_timer_handle_t timer, uint64_t period);
+      |                                    ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:187:29: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  187 | esp_err_t esp_timer_restart(esp_timer_handle_t timer, uint64_t timeout_us);
+      |                             ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:200:26: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  200 | esp_err_t esp_timer_stop(esp_timer_handle_t timer);
+      |                          ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:213:28: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  213 | esp_err_t esp_timer_delete(esp_timer_handle_t timer);
+      |                            ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:249:32: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  249 | esp_err_t esp_timer_get_period(esp_timer_handle_t timer, uint64_t *period);
+      |                                ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:266:37: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  266 | esp_err_t esp_timer_get_expiry_time(esp_timer_handle_t timer, uint64_t *expiry);
+      |                                     ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:318:26: error: expected declaration specifiers or '...' before 'esp_timer_handle_t'
+  318 | bool esp_timer_is_active(esp_timer_handle_t timer);
+      |                          ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/esp/esp-idf/components/esp_timer/include/esp_timer.h:333:41: error: expected declaration specifiers or '...' before 'esp_etm_event_handle_t'
+  333 | esp_err_t esp_timer_new_etm_alarm_event(esp_etm_event_handle_t *out_event);
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:7:20: error: storage class specified for parameter 'TAG'
+    7 | static const char* TAG = "button";
+      |                    ^~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:7:1: error: parameter 'TAG' is initialized
+    7 | static const char* TAG = "button";
+      | ^~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:15:2: error: storage class specified for parameter 'BUTTON_STATE'
+   15 | }BUTTON_STATE;
+      |  ^~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:20:5: error: expected specifier-qualifier-list before 'BUTTON_STATE'
+   20 |     BUTTON_STATE    state;      //当前状态
+      |     ^~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:23:2: error: storage class specified for parameter 'button_dev_t'
+   23 | }button_dev_t;
+      |  ^~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:26:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+   26 | static button_dev_t *s_button_head = NULL;
+      |                     ^
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:32:13: error: storage class specified for parameter 'g_is_timer_running'
+   32 | static bool g_is_timer_running = false;
+      |             ^~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:32:1: error: parameter 'g_is_timer_running' is initialized
+   32 | static bool g_is_timer_running = false;
+      | ^~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:35:27: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'g_button_timer_handle'
+   35 | static esp_timer_handle_t g_button_timer_handle;
+      |                           ^~~~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:37:13: error: storage class specified for parameter 'button_handle'
+   37 | static void button_handle(void *param);
+      |             ^~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:44:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   44 | {
+      | ^
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:95:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   95 | {
+      | ^
+In file included from /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:1:
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/include/button.h:22:1: error: old-style parameter declarations in prototyped function definition
+   22 | button_event_set(button_config_t *cfg)
+      | ^~~~~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:156: error: expected '{' at end of input
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/007_I2S/002_PCM_Control/components/button/button.c:156: error: control reaches end of non-void function [-Werror=return-type]
+cc1: some warnings being treated as errors
+[5/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/port/esp/unity_utils_memory_esp.c.obj
+[6/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_memory.c.obj
+[7/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_freertos.c.obj
+[8/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_utils_cache.c.obj
+[9/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_port_esp32.c.obj
+[10/115] Linking C static library esp-idf/esp_ringbuf/libesp_ringbuf.a
+[11/115] Building C object esp-idf/unity/CMakeFiles/__idf_unity.dir/unity_runner.c.obj
+[12/115] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common/protocomm.c.obj
+[13/115] Building C object esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c/sec0.pb-c.c.obj
+ninja: build stopped: subcommand failed.
