@@ -11,8 +11,8 @@ TaskHandle_t i2sHandle = NULL;
 
 void app_main(void)
 {
-    
-    button_event_set();
+
+    button_init();
     sd_spi_init();
     i2s_init();
 

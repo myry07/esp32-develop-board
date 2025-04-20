@@ -1,6 +1,6 @@
 # esp32-develop-board
 
-mp4 - > mp3  
+mp4 -> mp3  
 sample rate 44100Hz  
 single channel  
 quality 3  

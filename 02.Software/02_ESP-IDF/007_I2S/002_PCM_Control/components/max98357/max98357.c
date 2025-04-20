@@ -24,7 +24,6 @@ extern TaskHandle_t i2sHandle;
 
 void i2s_write_task(void *param)
 {
-
     char *f = (char *)param;
 
     FILE *my_file = sd_i2s_open_file(f);
