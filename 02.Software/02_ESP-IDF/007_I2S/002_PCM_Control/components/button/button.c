@@ -1,10 +1,15 @@
 #include "button.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
 #include "esp_timer.h"
 #include <stdio.h>
 #include <string.h>
 static const char* TAG = "button";
+
+extern volatile bool is_paused;
+extern TaskHandle_t i2sHandle;
 
 typedef enum
 {
@@ -21,6 +26,28 @@ typedef struct Button
     int press_cnt;              //按下计数
     struct Button* next;        //下一个按键参数
 }button_dev_t;
+
+void short_press_cb(void)
+{
+
+}
+
+void long_press_cb(void)
+{
+    is_paused = !is_paused;
+    xTaskNotifyGive(i2sHandle); // 通知
+    ESP_LOGI("PCM", "long press is_paused: %d", is_paused);
+}
+
+
+button_config_t cfg = {
+    .gpio_num = 0,
+    .active_level = 0,       // GPIO0 接地为按下
+    .long_press_time = 1500, // 1500ms 判定为长按
+    .short_cb = short_press_cb,
+    .long_cb = long_press_cb,
+};
+
 
 //按键处理列表
 static button_dev_t *s_button_head = NULL;
@@ -40,13 +67,13 @@ static void button_handle(void *param);
  * @param cfg   配置结构体
  * @return ESP_OK or ESP_FAIL 
 */
-esp_err_t button_event_set(button_config_t *cfg)
+esp_err_t button_event_set()
 {
     gpio_config_t gpio_t = 
     {
         .intr_type = GPIO_INTR_DISABLE,
         .mode = GPIO_MODE_INPUT,
-        .pin_bit_mask = (1ull<<cfg->gpio_num),
+        .pin_bit_mask = (1ull<<cfg.gpio_num),
         .pull_down_en = GPIO_PULLDOWN_DISABLE,
         .pull_up_en = GPIO_PULLUP_ENABLE,
     };
@@ -68,7 +95,7 @@ esp_err_t button_event_set(button_config_t *cfg)
         btn_p->next = btn;
         ESP_LOGI(TAG,"btn add");
     }
-    memcpy(&btn->btn_cfg,cfg,sizeof(button_config_t));
+    memcpy(&btn->btn_cfg,&cfg,sizeof(button_config_t));
 
     if (false == g_is_timer_running) {
         ESP_LOGI(TAG,"run button timer");

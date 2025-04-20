@@ -19,7 +19,7 @@ typedef struct
  * @param cfg   配置结构体
  * @return ESP_OK or ESP_FAIL 
 */
-esp_err_t button_event_set(button_config_t *cfg);
+esp_err_t button_event_set();
 
 
 #endif

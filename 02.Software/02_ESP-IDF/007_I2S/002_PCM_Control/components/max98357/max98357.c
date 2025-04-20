@@ -37,10 +37,11 @@ void i2s_write_task(void *param)
 
     while (!feof(my_file))
     {
-        if (is_paused)
-        {
+        if (is_paused) {
             ESP_LOGI("I2S", "Paused");
-            ulTaskNotifyTake(pdTRUE, portMAX_DELAY); // 阻塞等待恢复
+            i2s_stop(I2S_NUM_0);  // 停止数据输出
+            ulTaskNotifyTake(pdTRUE, portMAX_DELAY); // 等待继续
+            i2s_start(I2S_NUM_0); // 恢复 I2S
         }
 
         // ESP_LOGI("I2S", "Playing");

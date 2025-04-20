@@ -10,36 +10,11 @@
 TaskHandle_t i2sHandle = NULL;
 volatile bool is_paused = false;
 
-void short_press_cb(void)
-{
-    // is_paused = !is_paused;
-    // if (!is_paused && i2sHandle != NULL)
-    // {
-    //     xTaskNotifyGive(i2sHandle); // 通知恢复
-    // }
-    // ESP_LOGI("PCM", "short press");
-}
-
-void long_press_cb(void)
-{
-    is_paused = !is_paused;
-    xTaskNotifyGive(i2sHandle); // 通知
-
-    ESP_LOGI("PCM", "long press is_paused: %d", is_paused);
-}
 
 void app_main(void)
 {
-    button_config_t cfg = {
-        .gpio_num = 0,
-        .active_level = 0,       // GPIO0 接地为按下
-        .long_press_time = 1500, // 1500ms 判定为长按
-        .short_cb = short_press_cb,
-        .long_cb = long_press_cb,
-    };
-
-    button_event_set(&cfg);
-    vTaskDelay(100 / portTICK_PERIOD_MS);
+    
+    button_event_set();
     sd_spi_init();
     i2s_init();
 
