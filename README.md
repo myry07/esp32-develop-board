@@ -1,18 +1,14 @@
 # esp32-develop-board
 
-mp4 - > mp3
-sample rate 44100Hz
-single channel
-quality 3
+mp4 - > mp3\n
+sample rate 44100Hz\n
+single channel\n
+quality 3\n
 
-'''
-ffmpeg -i test.mp4 -ar 44100 -ac 1 -q:a 3 test.mp3
-'''
+```ffmpeg -i test.mp4 -ar 44100 -ac 1 -q:a 3 test.mp3```
 
-mp3 -> pcm
-sample bit 16 bits
-sample rate 44100Hz
+mp3 -> pcm\n
+sample bit 16 bits\n
+sample rate 44100Hz\n
 
-'''
-ffmpeg -i test.mp3 -f s16le -ar 44100 -ac 1 -acodec pcm_s16le test.pcm
-'''
+```ffmpeg -i test.mp3 -f s16le -ar 44100 -ac 1 -acodec pcm_s16le test.pcm```
