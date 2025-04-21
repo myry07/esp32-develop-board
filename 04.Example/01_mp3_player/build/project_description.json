@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "002_PCM_Control",
-    "project_version":    "66055b0d-dirty",
+    "project_version":    "c9a1e576-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build",
@@ -111,7 +111,7 @@
             "type": "LIBRARY",
             "lib": "__idf_button",
             "reqs": [],
-            "priv_reqs": [ "driver", "esp_timer" ],
+            "priv_reqs": [ "driver", "esp_timer", "sd_spi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/button/libbutton.a",
@@ -2185,7 +2185,7 @@
             "dir": "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button",
             "lib": "__idf_button",
             "reqs": [],
-            "priv_reqs": [ "driver", "esp_timer" ],
+            "priv_reqs": [ "driver", "esp_timer", "sd_spi" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]

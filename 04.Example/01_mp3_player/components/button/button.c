@@ -4,12 +4,15 @@
 #include "esp_log.h"
 #include "driver/gpio.h"
 #include "esp_timer.h"
+#include "sd_spi.h"
 #include <stdio.h>
 #include <string.h>
 static const char* TAG = "button";
 
 volatile bool is_paused;
 extern TaskHandle_t i2sHandle;
+extern int folder;
+extern char folder_path[128];
 
 typedef enum
 {
@@ -29,14 +32,17 @@ typedef struct Button
 
 void short_press_cb(void)
 {
-
+    is_paused = !is_paused;
+    xTaskNotifyGive(i2sHandle); // 通知
+    ESP_LOGI("PCM", "short press is_paused: %d", is_paused);
 }
 
 void long_press_cb(void)
 {
-    is_paused = !is_paused;
-    xTaskNotifyGive(i2sHandle); // 通知
-    ESP_LOGI("PCM", "long press is_paused: %d", is_paused);
+    folder += 1;
+    write_file(folder_path, folder);
+    ESP_LOGI("PCM", "long press: jump to folder=%d", folder);
+    sd_spi_deinit();
 }
 
 

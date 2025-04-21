@@ -1,0 +1,835 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 21 2025 13:43:28[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=102a8h ( 66216) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=000202d0 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022bd4 vaddr=40080000 size=0d444h ( 54340) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2b02ch (176172) map[0m
+[0;32mI (215) esp_image: segment 4: paddr=0005b054 vaddr=4008d444 size=02408h (  9224) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      c9a1e576-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 13:43:26[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  5e77a945f...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (278) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3398 len 0002CC68 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F84C len 000107B4 (65 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Found folder: 1[0m
+[0;32mI (523) SD: Found folder: 2[0m
+[0;32mI (523) SD: Found folder: 7[0m
+[0;32mI (523) SD: Found folder: 5[0m
+[0;32mI (523) SD: Found folder: 3[0m
+[0;32mI (533) SD: Found folder: 4[0m
+[0;32mI (533) SD: Found folder: 6[0m
+[0;32mI (533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (553) SD: Opened file: /FAT/idf_mp3/1/test.pcm[0m
+[0;32mI (553) I2S: Start playing folder=1[0m
+[0;32mI (5053) button: short press detect[0m
+[0;32mI (5053) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5083) SD: Get Number: 2[0m
+[0;32mI (5083) PCM: short press: jump to folder=2[0m
+[0;32mI (5093) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5113) SD: Get Number: 2[0m
+[0;32mI (5113) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5133) SD: Get Number: 2[0m
+[0;32mI (5143) SD: Found folder: 1[0m
+[0;32mI (5143) SD: Found folder: 2[0m
+[0;32mI (5143) SD: Found folder: 7[0m
+[0;32mI (5143) SD: Found folder: 5[0m
+[0;32mI (5153) SD: Found folder: 3[0m
+[0;32mI (5153) SD: Found folder: 4[0m
+[0;32mI (5153) SD: Found folder: 6[0m
+[0;32mI (5153) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5163) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5173) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5173) I2S: Start playing folder=2[0m
+[0;32mI (5173) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5203) SD: Get Number: 2[0m
+[0;32mI (5203) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5223) SD: Get Number: 2[0m
+[0;32mI (5223) SD: Found folder: 1[0m
+[0;32mI (5233) SD: Found folder: 2[0m
+[0;32mI (5233) SD: Found folder: 7[0m
+[0;32mI (5233) SD: Found folder: 5[0m
+[0;32mI (5233) SD: Found folder: 3[0m
+[0;32mI (5233) SD: Found folder: 4[0m
+[0;32mI (5243) SD: Found folder: 6[0m
+[0;32mI (5243) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5243) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5253) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5253) I2S: Start playing folder=2[0m
+[0;32mI (5263) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5283) SD: Get Number: 2[0m
+[0;32mI (5283) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5303) SD: Get Number: 2[0m
+[0;32mI (5313) SD: Found folder: 1[0m
+[0;32mI (5313) SD: Found folder: 2[0m
+[0;32mI (5313) SD: Found folder: 7[0m
+[0;32mI (5323) SD: Found folder: 5[0m
+[0;32mI (5323) SD: Found folder: 3[0m
+[0;32mI (5323) SD: Found folder: 4[0m
+[0;32mI (5323) SD: Found folder: 6[0m
+[0;32mI (5323) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5333) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5343) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5343) I2S: Start playing folder=2[0m
+[0;32mI (5343) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5373) SD: Get Number: 2[0m
+[0;32mI (5373) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5393) SD: Get Number: 2[0m
+[0;32mI (5393) SD: Found folder: 1[0m
+[0;32mI (5403) SD: Found folder: 2[0m
+[0;32mI (5403) SD: Found folder: 7[0m
+[0;32mI (5403) SD: Found folder: 5[0m
+[0;32mI (5403) SD: Found folder: 3[0m
+[0;32mI (5403) SD: Found folder: 4[0m
+[0;32mI (5413) SD: Found folder: 6[0m
+[0;32mI (5413) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5413) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5423) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5423) I2S: Start playing folder=2[0m
+[0;32mI (5433) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5453) SD: Get Number: 2[0m
+[0;32mI (5453) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5473) SD: Get Number: 2[0m
+[0;32mI (5483) SD: Found folder: 1[0m
+[0;32mI (5483) SD: Found folder: 2[0m
+[0;32mI (5483) SD: Found folder: 7[0m
+[0;32mI (5493) SD: Found folder: 5[0m
+[0;32mI (5493) SD: Found folder: 3[0m
+[0;32mI (5493) SD: Found folder: 4[0m
+[0;32mI (5493) SD: Found folder: 6[0m
+[0;32mI (5493) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5503) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5513) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5513) I2S: Start playing folder=2[0m
+[0;32mI (5513) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5543) SD: Get Number: 2[0m
+[0;32mI (5543) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5563) SD: Get Number: 2[0m
+[0;32mI (5573) SD: Found folder: 1[0m
+[0;32mI (5573) SD: Found folder: 2[0m
+[0;32mI (5573) SD: Found folder: 7[0m
+[0;32mI (5573) SD: Found folder: 5[0m
+[0;32mI (5573) SD: Found folder: 3[0m
+[0;32mI (5583) SD: Found folder: 4[0m
+[0;32mI (5583) SD: Found folder: 6[0m
+[0;32mI (5583) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5583) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5603) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5603) I2S: Start playing folder=2[0m
+[0;32mI (5603) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5623) SD: Get Number: 2[0m
+[0;32mI (5623) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5643) SD: Get Number: 2[0m
+[0;32mI (5653) SD: Found folder: 1[0m
+[0;32mI (5653) SD: Found folder: 2[0m
+[0;32mI (5663) SD: Found folder: 7[0m
+[0;32mI (5663) SD: Found folder: 5[0m
+[0;32mI (5663) SD: Found folder: 3[0m
+[0;32mI (5663) SD: Found folder: 4[0m
+[0;32mI (5663) SD: Found folder: 6[0m
+[0;32mI (5673) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5673) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5683) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5683) I2S: Start playing folder=2[0m
+[0;32mI (5693) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5713) SD: Get Number: 2[0m
+[0;32mI (5713) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5733) SD: Get Number: 2[0m
+[0;32mI (5743) SD: Found folder: 1[0m
+[0;32mI (5743) SD: Found folder: 2[0m
+[0;32mI (5743) SD: Found folder: 7[0m
+[0;32mI (5743) SD: Found folder: 5[0m
+[0;32mI (5743) SD: Found folder: 3[0m
+[0;32mI (5753) SD: Found folder: 4[0m
+[0;32mI (5753) SD: Found folder: 6[0m
+[0;32mI (5753) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5763) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5773) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5773) I2S: Start playing folder=2[0m
+[0;32mI (5773) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5803) SD: Get Number: 2[0m
+[0;32mI (5803) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5823) SD: Get Number: 2[0m
+[0;32mI (5823) SD: Found folder: 1[0m
+[0;32mI (5823) SD: Found folder: 2[0m
+[0;32mI (5833) SD: Found folder: 7[0m
+[0;32mI (5833) SD: Found folder: 5[0m
+[0;32mI (5833) SD: Found folder: 3[0m
+[0;32mI (5833) SD: Found folder: 4[0m
+[0;32mI (5833) SD: Found folder: 6[0m
+[0;32mI (5843) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5843) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5853) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5853) I2S: Start playing folder=2[0m
+[0;32mI (5863) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5883) SD: Get Number: 2[0m
+[0;32mI (5883) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5903) SD: Get Number: 2[0m
+[0;32mI (5913) SD: Found folder: 1[0m
+[0;32mI (5913) SD: Found folder: 2[0m
+[0;32mI (5913) SD: Found folder: 7[0m
+[0;32mI (5913) SD: Found folder: 5[0m
+[0;32mI (5923) SD: Found folder: 3[0m
+[0;32mI (5923) SD: Found folder: 4[0m
+[0;32mI (5923) SD: Found folder: 6[0m
+[0;32mI (5923) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (5933) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5943) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (5943) I2S: Start playing folder=2[0m
+[0;32mI (5943) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5973) SD: Get Number: 2[0m
+[0;32mI (5973) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (5993) SD: Get Number: 2[0m
+[0;32mI (5993) SD: Found folder: 1[0m
+[0;32mI (6003) SD: Found folder: 2[0m
+[0;32mI (6003) SD: Found folder: 7[0m
+[0;32mI (6003) SD: Found folder: 5[0m
+[0;32mI (6003) SD: Found folder: 3[0m
+[0;32mI (6003) SD: Found folder: 4[0m
+[0;32mI (6013) SD: Found folder: 6[0m
+[0;32mI (6013) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6013) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6023) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6023) I2S: Start playing folder=2[0m
+[0;32mI (6033) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6053) SD: Get Number: 2[0m
+[0;32mI (6053) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6073) SD: Get Number: 2[0m
+[0;32mI (6083) SD: Found folder: 1[0m
+[0;32mI (6083) SD: Found folder: 2[0m
+[0;32mI (6083) SD: Found folder: 7[0m
+[0;32mI (6093) SD: Found folder: 5[0m
+[0;32mI (6093) SD: Found folder: 3[0m
+[0;32mI (6093) SD: Found folder: 4[0m
+[0;32mI (6093) SD: Found folder: 6[0m
+[0;32mI (6093) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6103) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6113) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6113) I2S: Start playing folder=2[0m
+[0;32mI (6113) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6143) SD: Get Number: 2[0m
+[0;32mI (6143) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6163) SD: Get Number: 2[0m
+[0;32mI (6173) SD: Found folder: 1[0m
+[0;32mI (6173) SD: Found folder: 2[0m
+[0;32mI (6173) SD: Found folder: 7[0m
+[0;32mI (6173) SD: Found folder: 5[0m
+[0;32mI (6173) SD: Found folder: 3[0m
+[0;32mI (6183) SD: Found folder: 4[0m
+[0;32mI (6183) SD: Found folder: 6[0m
+[0;32mI (6183) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6193) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6203) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6203) I2S: Start playing folder=2[0m
+[0;32mI (6203) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6223) SD: Get Number: 2[0m
+[0;32mI (6233) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6243) SD: Get Number: 2[0m
+[0;32mI (6253) SD: Found folder: 1[0m
+[0;32mI (6253) SD: Found folder: 2[0m
+[0;32mI (6263) SD: Found folder: 7[0m
+[0;32mI (6263) SD: Found folder: 5[0m
+[0;32mI (6263) SD: Found folder: 3[0m
+[0;32mI (6263) SD: Found folder: 4[0m
+[0;32mI (6263) SD: Found folder: 6[0m
+[0;32mI (6273) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6273) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6283) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6283) I2S: Start playing folder=2[0m
+[0;32mI (6293) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6313) SD: Get Number: 2[0m
+[0;32mI (6313) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6333) SD: Get Number: 2[0m
+[0;32mI (6343) SD: Found folder: 1[0m
+[0;32mI (6343) SD: Found folder: 2[0m
+[0;32mI (6343) SD: Found folder: 7[0m
+[0;32mI (6343) SD: Found folder: 5[0m
+[0;32mI (6353) SD: Found folder: 3[0m
+[0;32mI (6353) SD: Found folder: 4[0m
+[0;32mI (6353) SD: Found folder: 6[0m
+[0;32mI (6353) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6363) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6373) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6373) I2S: Start playing folder=2[0m
+[0;32mI (6373) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6403) SD: Get Number: 2[0m
+[0;32mI (6403) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6423) SD: Get Number: 2[0m
+[0;32mI (6423) SD: Found folder: 1[0m
+[0;32mI (6433) SD: Found folder: 2[0m
+[0;32mI (6433) SD: Found folder: 7[0m
+[0;32mI (6433) SD: Found folder: 5[0m
+[0;32mI (6433) SD: Found folder: 3[0m
+[0;32mI (6443) SD: Found folder: 4[0m
+[0;32mI (6443) SD: Found folder: 6[0m
+[0;32mI (6443) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6443) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6453) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6453) I2S: Start playing folder=2[0m
+[0;32mI (6463) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6483) SD: Get Number: 2[0m
+[0;32mI (6483) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6513) SD: Get Number: 2[0m
+[0;32mI (6513) SD: Found folder: 1[0m
+[0;32mI (6523) SD: Found folder: 2[0m
+[0;32mI (6523) SD: Found folder: 7[0m
+[0;32mI (6523) SD: Found folder: 5[0m
+[0;32mI (6523) SD: Found folder: 3[0m
+[0;32mI (6523) SD: Found folder: 4[0m
+[0;32mI (6533) SD: Found folder: 6[0m
+[0;32mI (6533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6533) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6543) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6543) I2S: Start playing folder=2[0m
+[0;32mI (6553) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6573) SD: Get Number: 2[0m
+[0;32mI (6573) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6593) SD: Get Number: 2[0m
+[0;32mI (6603) SD: Found folder: 1[0m
+[0;32mI (6603) SD: Found folder: 2[0m
+[0;32mI (6603) SD: Found folder: 7[0m
+[0;32mI (6613) SD: Found folder: 5[0m
+[0;32mI (6613) SD: Found folder: 3[0m
+[0;32mI (6613) SD: Found folder: 4[0m
+[0;32mI (6613) SD: Found folder: 6[0m
+[0;32mI (6623) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6623) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6633) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6633) I2S: Start playing folder=2[0m
+[0;32mI (6633) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6663) SD: Get Number: 2[0m
+[0;32mI (6663) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6683) SD: Get Number: 2[0m
+[0;32mI (6693) SD: Found folder: 1[0m
+[0;32mI (6693) SD: Found folder: 2[0m
+[0;32mI (6693) SD: Found folder: 7[0m
+[0;32mI (6693) SD: Found folder: 5[0m
+[0;32mI (6703) SD: Found folder: 3[0m
+[0;32mI (6703) SD: Found folder: 4[0m
+[0;32mI (6703) SD: Found folder: 6[0m
+[0;32mI (6703) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6713) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6723) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6723) I2S: Start playing folder=2[0m
+[0;32mI (6723) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6753) SD: Get Number: 2[0m
+[0;32mI (6753) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6773) SD: Get Number: 2[0m
+[0;32mI (6773) SD: Found folder: 1[0m
+[0;32mI (6783) SD: Found folder: 2[0m
+[0;32mI (6783) SD: Found folder: 7[0m
+[0;32mI (6783) SD: Found folder: 5[0m
+[0;32mI (6783) SD: Found folder: 3[0m
+[0;32mI (6783) SD: Found folder: 4[0m
+[0;32mI (6793) SD: Found folder: 6[0m
+[0;32mI (6793) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6793) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6803) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6803) I2S: Start playing folder=2[0m
+[0;32mI (6813) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6833) SD: Get Number: 2[0m
+[0;32mI (6833) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6853) SD: Get Number: 2[0m
+[0;32mI (6863) SD: Found folder: 1[0m
+[0;32mI (6863) SD: Found folder: 2[0m
+[0;32mI (6863) SD: Found folder: 7[0m
+[0;32mI (6873) SD: Found folder: 5[0m
+[0;32mI (6873) SD: Found folder: 3[0m
+[0;32mI (6873) SD: Found folder: 4[0m
+[0;32mI (6873) SD: Found folder: 6[0m
+[0;32mI (6883) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6883) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6893) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6893) I2S: Start playing folder=2[0m
+[0;32mI (6893) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6923) SD: Get Number: 2[0m
+[0;32mI (6923) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6943) SD: Get Number: 2[0m
+[0;32mI (6953) SD: Found folder: 1[0m
+[0;32mI (6953) SD: Found folder: 2[0m
+[0;32mI (6953) SD: Found folder: 7[0m
+[0;32mI (6953) SD: Found folder: 5[0m
+[0;32mI (6963) SD: Found folder: 3[0m
+[0;32mI (6963) SD: Found folder: 4[0m
+[0;32mI (6963) SD: Found folder: 6[0m
+[0;32mI (6963) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (6973) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (6983) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (6983) I2S: Start playing folder=2[0m
+[0;32mI (6983) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7013) SD: Get Number: 2[0m
+[0;32mI (7013) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7033) SD: Get Number: 2[0m
+[0;32mI (7033) SD: Found folder: 1[0m
+[0;32mI (7043) SD: Found folder: 2[0m
+[0;32mI (7043) SD: Found folder: 7[0m
+[0;32mI (7043) SD: Found folder: 5[0m
+[0;32mI (7043) SD: Found folder: 3[0m
+[0;32mI (7053) SD: Found folder: 4[0m
+[0;32mI (7053) SD: Found folder: 6[0m
+[0;32mI (7053) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7053) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7063) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7073) I2S: Start playing folder=2[0m
+[0;32mI (7073) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7093) SD: Get Number: 2[0m
+[0;32mI (7093) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7113) SD: Get Number: 2[0m
+[0;32mI (7123) SD: Found folder: 1[0m
+[0;32mI (7123) SD: Found folder: 2[0m
+[0;32mI (7133) SD: Found folder: 7[0m
+[0;32mI (7133) SD: Found folder: 5[0m
+[0;32mI (7133) SD: Found folder: 3[0m
+[0;32mI (7133) SD: Found folder: 4[0m
+[0;32mI (7133) SD: Found folder: 6[0m
+[0;32mI (7143) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7143) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7153) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7153) I2S: Start playing folder=2[0m
+[0;32mI (7163) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7183) SD: Get Number: 2[0m
+[0;32mI (7183) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7203) SD: Get Number: 2[0m
+[0;32mI (7213) SD: Found folder: 1[0m
+[0;32mI (7213) SD: Found folder: 2[0m
+[0;32mI (7213) SD: Found folder: 7[0m
+[0;32mI (7223) SD: Found folder: 5[0m
+[0;32mI (7223) SD: Found folder: 3[0m
+[0;32mI (7223) SD: Found folder: 4[0m
+[0;32mI (7223) SD: Found folder: 6[0m
+[0;32mI (7223) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7233) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7243) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7243) I2S: Start playing folder=2[0m
+[0;32mI (7243) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7273) SD: Get Number: 2[0m
+[0;32mI (7273) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7293) SD: Get Number: 2[0m
+[0;32mI (7303) SD: Found folder: 1[0m
+[0;32mI (7303) SD: Found folder: 2[0m
+[0;32mI (7303) SD: Found folder: 7[0m
+[0;32mI (7303) SD: Found folder: 5[0m
+[0;32mI (7303) SD: Found folder: 3[0m
+[0;32mI (7313) SD: Found folder: 4[0m
+[0;32mI (7313) SD: Found folder: 6[0m
+[0;32mI (7313) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7323) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7333) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7333) I2S: Start playing folder=2[0m
+[0;32mI (7333) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7363) SD: Get Number: 2[0m
+[0;32mI (7363) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7383) SD: Get Number: 2[0m
+[0;32mI (7383) SD: Found folder: 1[0m
+[0;32mI (7393) SD: Found folder: 2[0m
+[0;32mI (7393) SD: Found folder: 7[0m
+[0;32mI (7393) SD: Found folder: 5[0m
+[0;32mI (7393) SD: Found folder: 3[0m
+[0;32mI (7393) SD: Found folder: 4[0m
+[0;32mI (7403) SD: Found folder: 6[0m
+[0;32mI (7403) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7403) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7413) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7413) I2S: Start playing folder=2[0m
+[0;32mI (7423) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7443) SD: Get Number: 2[0m
+[0;32mI (7443) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7463) SD: Get Number: 2[0m
+[0;32mI (7473) SD: Found folder: 1[0m
+[0;32mI (7473) SD: Found folder: 2[0m
+[0;32mI (7473) SD: Found folder: 7[0m
+[0;32mI (7483) SD: Found folder: 5[0m
+[0;32mI (7483) SD: Found folder: 3[0m
+[0;32mI (7483) SD: Found folder: 4[0m
+[0;32mI (7483) SD: Found folder: 6[0m
+[0;32mI (7483) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7493) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7503) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7503) I2S: Start playing folder=2[0m
+[0;32mI (7503) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7533) SD: Get Number: 2[0m
+[0;32mI (7533) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7553) SD: Get Number: 2[0m
+[0;32mI (7563) SD: Found folder: 1[0m
+[0;32mI (7563) SD: Found folder: 2[0m
+[0;32mI (7563) SD: Found folder: 7[0m
+[0;32mI (7563) SD: Found folder: 5[0m
+[0;32mI (7573) SD: Found folder: 3[0m
+[0;32mI (7573) SD: Found folder: 4[0m
+[0;32mI (7573) SD: Found folder: 6[0m
+[0;32mI (7573) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7583) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7593) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7593) I2S: Start playing folder=2[0m
+[0;32mI (7593) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7623) SD: Get Number: 2[0m
+[0;32mI (7623) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7643) SD: Get Number: 2[0m
+[0;32mI (7643) SD: Found folder: 1[0m
+[0;32mI (7653) SD: Found folder: 2[0m
+[0;32mI (7653) SD: Found folder: 7[0m
+[0;32mI (7653) SD: Found folder: 5[0m
+[0;32mI (7653) SD: Found folder: 3[0m
+[0;32mI (7653) SD: Found folder: 4[0m
+[0;32mI (7663) SD: Found folder: 6[0m
+[0;32mI (7663) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7663) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7673) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7673) I2S: Start playing folder=2[0m
+[0;32mI (7683) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7703) SD: Get Number: 2[0m
+[0;32mI (7703) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7723) SD: Get Number: 2[0m
+[0;32mI (7733) SD: Found folder: 1[0m
+[0;32mI (7733) SD: Found folder: 2[0m
+[0;32mI (7743) SD: Found folder: 7[0m
+[0;32mI (7743) SD: Found folder: 5[0m
+[0;32mI (7743) SD: Found folder: 3[0m
+[0;32mI (7743) SD: Found folder: 4[0m
+[0;32mI (7743) SD: Found folder: 6[0m
+[0;32mI (7753) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7753) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7763) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7763) I2S: Start playing folder=2[0m
+[0;32mI (7773) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7793) SD: Get Number: 2[0m
+[0;32mI (7793) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7813) SD: Get Number: 2[0m
+[0;32mI (7823) SD: Found folder: 1[0m
+[0;32mI (7823) SD: Found folder: 2[0m
+[0;32mI (7823) SD: Found folder: 7[0m
+[0;32mI (7823) SD: Found folder: 5[0m
+[0;32mI (7833) SD: Found folder: 3[0m
+[0;32mI (7833) SD: Found folder: 4[0m
+[0;32mI (7833) SD: Found folder: 6[0m
+[0;32mI (7833) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7843) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7853) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7853) I2S: Start playing folder=2[0m
+[0;32mI (7853) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7883) SD: Get Number: 2[0m
+[0;32mI (7883) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7903) SD: Get Number: 2[0m
+[0;32mI (7913) SD: Found folder: 1[0m
+[0;32mI (7913) SD: Found folder: 2[0m
+[0;32mI (7913) SD: Found folder: 7[0m
+[0;32mI (7913) SD: Found folder: 5[0m
+[0;32mI (7923) SD: Found folder: 3[0m
+[0;32mI (7923) SD: Found folder: 4[0m
+[0;32mI (7923) SD: Found folder: 6[0m
+[0;32mI (7923) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (7933) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7943) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (7943) I2S: Start playing folder=2[0m
+[0;32mI (7943) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7973) SD: Get Number: 2[0m
+[0;32mI (7973) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (7993) SD: Get Number: 2[0m
+[0;32mI (7993) SD: Found folder: 1[0m
+[0;32mI (8003) SD: Found folder: 2[0m
+[0;32mI (8003) SD: Found folder: 7[0m
+[0;32mI (8003) SD: Found folder: 5[0m
+[0;32mI (8003) SD: Found folder: 3[0m
+[0;32mI (8003) SD: Found folder: 4[0m
+[0;32mI (8013) SD: Found folder: 6[0m
+[0;32mI (8013) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8013) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8023) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8023) I2S: Start playing folder=2[0m
+[0;32mI (8033) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8053) SD: Get Number: 2[0m
+[0;32mI (8053) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8073) SD: Get Number: 2[0m
+[0;32mI (8083) SD: Found folder: 1[0m
+[0;32mI (8083) SD: Found folder: 2[0m
+[0;32mI (8093) SD: Found folder: 7[0m
+[0;32mI (8093) SD: Found folder: 5[0m
+[0;32mI (8093) SD: Found folder: 3[0m
+[0;32mI (8093) SD: Found folder: 4[0m
+[0;32mI (8093) SD: Found folder: 6[0m
+[0;32mI (8103) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8103) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8113) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8113) I2S: Start playing folder=2[0m
+[0;32mI (8123) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8143) SD: Get Number: 2[0m
+[0;32mI (8143) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8163) SD: Get Number: 2[0m
+[0;32mI (8173) SD: Found folder: 1[0m
+[0;32mI (8173) SD: Found folder: 2[0m
+[0;32mI (8173) SD: Found folder: 7[0m
+[0;32mI (8173) SD: Found folder: 5[0m
+[0;32mI (8183) SD: Found folder: 3[0m
+[0;32mI (8183) SD: Found folder: 4[0m
+[0;32mI (8183) SD: Found folder: 6[0m
+[0;32mI (8183) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8193) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8203) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8203) I2S: Start playing folder=2[0m
+[0;32mI (8203) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8233) SD: Get Number: 2[0m
+[0;32mI (8233) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8253) SD: Get Number: 2[0m
+[0;32mI (8263) SD: Found folder: 1[0m
+[0;32mI (8263) SD: Found folder: 2[0m
+[0;32mI (8263) SD: Found folder: 7[0m
+[0;32mI (8263) SD: Found folder: 5[0m
+[0;32mI (8263) SD: Found folder: 3[0m
+[0;32mI (8273) SD: Found folder: 4[0m
+[0;32mI (8273) SD: Found folder: 6[0m
+[0;32mI (8273) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8273) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8283) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8293) I2S: Start playing folder=2[0m
+[0;32mI (8293) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8313) SD: Get Number: 2[0m
+[0;32mI (8313) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8333) SD: Get Number: 2[0m
+[0;32mI (8343) SD: Found folder: 1[0m
+[0;32mI (8343) SD: Found folder: 2[0m
+[0;32mI (8353) SD: Found folder: 7[0m
+[0;32mI (8353) SD: Found folder: 5[0m
+[0;32mI (8353) SD: Found folder: 3[0m
+[0;32mI (8353) SD: Found folder: 4[0m
+[0;32mI (8353) SD: Found folder: 6[0m
+[0;32mI (8363) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8363) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8373) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8373) I2S: Start playing folder=2[0m
+[0;32mI (8383) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8403) SD: Get Number: 2[0m
+[0;32mI (8403) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8423) SD: Get Number: 2[0m
+[0;32mI (8433) SD: Found folder: 1[0m
+[0;32mI (8433) SD: Found folder: 2[0m
+[0;32mI (8433) SD: Found folder: 7[0m
+[0;32mI (8443) SD: Found folder: 5[0m
+[0;32mI (8443) SD: Found folder: 3[0m
+[0;32mI (8443) SD: Found folder: 4[0m
+[0;32mI (8443) SD: Found folder: 6[0m
+[0;32mI (8443) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8453) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8463) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8463) I2S: Start playing folder=2[0m
+[0;32mI (8463) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8493) SD: Get Number: 2[0m
+[0;32mI (8493) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8513) SD: Get Number: 2[0m
+[0;32mI (8523) SD: Found folder: 1[0m
+[0;32mI (8523) SD: Found folder: 2[0m
+[0;32mI (8523) SD: Found folder: 7[0m
+[0;32mI (8523) SD: Found folder: 5[0m
+[0;32mI (8523) SD: Found folder: 3[0m
+[0;32mI (8533) SD: Found folder: 4[0m
+[0;32mI (8533) SD: Found folder: 6[0m
+[0;32mI (8533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8553) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8553) I2S: Start playing folder=2[0m
+[0;32mI (8553) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8573) SD: Get Number: 2[0m
+[0;32mI (8573) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8603) SD: Get Number: 2[0m
+[0;32mI (8613) SD: Found folder: 1[0m
+[0;32mI (8613) SD: Found folder: 2[0m
+[0;32mI (8613) SD: Found folder: 7[0m
+[0;32mI (8613) SD: Found folder: 5[0m
+[0;32mI (8623) SD: Found folder: 3[0m
+[0;32mI (8623) SD: Found folder: 4[0m
+[0;32mI (8623) SD: Found folder: 6[0m
+[0;32mI (8623) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8633) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8643) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8643) I2S: Start playing folder=2[0m
+[0;32mI (8643) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8673) SD: Get Number: 2[0m
+[0;32mI (8673) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8693) SD: Get Number: 2[0m
+[0;32mI (8693) SD: Found folder: 1[0m
+[0;32mI (8693) SD: Found folder: 2[0m
+[0;32mI (8703) SD: Found folder: 7[0m
+[0;32mI (8703) SD: Found folder: 5[0m
+[0;32mI (8703) SD: Found folder: 3[0m
+[0;32mI (8703) SD: Found folder: 4[0m
+[0;32mI (8713) SD: Found folder: 6[0m
+[0;32mI (8713) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8713) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8723) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8723) I2S: Start playing folder=2[0m
+[0;32mI (8733) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8753) SD: Get Number: 2[0m
+[0;32mI (8753) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8773) SD: Get Number: 2[0m
+[0;32mI (8783) SD: Found folder: 1[0m
+[0;32mI (8783) SD: Found folder: 2[0m
+[0;32mI (8783) SD: Found folder: 7[0m
+[0;32mI (8783) SD: Found folder: 5[0m
+[0;32mI (8793) SD: Found folder: 3[0m
+[0;32mI (8793) SD: Found folder: 4[0m
+[0;32mI (8793) SD: Found folder: 6[0m
+[0;32mI (8793) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8803) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8813) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8813) I2S: Start playing folder=2[0m
+[0;32mI (8813) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8843) SD: Get Number: 2[0m
+[0;32mI (8843) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8863) SD: Get Number: 2[0m
+[0;32mI (8863) SD: Found folder: 1[0m
+[0;32mI (8873) SD: Found folder: 2[0m
+[0;32mI (8873) SD: Found folder: 7[0m
+[0;32mI (8873) SD: Found folder: 5[0m
+[0;32mI (8873) SD: Found folder: 3[0m
+[0;32mI (8873) SD: Found folder: 4[0m
+[0;32mI (8883) SD: Found folder: 6[0m
+[0;32mI (8883) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8883) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8893) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8893) I2S: Start playing folder=2[0m
+[0;32mI (8903) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8923) SD: Get Number: 2[0m
+[0;32mI (8923) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8943) SD: Get Number: 2[0m
+[0;32mI (8953) SD: Found folder: 1[0m
+[0;32mI (8953) SD: Found folder: 2[0m
+[0;32mI (8953) SD: Found folder: 7[0m
+[0;32mI (8963) SD: Found folder: 5[0m
+[0;32mI (8963) SD: Found folder: 3[0m
+[0;32mI (8963) SD: Found folder: 4[0m
+[0;32mI (8963) SD: Found folder: 6[0m
+[0;32mI (8973) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (8973) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (8983) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (8983) I2S: Start playing folder=2[0m
+[0;32mI (8983) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9013) SD: Get Number: 2[0m
+[0;32mI (9013) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9033) SD: Get Number: 2[0m
+[0;32mI (9043) SD: Found folder: 1[0m
+[0;32mI (9043) SD: Found folder: 2[0m
+[0;32mI (9043) SD: Found folder: 7[0m
+[0;32mI (9043) SD: Found folder: 5[0m
+[0;32mI (9043) SD: Found folder: 3[0m
+[0;32mI (9053) SD: Found folder: 4[0m
+[0;32mI (9053) SD: Found folder: 6[0m
+[0;32mI (9053) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (9063) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9073) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (9073) I2S: Start playing folder=2[0m
+[0;32mI (9073) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9093) SD: Get Number: 2[0m
+[0;32mI (9103) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9113) SD: Get Number: 2[0m
+[0;32mI (9123) SD: Found folder: 1[0m
+[0;32mI (9123) SD: Found folder: 2[0m
+[0;32mI (9133) SD: Found folder: 7[0m
+[0;32mI (9133) SD: Found folder: 5[0m
+[0;32mI (9133) SD: Found folder: 3[0m
+[0;32mI (9133) SD: Found folder: 4[0m
+[0;32mI (9133) SD: Found folder: 6[0m
+[0;32mI (9143) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (9143) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9153) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (9153) I2S: Start playing folder=2[0m
+[0;32mI (9163) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9183) SD: Get Number: 2[0m
+[0;32mI (9183) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9203) SD: Get Number: 2[0m
+[0;32mI (9213) SD: Found folder: 1[0m
+[0;32mI (9213) SD: Found folder: 2[0m
+[0;32mI (9213) SD: Found folder: 7[0m
+[0;32mI (9223) SD: Found folder: 5[0m
+[0;32mI (9223) SD: Found folder: 3[0m
+[0;32mI (9223) SD: Found folder: 4[0m
+[0;32mI (9223) SD: Found folder: 6[0m
+[0;32mI (9223) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (9233) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9243) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (9243) I2S: Start playing folder=2[0m
+[0;32mI (9243) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9273) SD: Get Number: 2[0m
+[0;32mI (9273) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9293) SD: Get Number: 2[0m
+[0;32mI (9303) SD: Found folder: 1[0m
+[0;32mI (9303) SD: Found folder: 2[0m
+[0;32mI (9303) SD: Found folder: 7[0m
+[0;32mI (9303) SD: Found folder: 5[0m
+[0;32mI (9303) SD: Found folder: 3[0m
+[0;32mI (9313) SD: Found folder: 4[0m
+[0;32mI (9313) SD: Found folder: 6[0m
+[0;32mI (9313) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (9313) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9333) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (9333) I2S: Start playing folder=2[0m
+[0;32mI (9333) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9353) SD: Get Number: 2[0m
+[0;32mI (9353) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (9373) SD: Get Number: 2[0m
+[0;32mI (9383) SD: Found folder: 1[0m
+[0;32mI (9383) SD: Found folder: 2[0m
+[0;32mI (9393) SD: Found folder: 7[0m
+[0;32mI (9393) SD: Found folder: 5[0m
+[0;32mI (9393) SD: Found folder: 3[0m
+[0;32mI (9393) SD: Found folder: 4[0m
+[0;32mI (9393) SD: Found folder: 6[0m
+[0;32mI (9403) SD: Total folders in /FAT/i

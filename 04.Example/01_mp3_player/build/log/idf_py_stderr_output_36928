@@ -1,0 +1,173 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-1110 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x40089fe0: xTaskGenericNotify at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5869 (discriminator 1)
+0x400d6543: short_press_cb at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:36
+0x400d6602: button_handle at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:149
+0x400d4585: timer_process_alarm at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d45cd: timer_task at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x40089fe0: xTaskGenericNotify at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5869 (discriminator 1)
+0x400d6543: short_press_cb at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:36
+0x400d6602: button_handle at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:149
+0x400d4585: timer_process_alarm at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d45cd: timer_task at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x40089fe0: xTaskGenericNotify at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5869 (discriminator 1)
+0x400d6543: short_press_cb at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:36
+0x400d6602: button_handle at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/button/button.c:149
+0x400d4585: timer_process_alarm at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d45cd: timer_task at /Users/wangjiaqi/esp/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400818ee: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x4008745d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008e131: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x4008819e: spinlock_acquire at /Users/wangjiaqi/esp/esp-idf/components/esp_hw_support/include/spinlock.h:142 (discriminator 1)
+ (inlined by) xPortEnterCriticalTimeout at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:479 (discriminator 1)
+0x40087867: vPortEnterCritical at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) xQueueGenericSend at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:950
+0x400d9c19: ff_mutex_give at /Users/wangjiaqi/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c:204
+0x400d7ed5: unlock_volume at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:934
+0x400d8a59: f_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/src/ff.c:4005
+0x400da877: vfs_fat_read at /Users/wangjiaqi/esp/esp-idf/components/fatfs/vfs/vfs_fat.c:442
+0x400d4de3: esp_vfs_read at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:508 (discriminator 3)
+0x4000bdbb: _read_r in ROM
+0x40001125: __sread in ROM
+0x400e89da: __srefill_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/refill.c:115
+0x400e8462: _fread_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:228
+0x400e84f1: fread at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/0/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fread.c:266 (discriminator 1)
+0x400d681f: i2s_write_task at /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/max98357/max98357.c:71
+0x40087f19: vPortTaskWrapper at /Users/wangjiaqi/esp

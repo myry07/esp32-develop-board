@@ -1,0 +1,95 @@
+[1/87] Linking C static library esp-idf/esp_ringbuf/libesp_ringbuf.a
+[2/87] Linking C static library esp-idf/xtensa/libxtensa.a
+[3/87] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj
+[4/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_common.c.obj
+[5/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io.c.obj
+[6/87] Building C object esp-idf/button/CMakeFiles/__idf_button.dir/button.c.obj
+[7/87] Linking C static library esp-idf/wear_levelling/libwear_levelling.a
+[8/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_i2c_v2.c.obj
+[9/87] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj
+[10/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_i2c_v1.c.obj
+[11/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_spi.c.obj
+[12/87] Linking C static library esp-idf/led/libled.a
+[13/87] Linking C static library esp-idf/protobuf-c/libprotobuf-c.a
+[14/87] Linking C static library esp-idf/sdmmc/libsdmmc.a
+[15/87] Linking C static library esp-idf/unity/libunity.a
+[16/87] Linking C static library esp-idf/console/libconsole.a
+[17/87] Linking C static library esp-idf/fatfs/libfatfs.a
+[18/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ops.c.obj
+[19/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_ssd1306.c.obj
+[20/87] Building C object esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj
+[21/87] Linking C static library esp-idf/sd_spi/libsd_spi.a
+[22/87] Linking C static library esp-idf/protocomm/libprotocomm.a
+[23/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_nt35510.c.obj
+[24/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_st7789.c.obj
+[25/87] Linking C static library esp-idf/max98357/libmax98357.a
+[26/87] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_handler.c.obj
+[27/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_common.c.obj
+[28/87] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl_transport_httpd.c.obj
+[29/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_sha.c.obj
+[30/87] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src/esp_local_ctrl.c.obj
+[31/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_elf.c.obj
+[32/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_flash.c.obj
+[33/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_crc.c.obj
+[34/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj
+[35/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_binary.c.obj
+[36/87] Linking C static library esp-idf/json/libjson.a
+[37/87] Building C object esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c/esp_local_ctrl.pb-c.c.obj
+[38/87] Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj
+[39/87] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj
+[40/87] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_access.c.obj
+[41/87] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/platform_esp32_idf.c.obj
+[42/87] Building C object esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_apis.c.obj
+[43/87] Building C object esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/xtensa/core_dump_port.c.obj
+[44/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs_api.c.obj
+[45/87] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_outbox.c.obj
+[46/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_cache.c.obj
+[47/87] Building C object esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src/esp_lcd_panel_io_i2s.c.obj
+[48/87] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib/mqtt_msg.c.obj
+[49/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_gc.c.obj
+[50/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_ctrl.c.obj
+[51/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_config.c.obj
+[52/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/wifi_scan.c.obj
+[53/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/handlers.c.obj
+[54/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_check.c.obj
+[55/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_console.c.obj
+[56/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/esp_spiffs.c.obj
+[57/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_config.pb-c.c.obj
+[58/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_scan.pb-c.c.obj
+[59/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_constants.pb-c.c.obj
+[60/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c/wifi_ctrl.pb-c.c.obj
+[61/87] Linking C static library esp-idf/button/libbutton.a
+[62/87] Linking C static library esp-idf/app_trace/libapp_trace.a
+[63/87] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[64/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_hydrogen.c.obj
+[65/87] Linking C static library esp-idf/esp_hid/libesp_hid.a
+[66/87] Linking C static library esp-idf/cmock/libcmock.a
+[67/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/scheme_softap.c.obj
+[68/87] Linking C static library esp-idf/esp_lcd/libesp_lcd.a
+[69/87] Linking C static library esp-idf/nvs_sec_provider/libnvs_sec_provider.a
+[70/87] Linking C static library esp-idf/esp_local_ctrl/libesp_local_ctrl.a
+[71/87] Linking C static library esp-idf/main/libmain.a
+[72/87] Linking C static library esp-idf/perfmon/libperfmon.a
+[73/87] Linking C static library esp-idf/espcoredump/libespcoredump.a
+[74/87] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/bootloader/bootloader.bin
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[75/87] No install step for 'bootloader'
+[76/87] Completed 'bootloader'
+[77/87] Building C object esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src/manager.c.obj
+[78/87] Building C object esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src/spiffs_nucleus.c.obj
+[79/87] Building C object esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/mqtt_client.c.obj
+[80/87] Linking C static library esp-idf/spiffs/libspiffs.a
+[81/87] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[82/87] Linking C static library esp-idf/mqtt/libmqtt.a
+[83/87] Generating ld/sections.ld
+[84/87] Building C object CMakeFiles/002_PCM_Control.elf.dir/project_elf_src_esp32.c.obj
+[85/87] Linking CXX executable 002_PCM_Control.elf
+[86/87] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/002_PCM_Control.bin
+[87/87] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/002_PCM_Control.bin
+002_PCM_Control.bin binary size 0x4d480 bytes. Smallest app partition is 0x100000 bytes. 0xb2b80 bytes (70%) free.
