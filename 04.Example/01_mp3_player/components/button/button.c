@@ -53,7 +53,7 @@ button_config_t cfg = {
 static button_dev_t *s_button_head = NULL;
 
 //消抖过滤时间
-#define FILITER_TIMER   20
+#define FILITER_TIMER   100
 
 //定时器释放运行标志
 static bool g_is_timer_running = false;
