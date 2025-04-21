@@ -7,6 +7,7 @@
 #include "led.h"
 
 #define LED_GPIO GPIO_NUM_2
+
 #define LEDC_CHANNEL LEDC_CHANNEL_0
 #define LEDC_TIMER LEDC_TIMER_0
 #define LEDC_MODE LEDC_LOW_SPEED_MODE

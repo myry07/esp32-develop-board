@@ -1,0 +1,760 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=10308h ( 66312) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020330 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022c34 vaddr=40080000 size=0d3e4h ( 54244) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2b0f8h (176376) map[0m
+[0;32mI (215) esp_image: segment 4: paddr=0005b120 vaddr=4008d3e4 size=0233ch (  9020) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  7ee44e754...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (278) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3398 len 0002CC68 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F720 len 000108E0 (66 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Found folder: 1[0m
+[0;32mI (523) SD: Found folder: 2[0m
+[0;32mI (523) SD: Found folder: 7[0m
+[0;32mI (523) SD: Found folder: 5[0m
+[0;32mI (523) SD: Found folder: 3[0m
+[0;32mI (533) SD: Found folder: 4[0m
+[0;32mI (533) SD: Found folder: 6[0m
+[0;32mI (533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (553) SD: Opened file: /FAT/idf_mp3/1/test.pcm[0m
+[0;32mI (553) I2S: Open the File[0m
+[0;32mI (573) button: short press detect[0m
+[0;32mI (623) button: short press detect[0m
+[0;32mI (793) button: short press detect[0m
+[0;32mI (1443) button: short press detect[0m
+[0;32mI (1843) button: short press detect[0m
+[0;32mI (1873) button: short press detect[0m
+[0;32mI (2033) button: short press detect[0m
+[0;32mI (2303) button: short press detect[0m
+[0;32mI (2623) button: short press detect[0m
+[0;32mI (3433) button: short press detect[0m
+[0;32mI (4393) button: short press detect[0m
+[0;32mI (5483) button: short press detect[0m
+[0;32mI (5923) button: short press detect[0m
+[0;32mI (5963) button: short press detect[0m
+[0;32mI (5983) button: short press detect[0m
+[0;32mI (6413) button: short press detect[0m
+[0;32mI (7543) button: short press detect[0m
+[0;32mI (7973) button: short press detect[0m
+[0;32mI (8503) button: short press detect[0m
+[0;32mI (9593) button: short press detect[0m
+[0;32mI (10523) button: short press detect[0m
+[0;32mI (11103) button: short press detect[0m
+[0;32mI (12113) button: short press detect[0m
+[0;32mI (12153) button: short press detect[0m
+[0;32mI (12583) button: short press detect[0m
+[0;32mI (13693) button: short press detect[0m
+[0;32mI (14173) button: short press detect[0m
+[0;32mI (14203) button: short press detect[0m
+[0;32mI (14633) button: short press detect[0m
+[0;32mI (15213) button: short press detect[0m
+[0;32mI (16263) button: short press detect[0m
+[0;32mI (16693) button: short press detect[0m
+[0;32mI (17013) button: short press detect[0m
+[0;32mI (17813) button: short press detect[0m
+[0;32mI (18743) button: short press detect[0m
+[0;32mI (19113) button: short press detect[0m
+[0;32mI (19583) button: short press detect[0m
+[0;32mI (19873) button: short press detect[0m
+[0;32mI (20223) button: short press detect[0m
+[0;32mI (20333) button: short press detect[0m
+[0;32mI (20863) button: short press detect[0m
+[0;32mI (21963) button: short press detect[0m
+[0;32mI (22393) button: short press detect[0m
+[0;32mI (22423) button: short press detect[0m
+[0;32mI (23553) button: short press detect[0m
+[0;32mI (24443) button: short press detect[0m
+[0;32mI (25233) button: short press detect[0m
+[0;32mI (26963) button: short press detect[0m
+[0;32mI (27333) button: short press detect[0m
+[0;32mI (27403) button: short press detect[0m
+[0;32mI (27623) button: short press detect[0m
+[0;32mI (28553) button: short press detect[0m
+[0;32mI (29343) button: short press detect[0m
+[0;32mI (30183) button: short press detect[0m
+[0;32mI (30613) button: short press detect[0m
+[0;32mI (30873) button: short press detect[0m
+[0;32mI (30913) button: short press detect[0m
+[0;32mI (31393) button: short press detect[0m
+[0;32mI (31733) button: short press detect[0m
+[0;32mI (32103) button: short press detect[0m
+[0;32mI (32203) button: short press detect[0m
+[0;32mI (32233) button: short press detect[0m
+[0;32mI (32663) button: short press detect[0m
+[0;32mI (33133) button: short press detect[0m
+[0;32mI (33293) button: short press detect[0m
+[0;32mI (33333) button: short press detect[0m
+[0;32mI (33503) button: short press detect[0m
+[0;32mI (33823) button: short press detect[0m
+[0;32mI (33933) button: short press detect[0m
+[0;32mI (34253) button: short press detect[0m
+[0;32mI (35843) button: short press detect[0m
+[0;32mI (35883) button: short press detect[0m
+[0;32mI (36343) button: short press detect[0m
+[0;32mI (36593) button: short press detect[0m
+[0;32mI (37443) button: short press detect[0m
+[0;32mI (38403) button: short press detect[0m
+[0;32mI (38833) button: short press detect[0m
+[0;32mI (39793) button: short press detect[0m
+[0;32mI (39953) button: short press detect[0m
+[0;32mI (40923) button: short press detect[0m
+[0;32mI (41383) button: short press detect[0m
+[0;32mI (41723) button: short press detect[0m
+[0;32mI (42143) button: short press detect[0m
+[0;32mI (42513) button: short press detect[0m
+[0;32mI (42973) button: short press detect[0m
+[0;32mI (43723) button: short press detect[0m
+[0;32mI (43763) button: short press detect[0m
+[0;32mI (44063) button: short press detect[0m
+[0;32mI (44563) button: short press detect[0m
+[0;32mI (45033) button: short press detect[0m
+[0;32mI (45783) button: short press detect[0m
+[0;32mI (46123) button: short press detect[0m
+[0;32mI (46153) button: short press detect[0m
+[0;32mI (46453) button: short press detect[0m
+[0;32mI (47053) button: short press detect[0m
+[0;32mI (48303) button: short press detect[0m
+[0;32mI (48673) button: short press detect[0m
+[0;32mI (49143) button: short press detect[0m
+[0;32mI (50233) button: short press detect[0m
+[0;32mI (50263) button: short press detect[0m
+[0;32mI (51753) button: short press detect[0m
+[0;32mI (52313) button: short press detect[0m
+[0;32mI (52353) button: short press detect[0m
+[0;32mI (52753) button: short press detect[0m
+[0;32mI (52783) button: short press detect[0m
+[0;32mI (53763) button: short press detect[0m
+[0;32mI (53813) button: short press detect[0m
+[0;32mI (54343) button: short press detect[0m
+[0;32mI (54373) button: short press detect[0m
+[0;32mI (54803) button: short press detect[0m
+[0;32mI (55043) button: short press detect[0m
+[0;32mI (55273) button: short press detect[0m
+[0;32mI (56053) button: short press detect[0m
+[0;32mI (56433) button: short press detect[0m
+[0;32mI (57363) button: short press detect[0m
+[0;32mI (58453) button: short press detect[0m
+[0;32mI (58883) button: short press detect[0m
+[0;32mI (59383) button: short press detect[0m
+[0;32mI (59413) button: short press detect[0m
+[0;32mI (59483) button: short press detect[0m
+[0;32mI (59523) button: short press detect[0m
+[0;32mI (59753) button: short press detect[0m
+[0;32mI (60503) button: short press detect[0m
+[0;32mI (60943) button: short press detect[0m
+[0;32mI (60983) button: short press detect[0m
+[0;32mI (61003) button: short press detect[0m
+[0;32mI (62563) button: short press detect[0m
+[0;32mI (63493) button: short press detect[0m
+[0;32mI (63593) button: short press detect[0m
+[0;32mI (64323) button: short press detect[0m
+[0;32mI (64613) button: short press detect[0m
+[0;32mI (65083) button: short press detect[0m
+[0;32mI (65373) button: short press detect[0m
+[0;32mI (67133) button: short press detect[0m
+[0;32mI (67173) button: short press detect[0m
+[0;32mI (68723) button: short press detect[0m
+[0;32mI (70583) button: short press detect[0m
+[0;32mI (72083) button: short press detect[0m
+[0;32mI (72593) button: short press detect[0m
+[0;32mI (72643) button: short press detect[0m
+[0;32mI (72873) button: short press detect[0m
+[0;32mI (73763) button: short press detect[0m
+[0;32mI (74923) button: short press detect[0m
+[0;32mI (75883) button: short press detect[0m
+[0;32mI (76483) button: short press detect[0m
+[0;32mI (77413) button: short press detect[0m
+[0;32mI (78713) button: short press detect[0m
+[0;32mI (79133) button: short press detect[0m
+[0;32mI (79463) button: short press detect[0m
+[0;32mI (79773) button: short press detect[0m
+[0;32mI (80303) button: short press detect[0m
+[0;32mI (80763) button: short press detect[0m
+[0;32mI (81183) button: short press detect[0m
+[0;32mI (81523) button: short press detect[0m
+[0;32mI (82353) button: short press detect[0m
+[0;32mI (82423) button: short press detect[0m
+[0;32mI (83013) button: short press detect[0m
+[0;32mI (83143) button: short press detect[0m
+[0;32mI (83573) button: short press detect[0m
+[0;32mI (84043) button: short press detect[0m
+[0;32mI (84413) button: short press detect[0m
+[0;32mI (84473) button: short press detect[0m
+[0;32mI (86133) button: short press detect[0m
+[0;32mI (88313) button: short press detect[0m
+[0;32mI (88813) button: short press detect[0m
+[0;32mI (88953) button: short press detect[0m
+[0;32mI (89273) button: short press detect[0m
+[0;32mI (89313) button: short press detect[0m
+[0;32mI (90373) button: short press detect[0m
+[0;32mI (91013) button: short press detect[0m
+[0;32mI (92633) button: short press detect[0m
+[0;32mI (93013) button: short press detect[0m
+[0;32mI (93043) button: short press detect[0m
+[0;32mI (93303) button: short press detect[0m
+[0;32mI (93883) button: short press detect[0m
+[0;32mI (95153) button: short press detect[0m
+[0;32mI (97533) button: short press detect[0m
+[0;32mI (97963) button: short press detect[0m
+[0;32mI (99263) button: short press detect[0m
+[0;32mI (99583) button: short press detect[0m
+[0;32mI (100013) button: short press detect[0m
+[0;32mI (101313) button: short press detect[0m
+[0;32mI (101473) button: short press detect[0m
+[0;32mI (102663) button: short press detect[0m
+[0;32mI (102903) button: short press detect[0m
+[0;32mI (103193) button: short press detect[0m
+[0;32mI (103373) button: short press detect[0m
+[0;32mI (103663) button: short press detect[0m
+[0;32mI (103693) button: short press detect[0m
+[0;32mI (104163) button: short press detect[0m
+[0;32mI (105313) button: short press detect[0m
+[0;32mI (105713) button: short press detect[0m
+[0;32mI (105753) button: short press detect[0m
+[0;32mI (106183) button: short press detect[0m
+[0;32mI (106213) button: short press detect[0m
+[0;32mI (107373) button: short press detect[0m
+[0;32mI (107483) button: short press detect[0m
+[0;32mI (108013) button: short press detect[0m
+[0;32mI (108273) button: short press detect[0m
+[0;32mI (109203) button: short press detect[0m
+[0;32mI (109823) button: short press detect[0m
+[0;32mI (110293) button: short press detect[0m
+[0;32mI (111123) button: short press detect[0m
+[0;32mI (111413) button: short press detect[0m
+[0;32mI (111883) button: short press detect[0m
+[0;32mI (111913) button: short press detect[0m
+[0;32mI (112383) button: short press detect[0m
+[0;32mI (113313) button: short press detect[0m
+[0;32mI (113393) I2S: Playback finished[0m
+[0;32mI (113393) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (113423) SD: Get Number: 2[0m
+[0;32mI (113423) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (113423) SD: SD card unmounted[0m
+[0;32mI (113423) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (113423) button: short press detect[0m
+[0;32mI (113433) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (113453) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (113463) SD: SPI bus freed[0m
+[0;32mI (113463) SD: All files played. System will restart.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=10308h ( 66312) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020330 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022c34 vaddr=40080000 size=0d3e4h ( 54244) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2b0f8h (176376) map[0m
+[0;32mI (215) esp_image: segment 4: paddr=0005b120 vaddr=4008d3e4 size=0233ch (  9020) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  7ee44e754...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3398 len 0002CC68 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F720 len 000108E0 (66 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Found folder: 1[0m
+[0;32mI (523) SD: Found folder: 2[0m
+[0;32mI (523) SD: Found folder: 7[0m
+[0;32mI (523) SD: Found folder: 5[0m
+[0;32mI (523) SD: Found folder: 3[0m
+[0;32mI (533) SD: Found folder: 4[0m
+[0;32mI (533) SD: Found folder: 6[0m
+[0;32mI (533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (553) SD: Opened file: /FAT/idf_mp3/2/test.pcm[0m
+[0;32mI (553) I2S: Open the File[0m
+[0;32mI (563) button: short press detect[0m
+[0;32mI (783) button: short press detect[0m
+[0;32mI (823) button: short press detect[0m
+[0;32mI (1213) button: short press detect[0m
+[0;32mI (1813) button: short press detect[0m
+[0;32mI (1873) button: short press detect[0m
+[0;32mI (2373) button: short press detect[0m
+[0;32mI (2713) button: short press detect[0m
+[0;32mI (3173) button: short press detect[0m
+[0;32mI (3273) button: short press detect[0m
+[0;32mI (3863) button: short press detect[0m
+[0;32mI (4103) button: short press detect[0m
+[0;32mI (4393) button: short press detect[0m
+[0;32mI (4463) button: short press detect[0m
+[0;32mI (4733) button: short press detect[0m
+[0;32mI (5983) button: short press detect[0m
+[0;32mI (6453) button: short press detect[0m
+[0;32mI (6733) button: short press detect[0m
+[0;32mI (6953) button: short press detect[0m
+[0;32mI (8343) button: short press detect[0m
+[0;32mI (9213) button: short press detect[0m
+[0;32mI (9343) button: short press detect[0m
+[0;32mI (9803) button: short press detect[0m
+[0;32mI (10093) button: short press detect[0m
+[0;32mI (10353) button: short press detect[0m
+[0;32mI (11223) button: short press detect[0m
+[0;32mI (11393) button: short press detect[0m
+[0;32mI (11633) button: short press detect[0m
+[0;32mI (11863) button: short press detect[0m
+[0;32mI (12453) button: short press detect[0m
+[0;32mI (12903) button: short press detect[0m
+[0;32mI (13153) button: short press detect[0m
+[0;32mI (13453) button: short press detect[0m
+[0;32mI (13643) button: short press detect[0m
+[0;32mI (13693) button: short press detect[0m
+[0;32mI (14463) button: short press detect[0m
+[0;32mI (15103) button: short press detect[0m
+[0;32mI (15743) button: short press detect[0m
+[0;32mI (16723) button: short press detect[0m
+[0;32mI (17063) button: short press detect[0m
+[0;32mI (17523) button: short press detect[0m
+[0;32mI (17563) button: short press detect[0m
+[0;32mI (18493) button: short press detect[0m
+[0;32mI (19063) button: short press detect[0m
+[0;32mI (19283) button: short press detect[0m
+[0;32mI (20083) button: short press detect[0m
+[0;32mI (20833) button: short press detect[0m
+[0;32mI (21123) button: short press detect[0m
+[0;32mI (21173) button: short press detect[0m
+[0;32mI (21593) button: short press detect[0m
+[0;32mI (21963) button: short press detect[0m
+[0;32mI (22893) button: short press detect[0m
+[0;32mI (22923) button: short press detect[0m
+[0;32mI (23063) button: short press detect[0m
+[0;32mI (23223) button: short press detect[0m
+[0;32mI (23263) button: short press detect[0m
+[0;32mI (23553) button: short press detect[0m
+[0;32mI (24653) button: short press detect[0m
+[0;32mI (24703) button: short press detect[0m
+[0;32mI (25233) button: short press detect[0m
+[0;32mI (25603) button: short press detect[0m
+[0;32mI (25783) button: short press detect[0m
+[0;32mI (26803) button: short press detect[0m
+[0;32mI (27283) button: short press detect[0m
+[0;32mI (27333) button: short press detect[0m
+[0;32mI (27663) button: short press detect[0m
+[0;32mI (27833) button: short press detect[0m
+[0;32mI (29343) button: short press detect[0m
+[0;32mI (29423) button: short press detect[0m
+[0;32mI (30183) button: short press detect[0m
+[0;32mI (30353) button: short press detect[0m
+[0;32mI (30643) button: short press detect[0m
+[0;32mI (31243) button: short press detect[0m
+[0;32mI (31443) button: short press detect[0m
+[0;32mI (33293) button: short press detect[0m
+[0;32mI (34003) button: short press detect[0m
+[0;32mI (34463) button: short press detect[0m
+[0;32mI (35353) button: short press detect[0m
+[0;32mI (35553) button: short press detect[0m
+[0;32mI (35883) button: short press detect[0m
+[0;32mI (36583) button: short press detect[0m
+[0;32mI (37613) button: short press detect[0m
+[0;32mI (37933) button: short press detect[0m
+[0;32mI (39703) button: short press detect[0m
+[0;32mI (40163) button: short press detect[0m
+[0;32mI (40453) button: short press detect[0m
+[0;32mI (41293) button: short press detect[0m
+[0;32mI (42043) button: short press detect[0m
+[0;32mI (42473) button: short press detect[0m
+[0;32mI (42683) button: short press detect[0m
+[0;32mI (43473) button: short press detect[0m
+[0;32mI (43773) button: short press detect[0m
+[0;32mI (44563) button: short press detect[0m
+[0;32mI (45523) button: short press detect[0m
+[0;32mI (46623) button: short press detect[0m
+[0;32mI (47263) button: short press detect[0m
+[0;32mI (47833) button: short press detect[0m
+[0;32mI (47883) button: short press detect[0m
+[0;32mI (48213) button: short press detect[0m
+[0;32mI (48383) button: short press detect[0m
+[0;32mI (49143) button: short press detect[0m
+[0;32mI (49313) button: short press detect[0m
+[0;32mI (50443) button: short press detect[0m
+[0;32mI (50733) button: short press detect[0m
+[0;32mI (50903) button: short press detect[0m
+[0;32mI (51193) button: short press detect[0m
+[0;32mI (51533) button: short press detect[0m
+[0;32mI (51563) button: short press detect[0m
+[0;32mI (51663) button: short press detect[0m
+[0;32mI (51993) button: short press detect[0m
+[0;32mI (52033) button: short press detect[0m
+[0;32mI (52493) button: short press detect[0m
+[0;32mI (52783) button: short press detect[0m
+[0;32mI (52963) button: short press detect[0m
+[0;32mI (52993) button: short press detect[0m
+[0;32mI (53713) button: short press detect[0m
+[0;32mI (53743) button: short press detect[0m
+[0;32mI (54183) button: short press detect[0m
+[0;32mI (55673) button: short press detect[0m
+[0;32mI (56103) button: short press detect[0m
+[0;32mI (56143) button: short press detect[0m
+[0;32mI (56833) button: short press detect[0m
+[0;32mI (57073) button: short press detect[0m
+[0;32mI (57423) button: short press detect[0m
+[0;32mI (57733) button: short press detect[0m
+[0;32mI (57823) button: short press detect[0m
+[0;32mI (57853) button: short press detect[0m
+[0;32mI (58293) button: short press detect[0m
+[0;32mI (59413) button: short press detect[0m
+[0;32mI (60713) button: short press detect[0m
+[0;32mI (61533) button: short press detect[0m
+[0;32mI (61803) button: short press detect[0m
+[0;32mI (61843) button: short press detect[0m
+[0;32mI (62173) button: short press detect[0m
+[0;32mI (62273) button: short press detect[0m
+[0;32mI (63233) button: short press detect[0m
+[0;32mI (63863) button: short press detect[0m
+[0;32mI (64273) button: short press detect[0m
+[0;32mI (65373) button: short press detect[0m
+[0;32mI (65753) button: short press detect[0m
+[0;32mI (65953) button: short press detect[0m
+[0;32mI (66333) button: short press detect[0m
+[0;32mI (66603) button: short press detect[0m
+[0;32mI (67473) button: short press detect[0m
+[0;32mI (67973) button: short press detect[0m
+[0;32mI (68103) button: short press detect[0m
+[0;32mI (68133) button: short press detect[0m
+[0;32mI (68143) I2S: Playback finished[0m
+[0;32mI (68143) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (68163) SD: Get Number: 3[0m
+[0;32mI (68163) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (68163) SD: SD card unmounted[0m
+[0;32mI (68163) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (68173) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (68183) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (68193) SD: SPI bus freed[0m
+[0;32mI (68203) SD: All files played. System will restart.[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=10308h ( 66312) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020330 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022c34 vaddr=40080000 size=0d3e4h ( 54244) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2b0f8h (176376) map[0m
+[0;32mI (215) esp_image: segment 4: paddr=0005b120 vaddr=4008d3e4 size=0233ch (  9020) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  7ee44e754...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3398 len 0002CC68 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F720 len 000108E0 (66 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Found folder: 1[0m
+[0;32mI (523) SD: Found folder: 2[0m
+[0;32mI (523) SD: Found folder: 7[0m
+[0;32mI (523) SD: Found folder: 5[0m
+[0;32mI (523) SD: Found folder: 3[0m
+[0;32mI (533) SD: Found folder: 4[0m
+[0;32mI (533) SD: Found folder: 6[0m
+[0;32mI (533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (553) SD: Opened file: /FAT/idf_mp3/3/test.pcm[0m
+[0;32mI (553) I2S: Open the File[0m
+[0;32mI (2073) button: short press detect[0m
+[0;32mI (2133) button: short press detect[0m
+[0;32mI (2303) button: short press detect[0m
+[0;32mI (2773) button: short press detect[0m
+[0;32mI (3393) button: short press detect[0m
+[0;32mI (3723) button: short press detect[0m
+[0;32mI (3893) button: short press detect[0m
+[0;32mI (7503) button: short press detect[0m
+[0;32mI (7543) button: short press detect[0m
+[0;32mI (8473) button: short press detect[0m
+[0;32mI (9223) button: short press detect[0m
+[0;32mI (9313) button: short press detect[0m
+[0;32mI (9563) button: short press detect[0m
+[0;32mI (11653) button: short press detect[0m
+[0;32mI (13143) button: short press detect[0m
+[0;32mI (13373) button: short press detect[0m
+[0;32mI (13673) button: short press detect[0m
+[0;32mI (15363) I2S: Playback finished[0m
+[0;32mI (15363) SD: Opening file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (15383) SD: Get Number: 4[0m
+[0;32mI (15383) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (15383) SD: SD card unmounted[0m
+[0;32mI (15393) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15393) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15403) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (15413) SD: SPI bus freed[0m
+[0;32mI (15423) SD: All files played. System will restart.[0m
+[0;32mI (15823) button: short press detect[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=10308h ( 66312) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020330 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022c34 vaddr=40080000 size=0d3e4h ( 54244) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2b0f8h (176376) map[0m
+[0;32mI (215) esp_image: segment 4: paddr=0005b120 vaddr=4008d3e4 size=0233ch (  9020) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  7ee44e754...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3398 len 0002CC68 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F720 len 000108E0 (66 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Found folder: 1[0m
+[0;32mI (523) SD: Found folder: 2[0m
+[0;32mI (523) SD: Found folder: 7[0m
+[0;32mI (523) SD: Found folder: 5[0m
+[0;32mI (533) SD: Found folder: 3[0m
+[0;32mI (533) SD: Found folder: 4[0m
+[0;32mI (533) SD: Found folder: 6[0m
+[0;32mI (533) SD: Total folders in /FAT/idf_mp3/: 7[0m
+[0;32mI (543) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (553) SD: Opened file: /FAT/idf_mp3/4/test.pcm[0m
+[0;32mI (553) I2S: Open the File[0m
+[0;32mI (1193) button: short press detect[0m
+[0;32mI (1393) button: short press detect[0m
+[0;32mI (1433) button: short press detect[0m
+[0;32mI (1573) button: short press detect[0m
+[0;32mI (1733) button: short press detect[0m
+[0;32mI (1773) button: short press detect[0m
+[0;32mI (2203) button: short press detect[0m
+[0;32mI (2663) button: short press detect[0m
+[0;32mI (2703) button: short press detect[0m
+[0;32mI (3243) button: short press detect[0m
+[0;32mI (3633) button: short press detect[0m
+[0;32mI (3823) button: short press detect[0m
+[0;32mI (4253) button: short press detect[0m
+[0;32mI (5223) button: short press detect[0m
+[0;32mI (5973) button: short press detect[0m
+[0;32mI (6313) button: short press detect[0m
+[0;32mI (6343) button: short press detect[0m
+[0;32mI (6553) button: short press detect[0m
+[0;32mI (7143) button: short press detect[0m
+[0;32mI (72

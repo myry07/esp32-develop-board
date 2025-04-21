@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "002_PCM_Control",
-    "project_version":    "967a9b11-dirty",
+    "project_version":    "876a084d-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build",
@@ -1026,7 +1026,7 @@
             "type": "LIBRARY",
             "lib": "__idf_sd_spi",
             "reqs": [],
-            "priv_reqs": [ "fatfs", "driver" ],
+            "priv_reqs": [ "fatfs", "driver", "max98357" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/sd_spi/libsd_spi.a",
@@ -2221,7 +2221,7 @@
             "dir": "/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/components/sd_spi",
             "lib": "__idf_sd_spi",
             "reqs": [],
-            "priv_reqs": [ "fatfs", "driver" ],
+            "priv_reqs": [ "fatfs", "driver", "max98357" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]

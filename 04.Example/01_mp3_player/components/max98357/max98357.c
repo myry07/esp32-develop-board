@@ -23,7 +23,9 @@
 TaskHandle_t pwmHandle = NULL;
 
 extern volatile bool is_paused;
-extern TaskHandle_t i2sHandle;
+extern int folder;
+extern char folder_path[128];
+TaskHandle_t i2sHandle;
 
 void i2s_write_task(void *param)
 {
@@ -68,12 +70,27 @@ void i2s_write_task(void *param)
         // ESP_LOGI("I2S", "Playing");
         size_t len = fread(line, sizeof(char), sizeof(line), my_file);
         size_t bytes_written;
+
+        int16_t *samples = (int16_t *)line; // line 是你的音频缓冲区
+        size_t sample_count = len / sizeof(int16_t);
+        float volume = 0.1f; // 10% 音量
+
+        for (size_t i = 0; i < sample_count; i++)
+        {
+            samples[i] *= volume; // 音量缩放
+        }
+
         i2s_write(I2S_NUM_0, line, len, &bytes_written, portMAX_DELAY);
     }
 
+    sleep_led();
+    i2s_stop(I2S_NUM_0);
+
     fclose(my_file);
     ESP_LOGI("I2S", "Playback finished");
-    vTaskDelete(NULL);
+
+    write_file(folder_path, folder + 1); // 通知
+    sd_spi_deinit();
 }
 
 void i2s_init(void)

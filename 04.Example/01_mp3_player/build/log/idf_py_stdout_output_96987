@@ -1,0 +1,287 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=101f8h ( 66040) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020220 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022b24 vaddr=40080000 size=0d4f4h ( 54516) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2adf8h (175608) map[0m
+[0;32mI (214) esp_image: segment 4: paddr=0005ae20 vaddr=4008d4f4 size=02358h (  9048) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (238) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (256) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  406076f35...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3318 len 0002CCE8 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F84C len 000107B4 (65 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (523) SD: Opened file: /FAT/idf_mp3/3/test.pcm[0m
+[0;32mI (523) I2S: Open the File[0m
+[0;32mI (733) button: short press detect[0m
+[0;32mI (1703) button: short press detect[0m
+[0;32mI (2463) button: short press detect[0m
+[0;32mI (3803) button: short press detect[0m
+[0;32mI (4083) button: short press detect[0m
+[0;32mI (4513) button: short press detect[0m
+[0;32mI (5813) button: short press detect[0m
+[0;32mI (6143) button: short press detect[0m
+[0;32mI (7103) button: short press detect[0m
+[0;32mI (7733) button: short press detect[0m
+[0;32mI (8113) I2S: Playback finished[0m
+[0;31mE (8113) FreeRTOS: FreeRTOS Task "i2s_example_wri" should not return, Aborting noGuru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: BREAK instr 
+Core  0 register dump:
+PC      : 0x40083164  PS      : 0x00000016  A0      : 0x40080306  A1      : 0x3ffb4510  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x4008842b  A5      : 0x3ffb4460  
+A6      : 0x3ffb4a60  A7      : 0x00000000  A8      : 0x400ed9e6  A9      : 0x4008835a  
+A10     : 0x0000005a  A11     : 0x3f40f4e4  A12     : 0x8008935c  A13     : 0x3ffb4440  
+A14     : 0x3ffb0078  A15     : 0xa5a5a5a5  SAR     : 0x0000001e  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40083161:0x3ffb4510 0x40080303:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 406076f35
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=101f8h ( 66040) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020220 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022b24 vaddr=40080000 size=0d4f4h ( 54516) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2adf8h (175608) map[0m
+[0;32mI (214) esp_image: segment 4: paddr=0005ae20 vaddr=4008d4f4 size=02358h (  9048) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (255) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  406076f35...[0m
+[0;32mI (272) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3318 len 0002CCE8 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F84C len 000107B4 (65 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, capacity=62333952 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (513) main_task: Returned from app_main()[0m
+[0;32mI (513) SD: Reading file /FAT/idf_mp3/RECORD.TXT[0m
+[0;32mI (523) SD: Opened file: /FAT/idf_mp3/3/test.pcm[0m
+[0;32mI (523) I2S: Open the File[0m
+[0;32mI (593) button: short press detect[0m
+[0;32mI (1523) button: short press detect[0m
+[0;32mI (1553) button: short press detect[0m
+[0;32mI (3083) button: short press detect[0m
+[0;32mI (3113) button: short press detect[0m
+[0;32mI (3723) button: short press detect[0m
+[0;32mI (4313) button: short press detect[0m
+[0;32mI (4703) button: short press detect[0m
+[0;32mI (5203) button: short press detect[0m
+[0;32mI (5633) button: short press detect[0m
+[0;32mI (6323) button: short press detect[0m
+[0;32mI (6753) button: short press detect[0m
+[0;32mI (7253) button: short press detect[0m
+[0;32mI (7783) button: short press detect[0m
+[0;32mI (8113) I2S: Playback finished[0m
+[0;31mE (8113) FreeRTOS: FreeRTOS Task "i2s_example_wri" should not return, Aborting noGuru Meditation Error: Core  0 panic'ed (Unhandled debug exception). 
+Debug exception reason: BREAK instr 
+Core  0 register dump:
+PC      : 0x40083164  PS      : 0x00000016  A0      : 0x40080306  A1      : 0x3ffb4510  
+A2      : 0x00000000  A3      : 0x00000000  A4      : 0x4008842b  A5      : 0x3ffb4460  
+A6      : 0x3ffb4a60  A7      : 0x00000000  A8      : 0x400ed9e6  A9      : 0x4008835a  
+A10     : 0x0000005a  A11     : 0x3f40f4e4  A12     : 0x8008935c  A13     : 0x3ffb4440  
+A14     : 0x3ffb0078  A15     : 0xa5a5a5a5  SAR     : 0x0000001e  EXCCAUSE: 0x00000001  
+EXCVADDR: 0x00000000  LBEG    : 0x00000000  LEND    : 0x00000000  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x40083161:0x3ffb4510 0x40080303:0x00000000 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 406076f35
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15620
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 20 2025 22:01:54[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=101f8h ( 66040) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00020220 vaddr=3ffb0000 size=028fch ( 10492) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00022b24 vaddr=40080000 size=0d4f4h ( 54516) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=2adf8h (175608) map[0m
+[0;32mI (214) esp_image: segment 4: paddr=0005ae20 vaddr=4008d4f4 size=02358h (  9048) load[0m
+[0;32mI (226) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (226) boot: Disabling RNG early entropy source...[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (247) cpu_start: Pro cpu start user code[0m
+[0;32mI (247) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (247) cpu_start: Application information:[0m
+[0;32mI (250) cpu_start: Project name:     002_PCM_Control[0m
+[0;32mI (255) cpu_start: App version:      876a084d-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Apr 21 2025 08:51:19[0m
+[0;32mI (267) cpu_start: ELF file SHA256:  406076f35...[0m
+[0;32mI (272) cpu_start: ESP-IDF:          v5.2.5[0m
+[0;32mI (277) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (282) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (287) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (292) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (299) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFB3318 len 0002CCE8 (179 KiB): DRAM[0m
+[0;32mI (311) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (317) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (324) heap_init: At 4008F84C len 000107B4 (65 KiB): IRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (339) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (352) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;33mW (360) i2s(legacy): legacy i2s driver is deprecated, please migrate to use driver/i2s_std.h, driver/i2s_pdm.h or driver/i2s_tdm.h[0m
+[0;32mI (373) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (383) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (383) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (393) button: first btn add[0m
+[0;32mI (393) button: run button timer[0m
+[0;32mI (403) gpio: GPIO[23]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (413) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (463) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+[0;32mI (503) SD: SD card mounted at /FAT[0m
+Name: SK32G
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 30436MB
+CSD: ver=2, sector_size=512, cap

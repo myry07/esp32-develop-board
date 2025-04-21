@@ -61,8 +61,8 @@
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/perfmon/libperfmon.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/spiffs/libspiffs.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
-/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/sd_spi/libsd_spi.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/button/libbutton.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/led/libled.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/max98357/libmax98357.a
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/sd_spi/libsd_spi.a
 /Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/main/libmain.a

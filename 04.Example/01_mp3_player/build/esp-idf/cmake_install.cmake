@@ -414,11 +414,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/sd_spi/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/button/cmake_install.cmake")
 endif()
 
@@ -430,6 +425,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/max98357/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/wangjiaqi/Documents/Github/esp32-develop-board/04.Example/01_mp3_player/build/esp-idf/sd_spi/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

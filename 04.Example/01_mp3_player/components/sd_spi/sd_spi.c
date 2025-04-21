@@ -1,9 +1,12 @@
 #include <string.h>
+#include <stdlib.h>
+#include <dirent.h>
 #include <sys/unistd.h>
 #include <sys/stat.h>
 #include "esp_vfs_fat.h"
 #include "sdmmc_cmd.h"
 #include "sd_spi.h"
+#include "esp_system.h"
 
 #define EXAMPLE_MAX_CHAR_SIZE 64
 
@@ -12,6 +15,7 @@
 #define PIN_NUM_CLK GPIO_NUM_19
 #define PIN_NUM_CS GPIO_NUM_23
 
+#define MOUNT_POINT "/FAT"
 #define DEFAULT_PATH "idf_mp3/"
 #define RECORD_DOC "RECORD.TXT"
 
@@ -19,6 +23,43 @@ static sdmmc_card_t *sd_card = NULL;
 static sdmmc_host_t host = SDSPI_HOST_DEFAULT();
 
 const char *TAG = "SD";
+
+extern TaskHandle_t i2sHandle;
+
+int folder;
+char folder_path[128];
+
+int count_folders(char *path)
+{
+    DIR *dir = opendir(path);
+    if (dir == NULL) {
+        ESP_LOGE(TAG, "Failed to open directory: %s", path);
+        vTaskDelete(NULL);
+        return -1;
+    }
+
+    struct dirent *entry;
+    struct stat st;
+    int folder_count = 0;
+
+    while ((entry = readdir(dir)) != NULL) {
+        char full_path[300];
+        snprintf(full_path, sizeof(full_path), "%s/%s", path, entry->d_name);
+
+        if (stat(full_path, &st) == 0 && S_ISDIR(st.st_mode)) {
+            // 排除 "." 和 ".."
+            if (strcmp(entry->d_name, ".") != 0 && strcmp(entry->d_name, "..") != 0) {
+                ESP_LOGI(TAG, "Found folder: %s", entry->d_name);
+                folder_count++;
+            }
+        }
+    }
+
+    closedir(dir);
+    ESP_LOGI(TAG, "Total folders in %s: %d", path, folder_count);
+
+    return folder_count;
+}
 
 esp_err_t create_dir(const char *path)
 {
@@ -62,26 +103,26 @@ esp_err_t create_dir(const char *path)
     r+ 读写 覆盖
      */
 
-esp_err_t write_file(const char *path, const char *data)
+esp_err_t write_file(const char *path, int num)
 {
     ESP_LOGI(TAG, "Opening file %s", path);
-    FILE *f = fopen(path, "a");
+    FILE *f = fopen(path, "w");
     if (f == NULL)
     {
         ESP_LOGE(TAG, "Failed to open file for writing");
         return ESP_FAIL;
     }
-    fprintf(f, data);
+    fprintf(f, "%d", num);
     fclose(f);
-    ESP_LOGI(TAG, "File written");
+    ESP_LOGI(TAG, "Get Number: %d", num);
+
+    xTaskNotify(i2sHandle, num, eSetValueWithOverwrite); // 通知给播放任务
 
     return ESP_OK;
 }
 
 int read_file(const char *path)
 {
-    int num;
-
     ESP_LOGI(TAG, "Reading file %s", path);
     FILE *f = fopen(path, "r");
     if (f == NULL)
@@ -89,21 +130,16 @@ int read_file(const char *path)
         ESP_LOGE(TAG, "Failed to open file for reading");
         return ESP_FAIL;
     }
-    char line[EXAMPLE_MAX_CHAR_SIZE];
-
-    while (fgets(line, sizeof(line), f))
+    char buffer[16];
+    if (fgets(buffer, sizeof(buffer), f) == NULL)
     {
-        // 去除换行符
-        char *pos = strchr(line, '\n');
-        if (pos)
-        {
-            *pos = '\0';
-        }
-
-        ESP_LOGI(TAG, "Line: %s", line);
+        ESP_LOGE(TAG, "Failed to read the number");
+        fclose(f);
+        return -1;
     }
 
     fclose(f);
+    int num = atoi(buffer); // 或者使用 strtol() 更安全
     return num;
 }
 
@@ -164,56 +200,18 @@ esp_err_t sd_spi_deinit(void)
 
     spi_bus_free(host.slot);
     ESP_LOGI("SD", "SPI bus freed");
-    return ESP_OK;
+
+    ESP_LOGI("SD", "All files played. System will restart.");
+
+    vTaskDelay(pdMS_TO_TICKS(1000)); // 给点时间刷完串口日志
+
+    esp_restart();
 }
 
-esp_err_t create_file_and_folder(const char *file, const char *data, const char *folder)
-{
-    char path[128];
-    if (snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, folder) >= sizeof(path))
-    {
-        ESP_LOGE(TAG, "Folder path too long");
-        return ESP_FAIL;
-    }
-
-    if (create_dir(path) != ESP_OK)
-        return ESP_FAIL;
-
-    char full_path[128];
-    if (snprintf(full_path, sizeof(full_path), "%s/%s", path, file) >= sizeof(full_path))
-    {
-        ESP_LOGE(TAG, "File path too long");
-        return ESP_FAIL;
-    }
-    ESP_LOGI(TAG, "Full file path: %s", full_path);
-    return write_file(full_path, data);
-}
-
-esp_err_t read_file_and_folder(const char *file, const char *data, const char *folder)
-{
-    char path[128];
-    if (snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, folder) >= sizeof(path))
-    {
-        ESP_LOGE(TAG, "Folder path too long");
-        return ESP_FAIL;
-    }
-
-    if (create_dir(path) != ESP_OK)
-        return ESP_FAIL;
-
-    char full_path[128];
-    if (snprintf(full_path, sizeof(full_path), "%s/%s", path, file) >= sizeof(full_path))
-    {
-        ESP_LOGE(TAG, "File path too long");
-        return ESP_FAIL;
-    }
-
-    return read_file(full_path);
-}
 
 FILE *sd_i2s_open_file(const char *filename)
 {
-
+    /*  /FAT/idf_mp3/ */
     char path[128];
     if (snprintf(path, sizeof(path), "%s/%s", MOUNT_POINT, DEFAULT_PATH) >= sizeof(path))
     {
@@ -221,10 +219,24 @@ FILE *sd_i2s_open_file(const char *filename)
         return NULL;
     }
 
-    int folder = 2;
+    int max_folder = count_folders(path);
 
+    /*  /FAT/idf_mp3/RECORD.TXT */
+    if (snprintf(folder_path, sizeof(folder_path), "%s%s", path, RECORD_DOC) >= sizeof(folder_path))
+    {
+        ESP_LOGE(TAG, "File path too long");
+        return NULL;
+    }
+
+    folder = read_file(folder_path);
+
+    if (folder > max_folder) {
+        folder = 1;
+    }
+
+    /*  /FAT/idf_mp3/1/test.pcm */
     char full_path[128];
-    if (snprintf(full_path, sizeof(full_path), "%s/%d/%s", path, folder, filename) >= sizeof(full_path))
+    if (snprintf(full_path, sizeof(full_path), "%s%d/%s", path, folder, filename) >= sizeof(full_path))
     {
         ESP_LOGE(TAG, "File path too long");
         return NULL;
