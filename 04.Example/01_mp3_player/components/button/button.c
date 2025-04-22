@@ -3,6 +3,7 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "driver/gpio.h"
+#include "driver/i2s.h"
 #include "esp_timer.h"
 #include "sd_spi.h"
 #include <stdio.h>
@@ -42,6 +43,7 @@ void long_press_cb(void)
     folder += 1;
     write_file(folder_path, folder);
     ESP_LOGI("PCM", "long press: jump to folder=%d", folder);
+    i2s_stop(I2S_NUM_0);
     sd_spi_deinit();
 }
 
