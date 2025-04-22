@@ -13,7 +13,7 @@
 #define LCD_BLK GPIO_NUM_2
 #define SPI_FREQENCY 40000000
 #define LCD_WIDTH 240
-#define LCD_HEIGHT 300
+#define LCD_HEIGHT 280
 
 void lcd_done_cb(void *user_ctx)
 {
@@ -52,7 +52,7 @@ void app_main(void)
     }
 
     // 刷新整块屏幕
-    st7789_flush(0, LCD_WIDTH, 0, LCD_HEIGHT, buffer);
+    st7789_flush(0, LCD_WIDTH, 0 + 20, LCD_HEIGHT + 20, buffer);
 
     ESP_LOGI("APP", "LCD should now show white screen");
 }
