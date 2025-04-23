@@ -16,3 +16,7 @@ sample rate 44100Hz
 ```
 ffmpeg -i test.mp3 -f s16le -ar 44100 -ac 1 -acodec pcm_s16le test.pcm
 ```
+
+<div align=center>
+	<img src="https://github.com/myry07/2.8inch-video-player/blob/main/04.Fotos/pcb1.jpg" width="500" height="310">
+</div>
