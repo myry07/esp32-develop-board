@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "001_ST7789_Init",
-    "project_version":    "1049ffa4-dirty",
+    "project_version":    "5c6b159b-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/008_SPI/001_ST7789_Init",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/008_SPI/001_ST7789_Init/build",
@@ -11,7 +11,7 @@
     "app_elf":            "001_ST7789_Init.elf",
     "app_bin":            "001_ST7789_Init.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.2.5",
+    "git_revision":       "v5.2.5-dirty",
     "target":             "esp32",
     "rev":                "0",
     "min_rev":            "0",

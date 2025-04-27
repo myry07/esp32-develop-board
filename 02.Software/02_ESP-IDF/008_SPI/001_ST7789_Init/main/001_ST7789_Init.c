@@ -13,7 +13,7 @@
 #define LCD_BLK GPIO_NUM_2
 #define SPI_FREQENCY 40000000
 #define LCD_WIDTH 240
-#define LCD_HEIGHT 280
+#define LCD_HEIGHT 198
 
 void lcd_done_cb(void *user_ctx)
 {
@@ -37,22 +37,25 @@ void app_main(void)
     };
 
     st7789_driver_hw_init(&cfg);
-    st7789_lcd_backlight(true);  // 打开背光
+    st7789_lcd_backlight(true); // 打开背光
 
     // 分配一块白色缓冲区
     size_t buffer_size = LCD_WIDTH * LCD_HEIGHT * sizeof(uint16_t);
     uint16_t *buffer = heap_caps_malloc(buffer_size, MALLOC_CAP_DMA); // DMA可用
-    if (buffer == NULL) {
+    if (buffer == NULL)
+    {
         ESP_LOGE("APP", "Failed to allocate buffer");
         return;
     }
 
-    for (int i = 0; i < LCD_WIDTH * LCD_HEIGHT; i++) {
-        buffer[i] = 0xFFFF;  // 全部填白
+    for (int i = 0; i < LCD_WIDTH * LCD_HEIGHT; i++)
+    {
+        // buffer[i] = 0xFFFF;  // 全部填白
+        buffer[i] = 0x001F;
     }
 
     // 刷新整块屏幕
-    st7789_flush(0, LCD_WIDTH, 0 + 20, LCD_HEIGHT + 20, buffer);
+    st7789_flush(0, LCD_WIDTH, 0, LCD_HEIGHT, buffer);
 
     ESP_LOGI("APP", "LCD should now show white screen");
 }

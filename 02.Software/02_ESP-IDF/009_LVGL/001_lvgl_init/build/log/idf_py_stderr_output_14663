@@ -1,0 +1,329 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbserial-1130 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/panic.c:466
+0x40087f4d: esp_system_abort at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4008ec11: __assert_func at /Users/wangjiaqi/esp/esp-idf/components/newlib/assert.c:81
+0x400d2305: do_core_init at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:341 (discriminator 1)
+0x400d2541: start_cpu0_default at /Users/wangjiaqi/esp/esp-idf/components/esp_system/startup.c:490
+0x4008167e: call_start_cpu0 at /Users/wangjiaqi/esp/esp-idf/components/esp_system/port/cpu_start.c:802 (discriminator 1)
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x4008194a: panic_abort at /Users/wangji

@@ -1,0 +1,59 @@
+[1/5] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build/001_lvgl_init.bin
+001_lvgl_init.bin binary size 0x75db0 bytes. Smallest app partition is 0x100000 bytes. 0x8a250 bytes (54%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build/bootloader/bootloader.bin
+Bootloader binary size 0x68b0 bytes. 0x750 bytes (7%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.2_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/009_LVGL/001_lvgl_init/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.usbserial-1130 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 8MB 0x1000 bootloader/bootloader.bin 0x10000 001_lvgl_init.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbserial-1130
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a8:42:e3:ae:d2:30
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+WARNING: Set --flash_size 8MB is larger than the available flash size of 4MB.
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00085fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26800 bytes to 16423...
+Writing at 0x00001000... (50 %)
+Writing at 0x00007891... (100 %)
+Wrote 26800 bytes (16423 compressed) at 0x00001000 in 0.8 seconds (effective 273.9 kbit/s)...
+Hash of data verified.
+Compressed 482736 bytes to 271739...
+Writing at 0x00010000... (5 %)
+Writing at 0x0001f835... (11 %)
+Writing at 0x00028a5a... (17 %)
+Writing at 0x0002ed23... (23 %)
+Writing at 0x000345a8... (29 %)
+Writing at 0x0003b984... (35 %)
+Writing at 0x00041f4a... (41 %)
+Writing at 0x00047af8... (47 %)
+Writing at 0x0004dc72... (52 %)
+Writing at 0x0005418f... (58 %)
+Writing at 0x00059ed7... (64 %)
+Writing at 0x0005ffbc... (70 %)
+Writing at 0x00066376... (76 %)
+Writing at 0x0006c60d... (82 %)
+Writing at 0x00075653... (88 %)
+Writing at 0x0007bdef... (94 %)
+Writing at 0x000821a0... (100 %)
+Wrote 482736 bytes (271739 compressed) at 0x00010000 in 7.0 seconds (effective 550.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 526.3 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
