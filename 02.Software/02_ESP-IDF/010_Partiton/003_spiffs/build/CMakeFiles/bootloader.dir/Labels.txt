@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/CMakeFiles/bootloader
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/CMakeFiles/bootloader.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/CMakeFiles/bootloader-complete.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/wangjiaqi/Documents/Github/esp32-develop-board/02.Software/02_ESP-IDF/010_Partiton/003_spiffs/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
