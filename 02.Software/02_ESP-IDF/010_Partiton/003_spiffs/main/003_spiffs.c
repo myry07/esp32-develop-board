@@ -13,7 +13,6 @@ void app_main(void)
         {
             .base_path = "/spiffs",         // 挂载点
             .partition_label = NULL,        // 寻找 subtype的spiffs
-            
             .max_files = 5,                 // 最大打开数
             .format_if_mount_failed = true // 挂载失败 格式化
         };
